@@ -12,19 +12,4 @@ $(document).ready(function() {
 		$(this).siblings( ".secHeader" ).fadeTo('slow', 0.6);
 	});
 
-
-    // Determine web browser
-	var browserInfo = navigator.userAgent;
-
-	//$('#nameBanner').append("<div>Browser Info:\t\t" + browserInfo + "</div>");
-
-
-	jQuery.each( jQuery.browser, function( i, val ) {
-		$( "<div>" + i + " : <span>" + val + "</span>" ).appendTo("#nameBanner");
-	});
-
-
-	
-
-
 });
