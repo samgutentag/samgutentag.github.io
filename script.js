@@ -12,4 +12,13 @@ $(document).ready(function() {
 		$(this).siblings( ".secHeader" ).fadeTo('slow', 0.6);
 	});
 
+
+    // Determine web browser
+	$(document).ready(function(){
+		alert(navigator.userAgent);
+    });
+
+
+
+
 });
