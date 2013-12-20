@@ -14,11 +14,17 @@ $(document).ready(function() {
 
 
     // Determine web browser
-	$(document).ready(function(){
-		alert(navigator.userAgent);
-    });
+	var browserInfo = navigator.userAgent;
+
+	//$('#nameBanner').append("<div>Browser Info:\t\t" + browserInfo + "</div>");
 
 
+	jQuery.each( jQuery.browser, function( i, val ) {
+		$( "<div>" + i + " : <span>" + val + "</span>" ).appendTo("#nameBanner");
+	});
+
+
+	
 
 
 });
