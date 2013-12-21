@@ -1,15 +1,25 @@
 $(document).ready(function() {
 
-	$('img').fadeTo(1000, 1.0);
+	var pageWidth = $(window).width();
+	var pageHeight = $(window).height();
+	$('#nameBanner').append('<div class="pageSize">Page Width: ' + pageWidth + "</div>");
+	$('#nameBanner').append('<div class="pageSize">Page Height: ' + pageHeight + "</div>");
 
-    $('.bodySecEntry').mouseenter(function () {
-		$(this).fadeTo('fast', 1.0);
-		$(this).siblings( ".secHeader" ).fadeTo('fast', 1.0);
+	
+
+	$(window).resize(function(){
+
+		$( ".pageSize" ).remove();
+		
+		pageWidth = $(window).width();
+		pageHeight = $(window).height();
+		$('#nameBanner').append('<div class="pageSize">Page Width: ' + pageWidth + "</div>");
+		$('#nameBanner').append('<div class="pageSize">Page Height: ' + pageHeight + "</div>");
+
+
 	});
 
-    $('.bodySecEntry').mouseleave(function () {
-		$(this).fadeTo('slow', 0.6);
-		$(this).siblings( ".secHeader" ).fadeTo('slow', 0.6);
-	});
+	
+	
 
 });
