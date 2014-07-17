@@ -9,7 +9,7 @@ html {
 
 #nameBanner {
 	font-weight:100;
-	font-size: 2em;
+	font-size: 8em;
 	background: -webkit-linear-gradient(left, #003366, #993333);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
