@@ -37,7 +37,7 @@ html {
 @media only screen and (max-device-width: 480px) {
 
 	#banner-background {
-		background-color: #00FF00;
+		background-color: #3399FF;
 		width: 95%;
 		height: 22em;
 		margin: 0 auto;
@@ -48,7 +48,7 @@ html {
 		font-size: 8em;
 		/* Original yellow color, matches business cards #F49D00 */
 		/*background: -webkit-linear-gradient(top, #F49D00, #FFAD19);*/
-		background: -webkit-linear-gradient(top, #000000, #FFFFFF);
+		background: -webkit-linear-gradient(top, #FF9933, #FF9966);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		text-align: center;
