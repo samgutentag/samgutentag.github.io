@@ -1,0 +1,27 @@
+/* --------------------	*/
+/* 		ipad specialized style sheet			*/
+/* --------------------	*/
+
+
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+#banner-background {
+	background-color: #000099;
+	width: 95%;
+	height: 22em;
+	margin: 0 auto;
+}
+
+#banner-text {
+	font-weight:400;
+	font-size: 8em;
+	/* Original yellow color, matches business cards #F49D00 */
+	background: -webkit-linear-gradient(top, #F49D00, #FFAD19);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+	font-family:'Lusitana', serif;
+}
+
