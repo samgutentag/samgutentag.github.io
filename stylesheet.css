@@ -7,17 +7,20 @@ html {
 	font-family: 'Roboto', sans-serif;
 }
 
-#nameBanner {
-	font-weight:100;
-	font-size: 3em;
-	background: -webkit-linear-gradient(left, #003366, #993333);
+#banner-background {
+	background-color: #000000;
+	width: 95%;
+	height: 10em;
+	margin: 0 auto;
+}
+
+#banner-text {
+	font-weight:400;
+	font-size: 8em;
+	/* Original yellow color, matches business cards #F49D00 */
+	background: -webkit-linear-gradient(top, #F49D00, #FFAD19);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-align: center;
-}
-
-.pageSize {
-	font-size: 1em;
-	font-weight:100;
-	text-align: center;
+	font-family:'Lusitana', serif;
 }
