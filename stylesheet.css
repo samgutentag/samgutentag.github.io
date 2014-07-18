@@ -37,7 +37,7 @@ html {
 @media only screen and (max-device-width: 480px) {
 
 	#banner-background {
-		background-color: #3399FF;
+		background-color: #000099;
 		width: 95%;
 		height: 22em;
 		margin: 0 auto;
