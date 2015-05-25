@@ -7,20 +7,27 @@ html {
 	font-family: 'Roboto', sans-serif;
 	width: 85%;
 	padding-left: 4em;
+	background-color: #FEEFE1;
+	color: #323232;
+}
+
+a {
+	color: #1E1E1E;
 }
 
 .nameBanner {
-	font-weight:100;
-	background: -webkit-linear-gradient(left, #003366, #993333);
+	font-weight:400;
+	background: -webkit-linear-gradient(top, #003366, #993333);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	/*color: #003366;*/
 	text-align: center;
     text-justify: inter-word;
 }
 
 #heading {
 	font-size: 2em;
-	font-weight: 200;
+	font-weight: 400;
 	color: #993333;
 
 }
@@ -30,7 +37,6 @@ html {
     text-justify: inter-word;
 	font-size: 1.1em;
 	font-weight: 100;
-	color: #000000;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
@@ -41,25 +47,4 @@ html {
 
 table {
 	width: 100%;
-}
-
-.secHead {
-	font-weight: 400;
-}
-
-.jobTitle, .jobCompany, .jobDates {
-	text-align: justify;
-    text-justify: inter-word;
-	font-size: 0.9em;
-	font-weight: 200;
-	color: #000000;
-
-}
-
-.projectEntry, .skillList, .projectList {
-	text-align: justify;
-    text-justify: inter-word;
-	font-size: 0.8em;
-	font-weight: 100;
-	color: #000000;
 }
