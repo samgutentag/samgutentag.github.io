@@ -17,11 +17,11 @@ a {
 
 .nameBanner {
 	font-weight:400;
-	/*background: -webkit-linear-gradient(left, #003366, #993333);*/
+	/*background: -webkit-linear-gradient(left, #003366, #993333);
 	background: -webkit-linear-gradient(left, #303F9F, #3F51B5);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	/*color: #003366;*/
+	-webkit-text-fill-color: transparent;*/
+	color: #303F9F;
 	text-align: center;
     text-justify: inter-word;
 }
