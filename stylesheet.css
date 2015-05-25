@@ -5,29 +5,61 @@
 
 html {
 	font-family: 'Roboto', sans-serif;
+	width: 85%;
+	padding-left: 4em;
 }
 
-#nameBanner {
-	font-weight:400;
-	font-size: 8em;
-	/*background: -webkit-linear-gradient(left, #003366, #993333);
-	background: -webkit-linear-gradient(top, #F88379, #9D1826);
-	background: -webkit-linear-gradient(bottom, #79EEF8, #F88379);*/
-	background: -webkit-linear-gradient(left, #189D8F, #9D1826);
+.nameBanner {
+	font-weight:100;
+	background: -webkit-linear-gradient(left, #003366, #993333);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-align: center;
+    text-justify: inter-word;
 }
 
-.pageSize {
-	font-size: 1em;
-	font-weight:100;
-	text-align: center;
-}
-
-#newContent {
+#heading {
 	font-size: 2em;
-	background-color: #FF0000;
+	font-weight: 200;
+	color: #993333;
+
+}
+
+#body {
+	text-align: justify;
+    text-justify: inter-word;
+	font-size: 1.1em;
+	font-weight: 100;
+	color: #000000;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+#body #body {
+	padding-left: 1em;
+}
+
+table {
+	width: 100%;
+}
+
+.secHead {
+	font-weight: 400;
+}
+
+.jobTitle, .jobCompany, .jobDates {
+	text-align: justify;
+    text-justify: inter-word;
+	font-size: 0.9em;
+	font-weight: 200;
 	color: #000000;
 
+}
+
+.projectEntry, .skillList, .projectList {
+	text-align: justify;
+    text-justify: inter-word;
+	font-size: 0.8em;
+	font-weight: 100;
+	color: #000000;
 }
