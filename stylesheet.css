@@ -6,7 +6,7 @@
 html {
 	font-family: 'Roboto', sans-serif;
 	width: 85%;
-	padding-left: 4em;
+	margin: 0 auto;
 	background-color: #FFFFFF;
 	color: #212121;
 }
