@@ -1,0 +1,26 @@
+
+
+
+Files and where they should go!
+
+
+
+#----------------------------------------------------------
+#   Bash profile aliases, should go in '~/'
+#   tell all computers in local ~/.bash_profile, to source this one!
+#----------------------------------------------------------
+.bash_profile
+source ~/Developer/web/samgutentag.github.io/utils/.bash_profile
+
+
+#----------------------------------------------------------
+#   Global git_ignore, should go in '~/'
+#----------------------------------------------------------
+.gitignore_global
+
+
+#----------------------------------------------------------
+#   Atom configuration file, shoudl go in '~/.atom/'
+#   Make sure to update before copying it over
+#----------------------------------------------------------
+config.cson
