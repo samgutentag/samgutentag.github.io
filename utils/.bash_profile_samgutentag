@@ -1,37 +1,35 @@
-# alias ea="open -a /Applications/Atom.app ~/.bash_profile &"
+alias ea="open -a /Applications/Atom.app ~/.bash_profile &"
 # alias src="source ~/.bash_profile"
-#
-# alias u="cd .."
-# alias uu="cd ../.."
-# alias uuu="cd ../../.."
-# alias uuu="cd ../../../.."
-# alias uuuu="cd ../../../../.."
-# alias uuuuu="cd ../../../../../.."
-#
-# alias ltr="ls -ltr"
-# alias al="ls -al"
-# alias la="ls -al"
-#
-# alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-#
-#
-# # program aliases
-# alias chrome="open -a /Applications/Google\ Chrome.app"
-# alias safari="open -a /Applications/Safari.app"
-# alias preview="open -a /Applications/Preview.app"
-# alias subl="open -a /Applications/Sublime\ Text\ 2.app"
-# alias atom="open -a /Applications/Atom.app"
-# alias xcode="open -a /Applications/Xcode.app"
-#
-# # command line utils
-# alias youtubeDL-best="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --write-thumbnail --embed-thumbnail"
-# alias brewUp="brew update && brew install `brew outdated`"
-#
-# # Setting PATH for Python 2.7
-# # The original version is saved in .bash_profile.pysave
-# PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-# export PATH
+
+alias u="cd .."
+alias uu="cd ../.."
+alias uuu="cd ../../.."
+alias uuu="cd ../../../.."
+alias uuuu="cd ../../../../.."
+alias uuuuu="cd ../../../../../.."
+
+alias ltr="ls -ltr"
+alias al="ls -al"
+alias la="ls -al"
+
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
+# program aliases
+alias chrome="open -a /Applications/Google\ Chrome.app"
+alias safari="open -a /Applications/Safari.app"
+alias preview="open -a /Applications/Preview.app"
+alias subl="open -a /Applications/Sublime\ Text\ 2.app"
+alias atom="open -a /Applications/Atom.app"
+alias xcode="open -a /Applications/Xcode.app"
+
+# command line utils
+alias youtubeDL-best="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --write-thumbnail --embed-thumbnail"
+alias brewUp="brew update && brew install `brew outdated`"
+
+# Setting PATH for Python 2.7
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH
 
 
 # soruce git controlled version of all aliases!
-source ~/Developer/web/samgutentag.github.io/utils/.bash_profile_samgutentag
+# source ~/Developer/web/samgutentag.github.io/utils/.bash_profile_samgutentag
