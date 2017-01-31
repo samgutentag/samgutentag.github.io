@@ -39,23 +39,13 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'images/sg_background_01.jpg': 'center',
-							'images/sg_background_02.jpg': 'center',
-							'images/sg_background_03.jpg': 'center',
-							'images/sg_background_04.jpg': 'center',
-							'images/sg_background_05.jpg': 'center',
-							'images/sg_background_06.jpg': 'center',
-							'images/sg_background_07.jpg': 'center',
-							'images/sg_background_08.jpg': 'center',
-							'images/sg_background_09.jpg': 'center',
-							'images/sg_background_10.jpg': 'center',
-							'images/sg_background_11.jpg': 'center',
-							'images/sg_background_12.jpg': 'center',
-							'images/sg_background_13.jpg': 'center',
+							'http://i.imgur.com/VMh08md.jpg': 'middle',
+							'http://i.imgur.com/NGSRcYc.jpg': 'middle',
+							'http://i.imgur.com/guxQgos.jpg': 'middle',
 						},
 
 					// Delay.
-						delay: 6000
+						delay: 10000
 
 				};
 
@@ -114,76 +104,6 @@
 						}, settings.delay / 2);
 
 				}, settings.delay);
-
-		})();
-
-	// Signup Form.
-		(function() {
-
-			// Vars.
-				var $form = document.querySelectorAll('#signup-form')[0],
-					$submit = document.querySelectorAll('#signup-form input[type="submit"]')[0],
-					$message;
-
-			// Bail if addEventListener isn't supported.
-				if (!('addEventListener' in $form))
-					return;
-
-			// Message.
-				$message = document.createElement('span');
-					$message.classList.add('message');
-					$form.appendChild($message);
-
-				$message._show = function(type, text) {
-
-					$message.innerHTML = text;
-					$message.classList.add(type);
-					$message.classList.add('visible');
-
-					window.setTimeout(function() {
-						$message._hide();
-					}, 3000);
-
-				};
-
-				$message._hide = function() {
-					$message.classList.remove('visible');
-				};
-
-			// Events.
-			// Note: If you're *not* using AJAX, get rid of this event listener.
-				$form.addEventListener('submit', function(event) {
-
-					event.stopPropagation();
-					event.preventDefault();
-
-					// Hide message.
-						$message._hide();
-
-					// Disable submit.
-						$submit.disabled = true;
-
-					// Process form.
-					// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
-					// but there's enough here to piece together a working AJAX submission call that does.
-						window.setTimeout(function() {
-
-							// Reset form.
-								$form.reset();
-
-							// Enable submit.
-								$submit.disabled = false;
-
-							// Show message.
-								$message._show('success', 'Thank you!');
-								// $message._show('failure', 'Something went wrong. Please try again.');
-
-								// alert('OOPS!');
-
-
-						}, 750);
-
-				});
 
 		})();
 
