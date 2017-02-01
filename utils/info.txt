@@ -10,7 +10,7 @@ Files and where they should go!
 #   tell all computers in local ~/.bash_profile, to source this one!
 #----------------------------------------------------------
 .bash_profile
-source ~/Developer/web/samgutentag.github.io/utils/.bash_profile
+source ~/Developer/web/samgutentag.github.io/utils/.bash_profile_samgutentag
 
 
 #----------------------------------------------------------
