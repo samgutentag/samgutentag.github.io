@@ -21,15 +21,18 @@ alias preview="open -a /Applications/Preview.app"
 alias subl="open -a /Applications/Sublime\ Text\ 2.app"
 alias atom="open -a /Applications/Atom.app"
 alias xcode="open -a /Applications/Xcode.app"
+alias vlc="open -a /Applications/VLC.app"
 
 # command line utils
 alias youtubeDL-best="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --write-thumbnail --embed-thumbnail"
 alias brewUp="brew update && brew install `brew outdated`"
+
+alias handbrakecli="handbrakecli"
 
 # Setting PATH for Python 2.7
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
 
 
-# soruce git controlled version of all aliases!
+# source git controlled version of all aliases!
 # source ~/Developer/web/samgutentag.github.io/utils/.bash_profile_samgutentag
