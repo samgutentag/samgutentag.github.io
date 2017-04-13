@@ -8,7 +8,7 @@ alias uuu="cd ../../../.."
 alias uuuu="cd ../../../../.."
 alias uuuuu="cd ../../../../../.."
 
-alias ltr="ls -ltr"
+alias ltr="ls -lthr"
 alias al="ls -al"
 alias la="ls -al"
 
