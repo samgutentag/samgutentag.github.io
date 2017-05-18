@@ -1,5 +1,5 @@
 alias ea="open -a /Applications/Atom.app ~/.bash_profile &"
-# alias src="source ~/.bash_profile"
+alias src="source ~/.bash_profile"
 
 alias u="cd .."
 alias uu="cd ../.."
@@ -25,6 +25,7 @@ alias vlc="open -a /Applications/VLC.app"
 
 # command line utils
 alias youtubeDL-best="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --write-thumbnail --embed-thumbnail"
+alias youtubeDL-lite="youtube-dl -f 'bestvideo[ext=mp4, height<=720]+bestaudio[ext=m4a]/best[ext=mp4]/best[height<=720]' --write-thumbnail --embed-thumbnail"
 alias brewUp="brew update && brew install `brew outdated`"
 
 alias handbrakecli="handbrakecli"
