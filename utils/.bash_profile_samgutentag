@@ -31,9 +31,13 @@ alias brewUp="brew update && brew install `brew outdated`"
 alias handbrakecli="handbrakecli"
 
 # Setting PATH for Python 2.7
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+# PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+# export PATH=/usr/local/bin:$PATH
 export PATH
 
 
 # source git controlled version of all aliases!
 # source ~/Developer/web/samgutentag.github.io/utils/.bash_profile_samgutentag
+
+
+# EOF
