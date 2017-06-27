@@ -1,0 +1,44 @@
+
+/*div {
+    border-style : solid;
+    border-color : red;
+}*/
+
+.contact-info-text {
+    /*color : orange;*/
+}
+
+
+.job-company {
+    color : #5a5a5a;
+    font-weight : bold;
+    font-size : 150%;
+    padding-bottom : -5px;
+}
+.job-title {
+    color : #5a5a5a;
+    font-weight : bold;
+    padding-bottom : -5px;
+}
+.job-dates {
+    color : #5a5a5a;
+    font-weight : light;
+    padding-bottom : -5px;
+}
+.job-description {
+    color : #5a5a5a;
+    font-weight : normal;
+}
+
+
+.my-content-left {
+    /*border-left: 2px solid green;*/
+    margin-left : 5px;
+    padding-left : 10px;
+}
+
+.my-content-right {
+    /*border-left: 2px solid green;*/
+    margin-left : 10px;
+    padding-left : 20px;
+}
