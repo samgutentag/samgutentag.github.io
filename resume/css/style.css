@@ -4,10 +4,27 @@
     border-color : red;
 }*/
 
-.contact-info-text {
-    /*color : orange;*/
+div {
+    font-family: 'Lato', sans-serif;
 }
 
+.summary-text {
+    font-weight: 100;
+}
+
+.name-text {
+    font-weight: 900;
+}
+
+.profile-image{
+    border-radius: 200px;
+    margin : 5%;
+    width : 50%;
+    height : auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .job-company {
     color : #5a5a5a;
@@ -31,14 +48,12 @@
 }
 
 
-.my-content-left {
-    /*border-left: 2px solid green;*/
+.right-column {
     margin-left : 5px;
-    padding-left : 10px;
 }
 
-.my-content-right {
-    /*border-left: 2px solid green;*/
-    margin-left : 10px;
-    padding-left : 20px;
+.category-header {
+  padding-bottom: 9px;
+  margin: 20px 0 10px;
+  border-bottom: 1px solid #eeeeee;
 }
