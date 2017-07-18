@@ -1,6 +1,15 @@
+
+###############################################################################
+##  Alias Management
+###############################################################################
 alias ea="open -a /Applications/Atom.app ~/.bash_profile &"
 alias src="source ~/.bash_profile"
+# source git controlled version of all aliases!
+# source ~/Developer/web/samgutentag.github.io/utils/.bash_profile_samgutentag
 
+###############################################################################
+##  Terminal Navigation
+###############################################################################
 alias u="cd .."
 alias uu="cd ../.."
 alias uuu="cd ../../.."
@@ -14,7 +23,10 @@ alias la="ls -al"
 
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
-# program aliases
+
+###############################################################################
+##  Program SHortcuts
+###############################################################################
 alias chrome="open -a /Applications/Google\ Chrome.app"
 alias safari="open -a /Applications/Safari.app"
 alias preview="open -a /Applications/Preview.app"
@@ -23,7 +35,10 @@ alias atom="open -a /Applications/Atom.app"
 alias xcode="open -a /Applications/Xcode.app"
 alias vlc="open -a /Applications/VLC.app"
 
-# command line utils
+
+###############################################################################
+##  Command Line Utils
+###############################################################################
 alias youtubeDL-best="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --write-thumbnail --embed-thumbnail"
 alias youtubeDL-lite="youtube-dl -f 18 --write-thumbnail --embed-thumbnail"
 alias brewUp="brew update && brew install `brew outdated`"
@@ -36,8 +51,12 @@ alias handbrakecli="handbrakecli"
 export PATH
 
 
-# source git controlled version of all aliases!
-# source ~/Developer/web/samgutentag.github.io/utils/.bash_profile_samgutentag
 
+###############################################################################
+##  Conda Environments
+###############################################################################
+
+alias mediaDelta="cd ~/Developer/python/mediaDelta ; source activate py2"
+alias springboard="cd ~/Developer/springboard ; source activate springboard"
 
 # EOF

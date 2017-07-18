@@ -10,7 +10,7 @@ Files and where they should go!
 #   tell all computers in local ~/.bash_profile, to source this one!
 #----------------------------------------------------------
 .bash_profile
-source ~/Developer/web/samgutentag.github.io/utils/.bash_profile_samgutentag
+source ~/Developer/samgutentag.github.io/utils/.bash_profile_samgutentag
 
 
 #----------------------------------------------------------
@@ -20,7 +20,7 @@ source ~/Developer/web/samgutentag.github.io/utils/.bash_profile_samgutentag
 
 
 #----------------------------------------------------------
-#   Atom configuration file, shoudl go in '~/.atom/'
+#   Atom configuration file, should go in '~/.atom/'
 #   Make sure to update before copying it over
 #----------------------------------------------------------
-config.cson
+sgutentag_atom_config.cson
