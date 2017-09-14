@@ -2,7 +2,7 @@
 ###############################################################################
 ##  Alias Management
 ###############################################################################
-alias ea="open -a /Applications/Atom.app ~/.bash_profile &"
+alias ea="open -a /Applications/Atom.app ~/.bash_profile ~/Developer/samgutentag.github.io/utils/.bash_profile_samgutentag &"
 alias src="source ~/.bash_profile"
 # source git controlled version of all aliases!
 # source ~/Developer/web/samgutentag.github.io/utils/.bash_profile_samgutentag
@@ -58,5 +58,7 @@ export PATH
 
 alias mediaDelta="cd ~/Developer/python/mediaDelta ; source activate py2"
 alias springboard="cd ~/Developer/springboard ; source activate springboard"
+alias tweepy="cd ~/Developer/python/tweetpy ; source activate tweetpy"
+"
 
 # EOF
