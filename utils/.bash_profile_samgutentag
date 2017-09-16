@@ -59,6 +59,5 @@ export PATH
 alias mediaDelta="cd ~/Developer/python/mediaDelta ; source activate py2"
 alias springboard="cd ~/Developer/springboard ; source activate springboard"
 alias tweepy="cd ~/Developer/python/tweetpy ; source activate tweetpy"
-"
 
 # EOF
