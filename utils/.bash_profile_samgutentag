@@ -41,6 +41,7 @@ alias vlc="open -a /Applications/VLC.app"
 ###############################################################################
 alias youtubeDL-best="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --write-thumbnail --embed-thumbnail"
 alias youtubeDL-lite="youtube-dl -f 18 --write-thumbnail --embed-thumbnail"
+alias youtubeDL-audio="youtube-dl -f 140 --write-thumbnail --embed-thumbnail"
 alias brewUp="brew update && brew install `brew outdated`"
 
 alias handbrakecli="handbrakecli"
