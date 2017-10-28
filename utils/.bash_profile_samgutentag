@@ -57,7 +57,7 @@ export PATH
 ##  Conda Environments
 ###############################################################################
 
-alias condaExport="conda env export | grep -v "^prefix: " > environment.yml"
+alias condaExport="conda env export | grep -v '^prefix: ' > environment.yml"
 alias condaImport="conda env create -f environment.yml"
 
 
