@@ -57,8 +57,15 @@ export PATH
 ##  Conda Environments
 ###############################################################################
 
+alias condaExport="conda env export | grep -v "^prefix: " > environment.yml"
+alias condaImport="conda env create -f environment.yml"
+
+
 alias mediaDelta="cd ~/Developer/python/mediaDelta ; source activate py2"
 alias springboard="cd ~/Developer/springboard ; source activate springboard"
 alias tweepy="cd ~/Developer/python/tweetpy ; source activate tweetpy"
+
+
+
 
 # EOF
