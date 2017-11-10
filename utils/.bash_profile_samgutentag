@@ -64,6 +64,7 @@ alias condaImport="conda env create -f environment.yml"
 alias mediaDelta="cd ~/Developer/python/mediaDelta ; source activate mediaDelta"
 alias springboard="cd ~/Developer/springboard ; source activate springboard"
 alias tweepy="cd ~/Developer/python/twitter_sentiment ; source activate tweepy"
+alias cellData="cd ~/Developer/python/cellularDataAnalysis ; source activate cellData"
 
 
 
