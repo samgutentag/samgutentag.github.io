@@ -57,3 +57,7 @@ div {
   margin: 20px 0 10px;
   border-bottom: 1px solid #eeeeee;
 }
+
+.spacer20 {
+    height: 20px;
+}
