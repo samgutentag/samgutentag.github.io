@@ -67,6 +67,7 @@ alias tweepy="cd ~/Developer/python/twitter_sentiment ; source activate tweepy"
 alias cellData="cd ~/Developer/python/cellularDataAnalysis ; source activate cellData"
 alias tinker="cd ~/Developer/python/tinkering ; source activate tinker"
 alias transcriptor="cd ~/Developer/python/transcriptor ; source activate transcriptor"
+alias splendor="cd ~/Developer/splendor ; source activate splendor"
 
 
 # EOF
