@@ -70,6 +70,6 @@ alias cellData="cd ~/Developer/python/cellularDataAnalysis ; source activate cel
 alias tinker="cd ~/Developer/python/tinkering ; source activate tinker"
 alias transcriptor="cd ~/Developer/python/transcriptor ; source activate transcriptor"
 alias splendor="cd ~/Developer/splendor ; source activate splendor"
-alias tfboot='cd ~/Developer/datascience_projects/enorflowbootcamp ; source tfdeeplearning'
+alias tfboot='cd ~/Developer/datascience_projects/tensorflowbootcamp ; source tfdeeplearning'
 
 # EOF
