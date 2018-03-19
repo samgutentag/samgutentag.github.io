@@ -62,15 +62,26 @@ alias condaImport="conda env create -f  ./environment.yml"
 alias condaForceImport="conda env create --force -f  ./environment.yml"
 
 
-alias mediaDelta="cd ~/Developer/python/mediaDelta ; source activate mediaDelta"
+
+# Data Science - Springboard
 alias springboard="cd ~/Developer/springboard ; source activate spring"
-alias bikeshare="cd ~/Developer/datascience_projects/bikeshare ; source activate bikeshare"
-alias yelp="cd ~/Developer/datascience_projects/yelpsubtopics ; source activate yelp"
-alias tweepy="cd ~/Developer/python/twitter_sentiment ; source activate tweepy"
-alias cellData="cd ~/Developer/python/cellularDataAnalysis ; source activate cellData"
-alias tinker="cd ~/Developer/python/tinkering ; source activate tinker"
-alias transcriptor="cd ~/Developer/python/transcriptor ; source activate transcriptor"
+alias bikeshare="cd ~/Developer/bikeshare ; source activate bikeshare"
+alias yelp="cd ~/Developer/yelpsubtopics ; source activate yelp"
+
+
+# Data Science - Personal
+alias kg="cd ~/Developer/kaggle ; source activate kaggle"
+alias tweepy="cd ~/Developer/twitter_sentiment ; source activate tweepy"
+alias tinker="cd ~/Developer/tinkering ; source activate tinker"
+alias transcriptor="cd ~/Developer/transcriptor ; source activate transcriptor"
 alias splendor="cd ~/Developer/splendor ; source activate splendor"
-alias tfboot='cd ~/Developer/datascience_projects/tensorflowbootcamp ; source activate tfdeeplearning'
+
+# Other Projects
+alias mediaDelta="cd ~/Developer/mediaDelta ; source activate mediaDelta"
+
+
+
+
+
 
 # EOF
