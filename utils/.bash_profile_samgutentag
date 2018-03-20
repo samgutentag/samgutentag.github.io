@@ -67,11 +67,7 @@ alias condaForceImport="conda env create --force -f  ./environment.yml"
 alias springboard="cd ~/Developer/springboard ; source activate spring"
 alias bikeshare="cd ~/Developer/bikeshare ; source activate bikeshare"
 alias yelp="cd ~/Developer/yelpsubtopics ; source activate yelp"
-
-
 alias datacamp="cd ~/Developer/datacamp ; source activate datacamp"
-
-
 
 
 # Data Science - Personal
@@ -85,6 +81,8 @@ alias splendor="cd ~/Developer/splendor ; source activate splendor"
 alias mediaDelta="cd ~/Developer/mediaDelta ; source activate mediaDelta"
 
 
+# Jobs
+alias airbnb="cd ~/Developer/jobs/airbnb ; source activate airbnb"
 
 
 
