@@ -4,8 +4,6 @@
 ###############################################################################
 alias ea="open -a /Applications/Atom.app ~/.bash_profile ~/Developer/samgutentag.github.io/utils/.bash_profile_samgutentag &"
 alias src="source ~/.bash_profile"
-# source git controlled version of all aliases!
-# source ~/Developer/web/samgutentag.github.io/utils/.bash_profile_samgutentag
 
 ###############################################################################
 ##  Terminal Navigation
@@ -30,7 +28,7 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias chrome="open -a /Applications/Google\ Chrome.app"
 alias safari="open -a /Applications/Safari.app"
 alias preview="open -a /Applications/Preview.app"
-alias subl="open -a /Applications/Sublime\ Text\ 2.app"
+alias subl="open -a /Applications/Sublime\ Text.app"
 alias atom="open -a /Applications/Atom.app"
 alias xcode="open -a /Applications/Xcode.app"
 alias vlc="open -a /Applications/VLC.app"
@@ -40,7 +38,7 @@ alias vlc="open -a /Applications/VLC.app"
 ##  Command Line Utils
 ###############################################################################
 alias youtubeDL-best="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --write-thumbnail --embed-thumbnail"
-alias youtubeDL-lite="youtube-dl -f 18 --write-thumbnail --embed-thumbnail"
+alias youtubeDL-lite="youtube-dl -f 22/17/18 --write-thumbnail --embed-thumbnail"
 alias youtubeDL-audio="youtube-dl -f 140 --write-thumbnail --embed-thumbnail"
 alias brewUp="brew update && brew install `brew outdated`"
 
@@ -79,10 +77,11 @@ alias splendor="cd ~/Developer/splendor ; source activate splendor"
 
 # Other Projects
 alias mediaDelta="cd ~/Developer/mediaDelta ; source activate mediaDelta"
+alias md3="cd ~/Developer/mediaDelta3 ; source activate mD3"
 
 
 # Jobs
-alias airbnb="cd ~/Developer/jobs/airbnb ; source activate airbnb"
+alias airbnb="cd ~/Developer/airbnb_userbooking ; source activate airbnb"
 
 
 
