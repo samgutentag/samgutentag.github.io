@@ -60,7 +60,6 @@ alias condaImport="conda env create -f  ./environment.yml"
 alias condaForceImport="conda env create --force -f  ./environment.yml"
 
 
-
 # Data Science - Springboard
 alias springboard="cd ~/Developer/springboard ; source activate spring"
 alias bikeshare="cd ~/Developer/bikeshare ; source activate bikeshare"
