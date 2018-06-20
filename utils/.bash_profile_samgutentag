@@ -74,6 +74,8 @@ alias tinker="cd ~/Developer/tinkering ; source activate tinker"
 alias character="cd ~/Developer/character_clustering ; source activate character_cluster"
 alias splendor="cd ~/Developer/splendor ; source activate splendor"
 
+alias netflix="cd ~/Developer/netflix_usage_history ; source activate netflix"
+
 # Other Projects
 alias mediaDelta="cd ~/Developer/mediaDelta ; source activate mediaDelta"
 alias md3="cd ~/Developer/mediaDelta3 ; source activate mD3"
