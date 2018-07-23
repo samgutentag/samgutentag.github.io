@@ -50,6 +50,9 @@ alias handbrakecli="handbrakecli"
 export PATH
 
 
+# python shortcut
+alias py="clear; pwd; python"
+
 
 ###############################################################################
 ##  Conda Environments
@@ -58,6 +61,10 @@ export PATH
 alias condaExport="conda env export | grep -v '^prefix: ' > ./environment.yml"
 alias condaImport="conda env create -f  ./environment.yml"
 alias condaForceImport="conda env create --force -f  ./environment.yml"
+
+
+# learning
+alias 100py="cd ~/Developer/100python ; source activate 100py"
 
 
 # Data Science - Springboard
