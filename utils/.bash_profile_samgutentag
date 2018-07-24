@@ -64,7 +64,8 @@ alias condaForceImport="conda env create --force -f  ./environment.yml"
 
 
 # learning
-alias 100py="cd ~/Developer/100python ; source activate 100py"
+alias 100py="cd ~/Developer/100daysofpython ; source activate 100py"
+alias 100cpp="cd ~/Developer/100daysofcpp ; atom . &"
 
 
 # Data Science - Springboard
