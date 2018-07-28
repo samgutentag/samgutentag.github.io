@@ -53,6 +53,9 @@ export PATH
 # python shortcut
 alias py="clear; pwd; python"
 
+# c++11 linking
+alias c11="clang++ -std=c++11 -stdlib=libc++"
+
 
 ###############################################################################
 ##  Conda Environments
