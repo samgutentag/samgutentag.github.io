@@ -93,6 +93,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
+.caption {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
 body {
 	line-height: 1;
 }
@@ -1248,7 +1253,7 @@ input, select, textarea {
 			background-image: -webkit-linear-gradient(to top, rgba(16,16,16,0.45) 25%, rgba(16,16,16,0) 100%);
 			background-image: -ms-linear-gradient(to top, rgba(16,16,16,0.45) 25%, rgba(16,16,16,0) 100%);
 			background-image: linear-gradient(to top, rgba(16,16,16,0.45) 25%, rgba(16,16,16,0) 100%);
-			bottom: 20;
+			bottom: 0;
 			cursor: default;
 			left: 0;
 			position: absolute;
