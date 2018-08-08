@@ -98,6 +98,10 @@ footer, header, hgroup, menu, nav, section {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
+h2 {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
 body {
 	line-height: 1;
 }
