@@ -1,0 +1,56 @@
+
+###############################################################################
+##  Alias Management
+###############################################################################
+alias ea="open -a /Applications/Atom.app ~/.bash_profile ~/Developer/samgutentag.github.io/utils/.bash_profile_samgutentag &"
+alias src="source ~/.bash_profile"
+
+###############################################################################
+##  Terminal Navigation
+###############################################################################
+alias u="cd .."
+alias uu="cd ../.."
+alias uuu="cd ../../.."
+alias uuu="cd ../../../.."
+alias uuuu="cd ../../../../.."
+alias uuuuu="cd ../../../../../.."
+
+alias ltr="ls -lthr"
+alias al="ls -al"
+alias la="ls -al"
+
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
+
+###############################################################################
+##  Other Aliases
+###############################################################################
+
+# python shortcut
+alias py="clear; pwd; python"
+
+# c++11 linking
+alias c11="clang++ -std=c++11 -stdlib=libc++"
+
+
+###############################################################################
+##  Virtualenvs
+###############################################################################
+alias pycv="cd ~/Developer/pycv ; source bin/activate ; atom . & "
+
+
+###############################################################################
+##  Conda Environments
+###############################################################################
+
+alias condaExport="conda env export | grep -v '^prefix: ' > ./environment.yml"
+alias condaImport="conda env create -f  ./environment.yml"
+alias condaForceImport="conda env create --force -f  ./environment.yml"
+
+
+alias tweepy="cd ~/Developer/twitter_tinker/; source bin/activate"
+alias mediaDelta="cd ~/Developer/mediaDelta ; source activate mediaDelta"
+
+
+
+# EOF
