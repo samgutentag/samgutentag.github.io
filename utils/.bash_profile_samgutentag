@@ -21,7 +21,7 @@ alias la="ls -al"
 
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
-alias DF="df -Bm"
+alias DF="df -g"
 
 ###############################################################################
 ##  Program Shortcuts
