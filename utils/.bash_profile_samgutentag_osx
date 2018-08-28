@@ -2,7 +2,7 @@
 ###############################################################################
 ##  Alias Management
 ###############################################################################
-alias ea="open -a /Applications/Atom.app ~/.bash_profile ~/Developer/samgutentag.github.io/utils/.bash_profile_samgutentag &"
+alias ea="open -a /Applications/Atom.app ~/.bash_profile ~/Developer/samgutentag.github.io/utils/.bash_profile_samgutentag_* &"
 alias src="source ~/.bash_profile"
 
 ###############################################################################
