@@ -98,6 +98,7 @@ alias netflix="cd ~/Developer/netflix_usage_history ; source activate netflix"
 alias mediaDelta="cd ~/Developer/mediaDelta ; source activate mediaDelta"
 alias md3="cd ~/Developer/mediaDelta3 ; source activate mD3"
 
+alias safewayClipper="cd ~/Developer/safewayClipper ; source bin/activate"
 
 # Jobs
 alias airbnb="cd ~/Developer/airbnb_userbooking ; source activate airbnb"

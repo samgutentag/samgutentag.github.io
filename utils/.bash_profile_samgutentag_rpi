@@ -38,6 +38,7 @@ alias c11="clang++ -std=c++11 -stdlib=libc++"
 ##  Virtualenvs
 ###############################################################################
 alias pycv="cd ~/Developer/pycv ; source bin/activate ; atom . & "
+alias safewayClipper="cd ~/Developer/safewayClipper ; source bin/activate"
 
 
 ###############################################################################
