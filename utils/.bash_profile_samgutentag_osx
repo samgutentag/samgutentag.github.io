@@ -26,13 +26,11 @@ alias DF="df -g"
 ###############################################################################
 ##  Program Shortcuts
 ###############################################################################
-# alias chrome="open -a /Applications/Google\ Chrome.app"
 alias safari="open -a /Applications/Safari.app"
 alias preview="open -a /Applications/Preview.app"
-# alias subl="open -a /Applications/Sublime\ Text.app"
 alias atom="open -a /Applications/Atom.app"
 alias xcode="open -a /Applications/Xcode.app"
-# alias vlc="open -a /Applications/VLC.app"
+alias vlc="open -a /Applications/VLC.app"
 
 
 ###############################################################################
@@ -43,7 +41,6 @@ alias youtubeDL-lite="youtube-dl -f 22/17/18 --write-thumbnail --embed-thumbnail
 alias youtubeDL-audio="youtube-dl -f 140 --write-thumbnail --embed-thumbnail"
 alias brewUp="brew update && brew install `brew outdated`"
 
-alias handbrakecli="handbrakecli"
 
 # Setting PATH for Python 2.7
 # PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
@@ -62,23 +59,37 @@ alias c11="clang++ -std=c++11 -stdlib=libc++"
 
 
 ###############################################################################
-##  Virtualenvs
+##  virtualenvs
 ###############################################################################
-alias pycv="cd ~/Developer/pycv ; source bin/activate ; atom . & "
+
+alias tinker_boilerplate="cd ~/Developer/tinker_boilerplate ; source bin/activate ; atom . &"
+alias tinker_dropbox="cd ~/Developer/tinker_dropbox ; source bin/activate ; atom . &"
+alias mediaDelta="cd ~/Developer/mediaDelta ; source bin/activate ; atom . &"
+alias tinker_slack="cd ~/Developer/tinker_slack ; source bin/activate ; atom . &"
+alias tinker_transit="cd ~/Developer/tinker_transit ; source bin/activate ; atom . &"
+alias tinker_twitter="cd ~/Developer/tinker_twitter ; source bin/activate ; atom . &"
+
+
+
+
+
+
+# alias pycv="cd ~/Developer/pycv ; source bin/activate ; atom . & "
+
 
 
 ###############################################################################
 ##  Conda Environments
 ###############################################################################
 
-alias condaExport="conda env export | grep -v '^prefix: ' > ./environment.yml"
-alias condaImport="conda env create -f  ./environment.yml"
-alias condaForceImport="conda env create --force -f  ./environment.yml"
+# alias condaExport="conda env export | grep -v '^prefix: ' > ./environment.yml"
+# alias condaImport="conda env create -f  ./environment.yml"
+# alias condaForceImport="conda env create --force -f  ./environment.yml"
 
 
 # learning
-alias 100py="cd ~/Developer/100daysofpython ; source activate 100py"
-alias 100cpp="cd ~/Developer/100daysofcpp ; atom . &"
+# alias 100py="cd ~/Developer/100daysofpython ; source activate 100py"
+# alias 100cpp="cd ~/Developer/100daysofcpp ; atom . &"
 
 
 # Data Science - Springboard
@@ -90,22 +101,22 @@ alias 100cpp="cd ~/Developer/100daysofcpp ; atom . &"
 
 # Data Science - Personal
 # alias kg="cd ~/Developer/kaggle ; source activate kaggle"
-alias tweepy="cd ~/Developer/twitter_tinker/; source bin/activate"
-alias tinker="cd ~/Developer/tinkering ; source activate tinker"
+# alias tweepy="cd ~/Developer/twitter_tinker/; source bin/activate"
+# alias tinker="cd ~/Developer/tinker ; source bin/activate"
+# alias tinker_transit="cd ~/Developer/tinkering/tinker_transit ; source bin/activate"
 # alias character="cd ~/Developer/character_clustering ; source activate character_cluster"
 # alias splendor="cd ~/Developer/splendor ; source activate splendor"
 
-alias netflix="cd ~/Developer/netflix_usage_history ; source activate netflix"
+# alias netflix="cd ~/Developer/netflix_usage_history ; source activate netflix"
 
 # Other Projects
-alias mediaDelta="cd ~/Developer/mediaDelta ; source activate mediaDelta"
+# alias mediaDelta="cd ~/Developer/mediaDelta ; source bin/activate"
 # alias md3="cd ~/Developer/mediaDelta3 ; source activate mD3"
 
 alias safewayClipper="cd ~/Developer/safewayClipper ; source bin/activate"
 
 # Jobs
 # alias airbnb="cd ~/Developer/airbnb_userbooking ; source activate airbnb"
-
 
 
 ###############################################################################
