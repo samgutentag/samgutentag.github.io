@@ -62,12 +62,12 @@ alias c11="clang++ -std=c++11 -stdlib=libc++"
 ##  virtualenvs
 ###############################################################################
 
-alias tinker_boilerplate="cd ~/Developer/tinker_boilerplate ; source bin/activate ; atom . &"
-alias tinker_dropbox="cd ~/Developer/tinker_dropbox ; source bin/activate ; atom . &"
-alias mediaDelta="cd ~/Developer/mediaDelta ; source bin/activate ; atom . &"
-alias tinker_slack="cd ~/Developer/tinker_slack ; source bin/activate ; atom . &"
-alias tinker_transit="cd ~/Developer/tinker_transit ; source bin/activate ; atom . &"
-alias tinker_twitter="cd ~/Developer/tinker_twitter ; source bin/activate ; atom . &"
+alias tinker_boilerplate="cd ~/Developer/tinker_boilerplate ; source bin/activate"
+alias tinker_dropbox="cd ~/Developer/tinker_dropbox ; source bin/activate"
+alias mediaDelta="cd ~/Developer/mediaDelta ; source bin/activate"
+alias tinker_slack="cd ~/Developer/tinker_slack ; source bin/activate"
+alias tinker_transit="cd ~/Developer/tinker_transit ; source bin/activate"
+alias tinker_twitter="cd ~/Developer/tinker_twitter ; source bin/activate"
 
 
 
