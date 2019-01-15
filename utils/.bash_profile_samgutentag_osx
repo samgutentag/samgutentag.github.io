@@ -6,6 +6,14 @@ alias ea="open -a /Applications/Atom.app ~/.bash_profile ~/Developer/samgutentag
 alias src="source ~/.bash_profile"
 
 ###############################################################################
+##  VNC Aliases
+###############################################################################
+alias ssh_piz="ssh pi@raspberrypizw.local"
+alias ssh_pi3="ssh pi@raspberrypi3bp.local"
+alias ssh_mbp="ssh samgutentag@sams-mbp.lan"
+
+
+###############################################################################
 ##  Terminal Navigation
 ###############################################################################
 alias u="cd .."
