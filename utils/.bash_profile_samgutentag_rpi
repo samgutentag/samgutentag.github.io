@@ -3,7 +3,7 @@
 ##  Alias Management
 ###############################################################################
 alias ea="nano ~/Developer/samgutentag.github.io/utils/.bash_profile_samgutentag_rpi &"
-alias src="source ~/.bash_profile"
+alias src="source ~/.bashrc"
 
 ###############################################################################
 ##  Terminal Navigation
@@ -39,26 +39,10 @@ alias cpy="clear; pwd; python3.7"
 alias c11="clang++ -std=c++11 -stdlib=libc++"
 
 
-
 ###############################################################################
 ##  Virtualenvs
 ###############################################################################
 alias pycv="cd ~/Developer/pycv ; source bin/activate ; atom . & "
-alias safewayClipper="cd ~/Developer/safewayClipper ; source bin/activate"
-
-
-###############################################################################
-##  Conda Environments
-###############################################################################
-
-alias condaExport="conda env export | grep -v '^prefix: ' > ./environment.yml"
-alias condaImport="conda env create -f  ./environment.yml"
-alias condaForceImport="conda env create --force -f  ./environment.yml"
-
-
-alias tweepy="cd ~/Developer/twitter_tinker/; source bin/activate"
-alias mediaDelta="cd ~/Developer/mediaDelta ; source activate mediaDelta"
-
-
+alias tinker_instagram="cd ~/Developer/tinker_instagram ; source bin/activate"
 
 # EOF
