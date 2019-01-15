@@ -76,6 +76,7 @@ alias mediaDelta="cd ~/Developer/mediaDelta ; source bin/activate"
 alias tinker_slack="cd ~/Developer/tinker_slack ; source bin/activate"
 alias tinker_transit="cd ~/Developer/tinker_transit ; source bin/activate"
 alias tinker_twitter="cd ~/Developer/tinker_twitter ; source bin/activate"
+alias tinker_darksky="cd ~/Developer/tinker_darksky ; source bin/activate"
 
 
 
