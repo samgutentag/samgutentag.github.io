@@ -45,5 +45,6 @@ alias c11="clang++ -std=c++11 -stdlib=libc++"
 alias pycv="cd ~/Developer/pycv ; source bin/activate ; atom . & "
 alias tinker_instagram="cd ~/Developer/tinker_instagram ; source bin/activate"
 alias tinker_ifttt="cd ~/Developer/tinker_ifttt ; source bin/activate"
+alias tinker_rpi="cd ~/Developer/tinker_rpi ; source bin/activate"
 
 # EOF

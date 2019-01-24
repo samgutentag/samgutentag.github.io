@@ -78,6 +78,7 @@ alias tinker_transit="cd ~/Developer/tinker_transit ; source bin/activate"
 alias tinker_twitter="cd ~/Developer/tinker_twitter ; source bin/activate"
 alias tinker_darksky="cd ~/Developer/tinker_darksky ; source bin/activate"
 alias tinker_ifttt="cd ~/Developer/tinker_ifttt ; source bin/activate"
+alias tinker_rpi="cd ~/Developer/tinker_rpi ; source bin/activate"
 
 
 
