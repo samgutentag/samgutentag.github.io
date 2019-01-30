@@ -29,10 +29,10 @@ alias DF="df -Bm"
 
 # python shortcuts
 
-alias py2="python2.7"
+alias python2="python2.7"
 alias cpy2="clear; pwd; python2.7"
 
-alias py="python3.7"
+alias python="python3.7"
 alias cpy="clear; pwd; python3.7"
 
 # c++11 linking
