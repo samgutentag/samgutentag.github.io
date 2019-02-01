@@ -50,20 +50,21 @@ alias youtubeDL-audio="youtube-dl -f 140 --write-thumbnail --embed-thumbnail"
 alias brewUp="brew update && brew install `brew outdated`"
 
 
-# Setting PATH for Python 2.7
-# PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-# export PATH=/usr/local/bin:$PATH
-export PATH
-
-
-alias py2="python2.7"
+alias python2="python2.7"
 alias cpy2="clear; pwd; python2.7"
 
-alias py="python3.7"
+alias python="python3.7"
 alias cpy="clear; pwd; python3.7"
+
+# alias for pip to default to pip3
+alias pip="pip3"
 
 # c++11 linking
 alias c11="clang++ -std=c++11 -stdlib=libc++"
+
+# c++14 linking
+alias c14="clang++ -std=c++14 -stdlib=libc++"
+
 
 
 ###############################################################################
@@ -79,55 +80,18 @@ alias tinker_twitter="cd ~/Developer/tinker_twitter ; source bin/activate"
 alias tinker_darksky="cd ~/Developer/tinker_darksky ; source bin/activate"
 alias tinker_ifttt="cd ~/Developer/tinker_ifttt ; source bin/activate"
 alias tinker_rpi="cd ~/Developer/tinker_rpi ; source bin/activate"
-
-
-
-
-
-
 # alias pycv="cd ~/Developer/pycv ; source bin/activate ; atom . & "
-
 
 
 ###############################################################################
 ##  Conda Environments
 ###############################################################################
 
-# alias condaExport="conda env export | grep -v '^prefix: ' > ./environment.yml"
-# alias condaImport="conda env create -f  ./environment.yml"
-# alias condaForceImport="conda env create --force -f  ./environment.yml"
-
-
 # learning
 # alias 100py="cd ~/Developer/100daysofpython ; source activate 100py"
 # alias 100cpp="cd ~/Developer/100daysofcpp ; atom . &"
 
-
-# Data Science - Springboard
-# alias springboard="cd ~/Developer/springboard ; source activate spring"
-# alias bikeshare="cd ~/Developer/bikeshare ; source activate bikeshare"
-# alias yelp="cd ~/Developer/yelpsubtopics ; source activate yelp"
-# alias datacamp="cd ~/Developer/datacamp ; source activate datacamp"
-
-
-# Data Science - Personal
-# alias kg="cd ~/Developer/kaggle ; source activate kaggle"
-# alias tweepy="cd ~/Developer/twitter_tinker/; source bin/activate"
-# alias tinker="cd ~/Developer/tinker ; source bin/activate"
-# alias tinker_transit="cd ~/Developer/tinkering/tinker_transit ; source bin/activate"
-# alias character="cd ~/Developer/character_clustering ; source activate character_cluster"
-# alias splendor="cd ~/Developer/splendor ; source activate splendor"
-
-# alias netflix="cd ~/Developer/netflix_usage_history ; source activate netflix"
-
-# Other Projects
-# alias mediaDelta="cd ~/Developer/mediaDelta ; source bin/activate"
-# alias md3="cd ~/Developer/mediaDelta3 ; source activate mD3"
-
 alias safewayClipper="cd ~/Developer/safewayClipper ; source bin/activate"
-
-# Jobs
-# alias airbnb="cd ~/Developer/airbnb_userbooking ; source activate airbnb"
 
 
 ###############################################################################
