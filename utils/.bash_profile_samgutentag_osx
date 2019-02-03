@@ -97,7 +97,7 @@ alias safewayClipper="cd ~/Developer/safewayClipper ; source bin/activate"
 ###############################################################################
 ##  Dumb Aliases
 ###############################################################################
-alias rings="cd ~/Google\ Drive/quantified/activity_rings/ ; mv ~/Google\ Drive/File_00* ./raw_rings/ ; python rename_rings.py ; rm -f ./raw_rings/*"
+alias rings="cd ~/Google\ Drive/activity_rings/ ; mv ~/Google\ Drive/File_00* ./raw_rings/ ; python rename_rings.py ; rm -f ./raw_rings/*"
 
 
 # EOF
