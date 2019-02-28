@@ -1,5 +1,11 @@
 
 ###############################################################################
+##  Ruby Stuff for Jekyll
+###############################################################################
+export GEM_HOME=$HOME/gems
+export PATH=$HOME/gems/bin:$PATH
+
+###############################################################################
 ##  Alias Management
 ###############################################################################
 alias ea="open -a /Applications/Atom.app ~/.bash_profile ~/Developer/samgutentag.github.io/utils/.bash_profile_samgutentag_* &"
