@@ -2,7 +2,7 @@
 ###############################################################################
 ##  Alias Management
 ###############################################################################
-alias ea="nano ~/Developer/samgutentag.github.io/.utils/.bash_profile_samgutentag_rpi &"
+alias ea="nano ~/samgutentag.github.io/.utils/.bash_profile_samgutentag_pi_headless &"
 alias src="source ~/.bashrc"
 
 ###############################################################################
@@ -35,16 +35,5 @@ alias cpy2="clear; pwd; python2.7"
 alias python="python3.7"
 alias cpy="clear; pwd; python3.7"
 
-# c++11 linking
-alias c11="clang++ -std=c++11 -stdlib=libc++"
-
-
-###############################################################################
-##  Virtualenvs
-###############################################################################
-alias pycv="cd ~/Developer/pycv ; source bin/activate ; atom . & "
-alias tinker_instagram="cd ~/Developer/tinker_instagram ; source bin/activate"
-alias tinker_ifttt="cd ~/Developer/tinker_ifttt ; source bin/activate"
-alias tinker_rpi="cd ~/Developer/tinker_rpi ; source bin/activate"
 
 # EOF
