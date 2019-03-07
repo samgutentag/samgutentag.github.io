@@ -8,15 +8,15 @@ export PATH=$HOME/gems/bin:$PATH
 ###############################################################################
 ##  Alias Management
 ###############################################################################
-alias ea="open -a /Applications/Atom.app ~/.bash_profile ~/Developer/samgutentag.github.io/utils/.bash_profile_samgutentag_* &"
+alias ea="open -a /Applications/Atom.app ~/.bash_profile ~/Developer/samgutentag.github.io/.utils/.bash_profile_samgutentag_* &"
 alias src="source ~/.bash_profile"
 
 ###############################################################################
 ##  VNC Aliases
 ###############################################################################
-#alias ssh_piz="ssh pi@raspberrypizw.local"
+alias ssh_piz="ssh pi@raspberrypizw.local"
 alias ssh_pi3="ssh pi@raspberrypi3bp.local"
-alias ssh_mbp="ssh samgutentag@samsmacbookpro.lan"
+alias ssh_mbp="ssh samgutentag@samsmacbookpro.local"
 
 
 ###############################################################################

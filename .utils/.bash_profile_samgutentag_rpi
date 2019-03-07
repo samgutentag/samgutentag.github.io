@@ -2,7 +2,7 @@
 ###############################################################################
 ##  Alias Management
 ###############################################################################
-alias ea="nano ~/Developer/samgutentag.github.io/utils/.bash_profile_samgutentag_rpi &"
+alias ea="nano ~/Developer/samgutentag.github.io/.utils/.bash_profile_samgutentag_rpi &"
 alias src="source ~/.bashrc"
 
 ###############################################################################
