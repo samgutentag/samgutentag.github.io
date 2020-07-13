@@ -1,29 +1,31 @@
 html {
   background-color: #000000;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
   text-align: center;
 }
 
 div {
-  width: 400px;
+  width: 800px;
   margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
 }
 
 td {
   width: 50%;
 }
 
-table {
-  width: 100%;
-  text-align: center;
-}
-
 tr {
-  height: 40px;
+  height: 100px;
 }
 
 #tr_head {
   color: #f8f8f8;
+  font-size: 80px;
 }
 
 #tr_90 {
