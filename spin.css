@@ -28,6 +28,11 @@ tr {
   font-size: 80px;
 }
 
+#tr_bike_settings {
+  color: #f8f8f8;
+  font-size: 20px;
+}
+
 #tr_90 {
   background-color: #ff2205;
 }
