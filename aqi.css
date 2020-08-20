@@ -1,0 +1,12 @@
+html {
+  background-color: #000000;
+}
+
+/* align divs side by side*/
+.container {
+  display: flex;
+}
+
+.container > div {
+  flex: ; /*grow*/
+}
