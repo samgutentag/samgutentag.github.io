@@ -5,14 +5,14 @@
         <style type="text/css">
             /* Shared styles */
             body {
-                font-family: HelveticaNeue, sans-serif;
+                font-family: Helvetica, sans-serif;
                 font-size: 16.0px;
                 color: #34302e;
                 margin: 0.25in;
             }
             .name {
                 font-size: 18.0px;
-                font-family: Futura, Helvetica, sans-serif;
+                font-family: Helvetica, sans-serif;
                 font-weight: normal;
                 margin: 0 0 10px 0;
             }
@@ -40,8 +40,14 @@
                 text-transform: uppercase;
                 margin: 10px 0;
             }
+            
             .ingredients p {
                 margin: 4px 0;
+            }
+            /* To prevent nutrition/directions from getting too close
+               to ingredients */
+            .ingredients {
+                padding-bottom: 10px;
             }
             .clear {
                 clear:both;
@@ -55,24 +61,22 @@
                 line-height: 130%;
             }
             .photobox {
+                
                 float: left;
                 margin-right: 14px;
+                
+                
             }
             .photo {
-                
-                
-                max-width: 140px;
-                max-height: 140px;
+                max-width: 140.0px;
+                max-height: 140.0px;
                 width: auto;
                 height: auto;
-                
             }
-            .columnbox {
-                
-            }
+            
             .inline-image {
-                max-width: 140px;
-                max-height: 140px;
+                max-width: 25%;
+                max-height: 25%;
                 width: auto;
                 height: auto;
             }
@@ -83,11 +87,22 @@
             .pswp__caption__center {
                 text-align: center !important;
             }
+            .recipe {
+                
+                page-break-after: always;
+                
+                
+            }
+            .recipe:first-child {
+                border-top: 0 none;
+                margin-top: 0;
+                padding-top: 0;
+            }
         </style>
     </head>
     <body>
         <!-- Recipe -->
-<div class="recipe" itemscope itemtype="http://schema.org/Recipe">
+<div class="recipe" itemscope itemtype="http://schema.org/Recipe" >
     
     <div class="infobox">
 
@@ -111,6 +126,8 @@
         
         <!-- Rating, categories -->
         <p itemprop="aggregateRating" class="rating" value="0"></p>
+        
+            <p itemprop="recipeCategory" class="categories">Formatted</p>
         
         
         <p class="metadata">
@@ -137,11 +154,13 @@
         </p>
         
         
+        
         <div class="clear"></div>
+        
 
     </div>
     
-    <div class="columnbox">
+    <div class="left-column">
 
         <!-- Ingredients -->
         
@@ -158,7 +177,9 @@
 
     </div>
     
-    <!-- Descriptino -->
+    <div class="right-column">
+    
+    <!-- Description -->
     
 
     <!-- Directions -->
@@ -166,7 +187,7 @@
     <div class="directionsbox">
         <h3 class="subhead">Directions</h3>
         <div itemprop="recipeInstructions" class="directions text">
-            <p class="line">Gather all the ingredients. With this recipe, you can use up to 4-6 eggs.</p><p class="line">In a resealable plastic bag, combine soy sauce, mirin, and water, set aside.</p><p class="line">Bring water to a boil in a medium saucepan. There should be enough water to cover the eggs (should be 1 inch above eggs).</p><p class="line">When boiling, take out the eggs from the refrigerator and carefully submerge the eggs into water with a mesh strainer/skimmer or ladle.</p><p class="line">Immediately reduce heat to maintain a simmer and cook the eggs for exactly <span class='timer' time='420.0'>7 minutes</span>.</p><p class="line">Make sure the water is simmering, but not so hot that the eggs bounce around.</p><p class="line">Immediately take out the eggs and soak in the ice bath to stop them from cooking further. Let them cool for <span class='timer' time='180.0'>3 minutes</span>.</p><p class="line">The soft boiled eggs are not completely hardened so gently peel the eggs.</p><p class="line">Put the eggs in the sauce bag and close tightly. The eggs should be submerged in the marinade. </p><p class="line">Let them marinate overnight to up to 3-4 days in the refrigerator.</p><p class="line">Take out the eggs and cut in halves to serve.</p>
+            <p class="line">Gather all the ingredients. With this recipe, you can use up to 4-6 eggs.</p><p class="line">In a resealable plastic bag, combine soy sauce, mirin, and water, set aside.</p><p class="line">Bring water to a boil in a medium saucepan. There should be enough water to cover the eggs (should be 1 inch above eggs).</p><p class="line">When boiling, take out the eggs from the refrigerator and carefully submerge the eggs into water with a mesh strainer/skimmer or ladle.</p><p class="line">Immediately reduce heat to maintain a simmer and cook the eggs for exactly 7 minutes.</p><p class="line">Make sure the water is simmering, but not so hot that the eggs bounce around.</p><p class="line">Immediately take out the eggs and soak in the ice bath to stop them from cooking further. Let them cool for 3 minutes.</p><p class="line">The soft boiled eggs are not completely hardened so gently peel the eggs.</p><p class="line">Put the eggs in the sauce bag and close tightly. The eggs should be submerged in the marinade. </p><p class="line">Let them marinate overnight to up to 3-4 days in the refrigerator.</p><p class="line">Take out the eggs and cut in halves to serve.</p>
         </div>
     </div>
     
@@ -181,10 +202,15 @@
 
     
     
+    </div>
+    
+    <div class="clear"></div>
+
 </div>
 
-        
-        <!-- PhotoSwipe gallery -->
+
+<!-- Photo gallery is only included when exporting. -->
+<!-- PhotoSwipe gallery -->
 
 <link rel="stylesheet" href="Resources/PhotoSwipe/photoswipe.css">
 <link rel="stylesheet" href="Resources/PhotoSwipe/default-skin/default-skin.css">
@@ -225,14 +251,6 @@
         // build items array
         var items = [
             
-            {
-                msrc: 'Images/D1A7FC12-1959-4F5E-818C-042113D9AF50-31614-0000158C328EE6EC/2D8BABCB-677D-4358-AFDC-3CC2F18BC8B8-31606-0000158D2D1D76EF.jpg',
-                src: 'Images/D1A7FC12-1959-4F5E-818C-042113D9AF50-31614-0000158C328EE6EC/2D8BABCB-677D-4358-AFDC-3CC2F18BC8B8-31606-0000158D2D1D76EF.jpg',
-                w: 500.0,
-                h: 500.0,
-                title: '1'
-            },
-            
         ];
         
         var index = 0;
@@ -267,6 +285,9 @@
     }
 </script>
 
-        
+
+
+
+
     </body>
 </html>

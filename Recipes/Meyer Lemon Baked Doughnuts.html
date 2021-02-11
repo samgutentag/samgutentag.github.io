@@ -5,14 +5,14 @@
         <style type="text/css">
             /* Shared styles */
             body {
-                font-family: HelveticaNeue, sans-serif;
+                font-family: Helvetica, sans-serif;
                 font-size: 16.0px;
                 color: #34302e;
                 margin: 0.25in;
             }
             .name {
                 font-size: 18.0px;
-                font-family: Futura, Helvetica, sans-serif;
+                font-family: Helvetica, sans-serif;
                 font-weight: normal;
                 margin: 0 0 10px 0;
             }
@@ -40,8 +40,14 @@
                 text-transform: uppercase;
                 margin: 10px 0;
             }
+            
             .ingredients p {
                 margin: 4px 0;
+            }
+            /* To prevent nutrition/directions from getting too close
+               to ingredients */
+            .ingredients {
+                padding-bottom: 10px;
             }
             .clear {
                 clear:both;
@@ -55,24 +61,22 @@
                 line-height: 130%;
             }
             .photobox {
+                
                 float: left;
                 margin-right: 14px;
+                
+                
             }
             .photo {
-                
-                
-                max-width: 140px;
-                max-height: 140px;
+                max-width: 140.0px;
+                max-height: 140.0px;
                 width: auto;
                 height: auto;
-                
             }
-            .columnbox {
-                
-            }
+            
             .inline-image {
-                max-width: 140px;
-                max-height: 140px;
+                max-width: 25%;
+                max-height: 25%;
                 width: auto;
                 height: auto;
             }
@@ -83,11 +87,22 @@
             .pswp__caption__center {
                 text-align: center !important;
             }
+            .recipe {
+                
+                page-break-after: always;
+                
+                
+            }
+            .recipe:first-child {
+                border-top: 0 none;
+                margin-top: 0;
+                padding-top: 0;
+            }
         </style>
     </head>
     <body>
         <!-- Recipe -->
-<div class="recipe" itemscope itemtype="http://schema.org/Recipe">
+<div class="recipe" itemscope itemtype="http://schema.org/Recipe" >
     
     <div class="infobox">
 
@@ -111,6 +126,8 @@
         
         <!-- Rating, categories -->
         <p itemprop="aggregateRating" class="rating" value="0"></p>
+        
+            <p itemprop="recipeCategory" class="categories">Formatted</p>
         
         
         <p class="metadata">
@@ -137,18 +154,20 @@
         </p>
         
         
+        
         <div class="clear"></div>
+        
 
     </div>
     
-    <div class="columnbox">
+    <div class="left-column">
 
         <!-- Ingredients -->
         
         <div class="ingredientsbox">
             <h3 class="subhead">Ingredients</h3>
             <div class="ingredients text">
-                <p class="line" itemprop="recipeIngredient"><strong>FOR THE DOUGHNUTS:</strong></p><p class="line" itemprop="recipeIngredient"><strong>2 1/2</strong> teaspoons active dry yeast (1 packet)</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> tablespoon plus 1/3 cup granulated sugar, divided</p><p class="line" itemprop="recipeIngredient"><strong>1/4</strong> cup plus 1/2 cup warm (but not hot) milk, divided</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tablespoons melted butter, plus more for brushing</p><p class="line" itemprop="recipeIngredient"><strong>3/4</strong> teaspoon kosher salt</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> large egg</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> teaspoon Meyer lemon zest</p><p class="line" itemprop="recipeIngredient"><strong>1/2</strong> teaspoon ground cardamom</p><p class="line" itemprop="recipeIngredient"><strong>2 1/2</strong> cups flour, plus more as needed</p><br/><p class="line" itemprop="recipeIngredient"><strong>FOR THE MEYER LEMON GLAZE:</strong></p><p class="line" itemprop="recipeIngredient"><strong>1</strong> teaspoon Meyer lemon zest</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tablespoons freshly squeezed Meyer lemon juice</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tablespoons whole milk</p><p class="line" itemprop="recipeIngredient"><strong>1/4</strong> teaspoon cardamom</p><p class="line" itemprop="recipeIngredient">pinch of salt</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> tablespoon melted butter</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> cups powdered sugar</p>
+                <p class="line" itemprop="recipeIngredient"><strong>FOR THE DOUGHNUTS:</strong></p><p class="line" itemprop="recipeIngredient"><strong>2 1/2</strong> tsp active dry yeast (1 packet)</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> Tbsp plus 1/3 cup granulated sugar, divided</p><p class="line" itemprop="recipeIngredient"><strong>1/4</strong> cup plus 1/2 cup warm (but not hot) milk, divided</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> Tbsp melted butter, plus more for brushing</p><p class="line" itemprop="recipeIngredient"><strong>3/4</strong> tsp kosher salt</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> egg</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> tsp Meyer lemon zest</p><p class="line" itemprop="recipeIngredient"><strong>1/2</strong> tsp ground cardamom</p><p class="line" itemprop="recipeIngredient"><strong>2 1/2</strong> cups flour, plus more as needed</p><br/><p class="line" itemprop="recipeIngredient"><strong>FOR THE MEYER LEMON GLAZE:</strong></p><p class="line" itemprop="recipeIngredient"><strong>1</strong> tsp Meyer lemon zest</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> Tbsp freshly squeezed Meyer lemon juice</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> Tbsp whole milk</p><p class="line" itemprop="recipeIngredient"><strong>1/4</strong> tsp cardamom</p><p class="line" itemprop="recipeIngredient">pinch of salt</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> Tbsp melted butter</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> cups powdered sugar</p>
             </div>
         </div>
         
@@ -158,7 +177,9 @@
 
     </div>
     
-    <!-- Descriptino -->
+    <div class="right-column">
+    
+    <!-- Description -->
     
 
     <!-- Directions -->
@@ -166,7 +187,7 @@
     <div class="directionsbox">
         <h3 class="subhead">Directions</h3>
         <div itemprop="recipeInstructions" class="directions text">
-            <p class="line">In large bowl or stand mixer, stir together the yeast, 1 tablespoon sugar, and 1/4 cup warm milk. Let sit for <span class='timer' time='300.0'>5 minutes </span>(the yeast should be foamy).</p><p class="line">In the meantime, mix together the remaining 1/3 cup sugar, 1/2 cup warm milk, melted butter, and salt. Add that mixture to the yeast once it has proofed along with the egg, Meyer lemon zest, and cardamom. Stir until thoroughly combined.</p><p class="line">Add the flour. If using a stand mixer, attach the dough hook and incorporate on low speed. If not, just use a sturdy wooden spoon or rubber spatula. Mix until the dough begins to pull away from the sides of the bowl, about <span class='timer' time='120.0'>2 minutes</span>. If the dough is very sticky, add 1 tablespoon of flour at a time until it comes together. Do NOT add more than 1/2 cup of extra flour, and do your best to add as little as possible, otherwise it will make the doughnuts dry and tough.</p><p class="line">Turn the mixer to medium and knead the dough for <span class='timer' time='300.0'>5 minutes</span>. Alternatively, you can turn the dough out onto a lightly floured work surface and knead until smooth and elastic, about <span class='timer' time='480.0'>8 minutes</span>.</p><p class="line">Place the dough into a lightly oiled (clean) bowl, cover, and let rise in a warm, draft free place until doubled in size (<span class='timer' time='3600.0'>1-2 hours </span>depending).</p><p class="line">When the dough has doubled, turn it out on to a lightly floured work surface and use a rolling pin to roll it out to about 1/2 inch thick. Use a doughnut cutter to cut out as many as you can, then reroll the scraps.</p><p class="line">Place doughnuts on to two (or more) parchment lined baking sheets, then cover and let rise again until doubled in size.</p><p class="line">Preheat the oven to 400 degrees. Brush the tops of the doughnuts with melted butter, then bake for <span class='timer' time='420.0'>7 minutes </span>exactly. Do not over bake even if they are not golden brown.</p><p class="line">Allow the doughnuts to cool completely. In the meantime, make the glaze. Combine the Meyer lemon zest, juice, milk, cardamom, salt and melted butter in a bowl. Add the powdered sugar and whisk until smooth.</p><p class="line">Dip the doughnuts into the glaze to coat on all sides except the very bottom. Transfer to a rack and allow to set up for about <span class='timer' time='1200.0'>20 minutes </span>before serving.</p><p class="line">Optional Step: Place glazed doughnuts back on the sheet pan and pop into a 400 degree oven for about <span class='timer' time='120.0'>2 minutes</span>. Remove and let cool before serving.</p>
+            <p class="line">In large bowl or stand mixer, stir together the yeast, 1 tablespoon sugar, and 1/4 cup warm milk. Let sit for 5 minutes (the yeast should be foamy).</p><p class="line">In the meantime, mix together the remaining 1/3 cup sugar, 1/2 cup warm milk, melted butter, and salt. Add that mixture to the yeast once it has proofed along with the egg, Meyer lemon zest, and cardamom. Stir until thoroughly combined.</p><p class="line">Add the flour. If using a stand mixer, attach the dough hook and incorporate on low speed. If not, just use a sturdy wooden spoon or rubber spatula. Mix until the dough begins to pull away from the sides of the bowl, about 2 minutes. If the dough is very sticky, add 1 tablespoon of flour at a time until it comes together. Do NOT add more than 1/2 cup of extra flour, and do your best to add as little as possible, otherwise it will make the doughnuts dry and tough.</p><p class="line">Turn the mixer to medium and knead the dough for 5 minutes. Alternatively, you can turn the dough out onto a lightly floured work surface and knead until smooth and elastic, about 8 minutes.</p><p class="line">Place the dough into a lightly oiled (clean) bowl, cover, and let rise in a warm, draft free place until doubled in size (1-2 hours depending).</p><p class="line">When the dough has doubled, turn it out on to a lightly floured work surface and use a rolling pin to roll it out to about 1/2 inch thick. Use a doughnut cutter to cut out as many as you can, then reroll the scraps.</p><p class="line">Place doughnuts on to two (or more) parchment lined baking sheets, then cover and let rise again until doubled in size.</p><p class="line">Preheat the oven to 400 degrees. Brush the tops of the doughnuts with melted butter, then bake for 7 minutes exactly. Do not over bake even if they are not golden brown.</p><p class="line">Allow the doughnuts to cool completely. In the meantime, make the glaze. Combine the Meyer lemon zest, juice, milk, cardamom, salt and melted butter in a bowl. Add the powdered sugar and whisk until smooth.</p><p class="line">Dip the doughnuts into the glaze to coat on all sides except the very bottom. Transfer to a rack and allow to set up for about 20 minutes before serving.</p><p class="line">Optional Step: Place glazed doughnuts back on the sheet pan and pop into a 400 degree oven for about 2 minutes. Remove and let cool before serving.</p>
         </div>
     </div>
     
@@ -190,84 +211,15 @@
 
     
     
-</div>
-
-        
-        <!-- PhotoSwipe gallery -->
-
-<link rel="stylesheet" href="Resources/PhotoSwipe/photoswipe.css">
-<link rel="stylesheet" href="Resources/PhotoSwipe/default-skin/default-skin.css">
-<script src="Resources/PhotoSwipe/photoswipe.min.js"></script>
-<script src="Resources/PhotoSwipe/photoswipe-ui-default.min.js"></script>
-
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="pswp__bg"></div>
-    <div class="pswp__scroll-wrap">
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close"></button>
-            </div>
-            <button class="pswp__button pswp__button--arrow--left" title="Previous">
-            </button>
-            <button class="pswp__button pswp__button--arrow--right" title="Next">
-            </button>
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-        </div>
     </div>
+    
+    <div class="clear"></div>
+
 </div>
 
-<script type="text/javascript">
-    var openPhotoSwipe = function(event) {
-        var pswp = document.querySelector('.pswp');
-        
-        var element = event.target;
-        var src = element.getAttribute('src');
-        
-        // build items array
-        var items = [
-            
-        ];
-        
-        var index = 0;
-        for (var i=0; i<items.length; i++) {
-            var item = items[i];
-            if (item.src == src) {
-                index = i;
-            }
-        }
-                         
-        var options = {
-            index: index,
-            history: false,
-            focus: true,
-            captionEl: true,
-            fullscreenEl: false,
-            zoomEl: false,
-            shareEl: false,
-            preloaderEl: false,
-            bgOpacity: 0.9,
-            showHideOpacity: true
-        };
-                             
-        var gallery = new PhotoSwipe(pswp, PhotoSwipeUI_Default, items, options);
-        gallery.init();
-    };
 
-    var elements = document.querySelectorAll('.photoswipe');
-    for (var i=0; i<elements.length; i++) {
-        var element = elements[i];
-        element.addEventListener('click', openPhotoSwipe);
-    }
-</script>
 
-        
+
+
     </body>
 </html>

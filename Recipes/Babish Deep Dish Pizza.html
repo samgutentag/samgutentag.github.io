@@ -5,14 +5,14 @@
         <style type="text/css">
             /* Shared styles */
             body {
-                font-family: HelveticaNeue, sans-serif;
+                font-family: Helvetica, sans-serif;
                 font-size: 16.0px;
                 color: #34302e;
                 margin: 0.25in;
             }
             .name {
                 font-size: 18.0px;
-                font-family: Futura, Helvetica, sans-serif;
+                font-family: Helvetica, sans-serif;
                 font-weight: normal;
                 margin: 0 0 10px 0;
             }
@@ -40,8 +40,14 @@
                 text-transform: uppercase;
                 margin: 10px 0;
             }
+            
             .ingredients p {
                 margin: 4px 0;
+            }
+            /* To prevent nutrition/directions from getting too close
+               to ingredients */
+            .ingredients {
+                padding-bottom: 10px;
             }
             .clear {
                 clear:both;
@@ -55,24 +61,22 @@
                 line-height: 130%;
             }
             .photobox {
+                
                 float: left;
                 margin-right: 14px;
+                
+                
             }
             .photo {
-                
-                
-                max-width: 140px;
-                max-height: 140px;
+                max-width: 140.0px;
+                max-height: 140.0px;
                 width: auto;
                 height: auto;
-                
             }
-            .columnbox {
-                
-            }
+            
             .inline-image {
-                max-width: 140px;
-                max-height: 140px;
+                max-width: 25%;
+                max-height: 25%;
                 width: auto;
                 height: auto;
             }
@@ -83,11 +87,22 @@
             .pswp__caption__center {
                 text-align: center !important;
             }
+            .recipe {
+                
+                page-break-after: always;
+                
+                
+            }
+            .recipe:first-child {
+                border-top: 0 none;
+                margin-top: 0;
+                padding-top: 0;
+            }
         </style>
     </head>
     <body>
         <!-- Recipe -->
-<div class="recipe" itemscope itemtype="http://schema.org/Recipe">
+<div class="recipe" itemscope itemtype="http://schema.org/Recipe" >
     
     <div class="infobox">
 
@@ -112,6 +127,8 @@
         <!-- Rating, categories -->
         <p itemprop="aggregateRating" class="rating" value="0"></p>
         
+            <p itemprop="recipeCategory" class="categories">Formatted</p>
+        
         
         <p class="metadata">
         
@@ -133,18 +150,20 @@
         </p>
         
         
+        
         <div class="clear"></div>
+        
 
     </div>
     
-    <div class="columnbox">
+    <div class="left-column">
 
         <!-- Ingredients -->
         
         <div class="ingredientsbox">
             <h3 class="subhead">Ingredients</h3>
             <div class="ingredients text">
-                <p class="line" itemprop="recipeIngredient"><strong>8.25</strong> oz room temp water</p><p class="line" itemprop="recipeIngredient"><strong>2.25</strong> tsp (1packet) active dry yeast</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> tsp sugar</p><p class="line" itemprop="recipeIngredient"><strong>355</strong>g All purpose Flour</p><p class="line" itemprop="recipeIngredient"><strong>70</strong>g Medium grind corn meal</p><p class="line" itemprop="recipeIngredient"><strong>1½</strong> tsp kosher salt</p><p class="line" itemprop="recipeIngredient"><strong>⅛</strong> tsp Cream of Tartar</p><p class="line" itemprop="recipeIngredient"><strong>½</strong> cup vegetable oil</p><br/><p class="line" itemprop="recipeIngredient"><strong>28</strong> oz San Marzano Tomatos, Hand Crushed</p><p class="line" itemprop="recipeIngredient"><strong>1/2</strong> white onion, finely diced</p><p class="line" itemprop="recipeIngredient"><strong>4</strong> cloves garlic, crushed</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> Tbsp olive oil</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tsp Red Pepper Flakes</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tsp dried Oregano</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tsp dried Basil</p><p class="line" itemprop="recipeIngredient"><strong>3</strong> Tbsp Tomato paste</p><br/><p class="line" itemprop="recipeIngredient"><strong>1</strong> pound sausage, removed from casing</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> pkg sliced pepperoni</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> pkg sliced provolone</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> pkg sliced low moisture mozzarella </p>
+                <p class="line" itemprop="recipeIngredient"><strong>8.25</strong> oz room temp water</p><p class="line" itemprop="recipeIngredient"><strong>2.25</strong> tsp (1 packet) active dry yeast</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> tsp sugar</p><p class="line" itemprop="recipeIngredient"><strong>355</strong> g all purpose Flour</p><p class="line" itemprop="recipeIngredient"><strong>85</strong> g corn meal</p><p class="line" itemprop="recipeIngredient"><strong>1½</strong> tsp kosher salt</p><p class="line" itemprop="recipeIngredient"><strong>⅛</strong> tsp Cream of Tartar</p><p class="line" itemprop="recipeIngredient"><strong>½</strong> cup vegetable oil</p><br/><p class="line" itemprop="recipeIngredient"><strong>28</strong> oz San Marzano Tomatos, Hand Crushed</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> white onion, finely diced</p><p class="line" itemprop="recipeIngredient"><strong>4</strong> garlic clove, crushed</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> Tbsp olive oil</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tsp Red Pepper Flakes</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tsp dried Oregano</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> tsp dried Basil</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> 6oz can tomato paste</p><br/><p class="line" itemprop="recipeIngredient"><strong>1</strong> pound sausage, removed from casing</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> pkg sliced pepperoni</p><p class="line" itemprop="recipeIngredient"><strong>16</strong> oz provolone, sliced or shredded (sliced preferred)</p><p class="line" itemprop="recipeIngredient"><strong>16</strong> os low moisture mozzarella, sliced or shredded (sliced preferred)</p>
             </div>
         </div>
         
@@ -154,7 +173,9 @@
 
     </div>
     
-    <!-- Descriptino -->
+    <div class="right-column">
+    
+    <!-- Description -->
     
 
     <!-- Directions -->
@@ -162,7 +183,7 @@
     <div class="directionsbox">
         <h3 class="subhead">Directions</h3>
         <div itemprop="recipeInstructions" class="directions text">
-            <p class="line"><strong>Pizza Crust</strong></p><p class="line">In a Stand Mixer Bowl combine water, dry active yeast and sugar. Allow to bloom for <span class='timer' time='600.0'>10 minutes</span>, should be foamy.</p><p class="line">In another bowl which to combine flour, corn meal, kosher salt and cream of tartar.</p><p class="line">Pour mixture into stand mixer bowl and add olive oil</p><p class="line">Stir with dough hook on Low for <span class='timer' time='60.0'>1-2 minutes</span>, until dough comes from bowl</p><p class="line">Stir on medium another <span class='timer' time='420.0'>7-8 minutes </span>to knead</p><p class="line">Knead <span class='timer' time='60.0'>1-2 minutes </span>on floured surface</p><p class="line">Stretch into ball, place into lightly oiled bowl, cover and let rest <span class='timer' time='3600.0'>60-90 minutes </span>or until doubled in size*</p><p class="line">Oil cast iron skillet and stretch dough into crust</p><p class="line">Let rest, covered <span class='timer' time='1500.0'>25 minutes </span>to relax</p><p class="line"><strong>Pizza Sauce</strong></p><p class="line">In large sauce pan add olive oil and heat over medium heat until shimmering.</p><p class="line">Add onion and sweat <span class='timer' time='120.0'>2-3 minutes </span>or until translucent around edges before adding crushed garlic and sautéing until fragrant.</p><p class="line">Add red pepper flakes, dried oregano, dried basil and tomato paste, sauce additional minute.</p><p class="line">Add crushed tomato, simmer <span class='timer' time='1200.0'>20-30 minutes</span>, stir regularly to avoid scorching.</p><p class="line">Should be able to drag spoon through it and leave a trail (&quot;Moses Parting the Red Sea&quot; joke goes here)</p><p class="line"><strong>Baking</strong></p><p class="line">Preheat oven to 425°F</p><p class="line">Re stretch into cast iron to form crust</p><p class="line">Remove sausage from casings and add in thin layer, raw, it bakes, you&apos;re fine. Break it up as much as possible, we don&apos;t want a large suasage patty.</p><p class="line">Add layer of sliced provolone followed by a layer of pepperoni then layer of mozzarella.</p><p class="line">Pour and spread a layer of sauce.</p><p class="line">Bake for <span class='timer' time='1800.0'>30 minutes</span>, rotate once during baking</p><p class="line">Remove from pan and let rest <span class='timer' time='900.0'>15 minutes</span>, ideally on a wire rack, to cool before cutting.</p><p class="line"><strong>Reheating</strong></p><p class="line">Preheat oven to 450°F</p><p class="line">Bake, tented with foil <span class='timer' time='1200.0'>20 minutes</span></p><p class="line">More information <a href="http://www.realdeepdish.com/2012/07-28-leftovers-reheating-deep-dish/">Reheating Deep Dish Pizza</a></p>
+            <p class="line"><strong>Pizza Crust</strong></p><p class="line">In a Stand Mixer Bowl combine water, dry active yeast and sugar. Allow to bloom for 10 minutes, should be foamy</p><p class="line">In another bowl whisk to combine flour, corn meal, kosher salt and cream of tartar</p><p class="line">Pour mixture into stand mixer bowl and add olive oil</p><p class="line">Stir with dough hook on Low (sipped 2 on Stand Mixer) for 1-2 minutes, until dough comes from bowl</p><p class="line">Stir on medium (4-5 on Stand Mixer) another 7-8 minutes to knead</p><p class="line">Knead additional 2 minutes by hand on floured surface</p><p class="line">Stretch into ball, place into lightly oiled bowl, cover and let rest 60-90 minutes or until doubled in size*</p><p class="line">Oil cast iron skillet and stretch dough into crust</p><p class="line">Let rest, covered 25 minutes to relax</p><p class="line"><strong>Pizza Sauce</strong></p><p class="line">In large sauce pan add olive oil and heat over medium heat until shimmering.</p><p class="line">Add onion and sweat 3 minutes or until translucent around edges before adding crushed garlic and sautéing until fragrant.</p><p class="line">Add red pepper flakes, dried oregano, dried basil and tomato paste, sauce additional minute.</p><p class="line">Add crushed tomato, simmer 30 minutes, stir regularly to avoid scorching.</p><p class="line">Should be able to drag spoon through it and leave a trail (&quot;Moses Parting the Red Sea&quot; joke goes here)</p><p class="line">In the cast iron pan you intended to bake in, crumble and brown sausage over medium high heat, save for later. Wipe out excess grease from pan.</p><p class="line"><strong>Baking</strong></p><p class="line">Preheat oven to 425°F</p><p class="line">Re stretch into cast iron to form crust</p><p class="line"><strong>Layer in fillings:</strong></p><p class="line">1. Sausage</p><p class="line">2. Provolone</p><p class="line">3. Pepperoni</p><p class="line">4. Mozzarella</p><p class="line">5. Sauce</p><p class="line">Add cooked sausage in an even layer, press very gently into corners to help form crust edge. <strong>DO NOT press in too firmly, crust will separate from bottom if too thin at outer corner</strong></p><p class="line">Add layer of sliced provolone followed by a layer of pepperoni then layer of mozzarella.</p><p class="line">Pour and spread a layer of sauce.</p><p class="line">Bake for 40 minutes, rotate once during baking, do not rotate if using a convecrion oven.</p><p class="line">Remove from pan and let rest 15 minutes, ideally on a wire rack, to cool before cutting.</p><p class="line"><strong>Reheating</strong></p><p class="line">Preheat oven to 450°F</p><p class="line">Bake, tented with foil 20 minutes</p><p class="line">More information <a href="http://www.realdeepdish.com/2012/07-28-leftovers-reheating-deep-dish/">Reheating Deep Dish Pizza</a></p>
         </div>
     </div>
     
@@ -173,7 +194,7 @@
     <div class="notesbox">
         <h3 class="subhead">Notes</h3>
         <div itemprop="comment" class="notes text">
-            <p>2020.03.10 - reheat instructions changed from 25 minites to 20, crust burnt last time at 25 minutes</p><p>2020.04.02 - video recipe called for 12½ oz flour and 2½ oz corn meal, translated to grams above 355g flour and 70g corn meal. About 1½ cup flour and ¼ cup corn meal</p><p>2020.04.12 - no sugar added to sauce</p>
+            <p>2020.03.10 - reheat instructions changed from 25 minites to 20, crust burnt last time at 25 minutes</p><p>2020.04.02 - video recipe called for 12½ oz flour and 2½ oz corn meal, translated to grams above 355g flour and 70g corn meal. About 1½ cup flour and ¼ cup corn meal</p><p>2020.04.12 - no sugar added to sauce</p><p>2020.07.10 - updated corn meal to 85g from 75g.  Brown sausage in cast iron, no more raw.  Bread flour is an OK substitute but not ideal. Convection Oven do not need to rotate, adjust cook time to 40 minutes from 30</p>
         </div>
     </div>
     
@@ -186,10 +207,15 @@
 
     
     
+    </div>
+    
+    <div class="clear"></div>
+
 </div>
 
-        
-        <!-- PhotoSwipe gallery -->
+
+<!-- Photo gallery is only included when exporting. -->
+<!-- PhotoSwipe gallery -->
 
 <link rel="stylesheet" href="Resources/PhotoSwipe/photoswipe.css">
 <link rel="stylesheet" href="Resources/PhotoSwipe/default-skin/default-skin.css">
@@ -230,14 +256,6 @@
         // build items array
         var items = [
             
-            {
-                msrc: 'Images/DBD49598-0397-4D4B-9C5A-3338DC94A897-2261-000033F3FE1122C1/88C5A64F-5998-465A-A298-22FC9AF35AB3-2261-0000344FD9AACDDC.jpg',
-                src: 'Images/DBD49598-0397-4D4B-9C5A-3338DC94A897-2261-000033F3FE1122C1/88C5A64F-5998-465A-A298-22FC9AF35AB3-2261-0000344FD9AACDDC.jpg',
-                w: 900.0,
-                h: 868.0,
-                title: '1'
-            },
-            
         ];
         
         var index = 0;
@@ -272,6 +290,9 @@
     }
 </script>
 
-        
+
+
+
+
     </body>
 </html>

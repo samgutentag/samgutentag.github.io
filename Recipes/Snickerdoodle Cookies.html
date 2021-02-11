@@ -5,14 +5,14 @@
         <style type="text/css">
             /* Shared styles */
             body {
-                font-family: HelveticaNeue, sans-serif;
+                font-family: Helvetica, sans-serif;
                 font-size: 16.0px;
                 color: #34302e;
                 margin: 0.25in;
             }
             .name {
                 font-size: 18.0px;
-                font-family: Futura, Helvetica, sans-serif;
+                font-family: Helvetica, sans-serif;
                 font-weight: normal;
                 margin: 0 0 10px 0;
             }
@@ -40,8 +40,14 @@
                 text-transform: uppercase;
                 margin: 10px 0;
             }
+            
             .ingredients p {
                 margin: 4px 0;
+            }
+            /* To prevent nutrition/directions from getting too close
+               to ingredients */
+            .ingredients {
+                padding-bottom: 10px;
             }
             .clear {
                 clear:both;
@@ -55,24 +61,22 @@
                 line-height: 130%;
             }
             .photobox {
+                
                 float: left;
                 margin-right: 14px;
+                
+                
             }
             .photo {
-                
-                
-                max-width: 140px;
-                max-height: 140px;
+                max-width: 140.0px;
+                max-height: 140.0px;
                 width: auto;
                 height: auto;
-                
             }
-            .columnbox {
-                
-            }
+            
             .inline-image {
-                max-width: 140px;
-                max-height: 140px;
+                max-width: 25%;
+                max-height: 25%;
                 width: auto;
                 height: auto;
             }
@@ -83,11 +87,22 @@
             .pswp__caption__center {
                 text-align: center !important;
             }
+            .recipe {
+                
+                page-break-after: always;
+                
+                
+            }
+            .recipe:first-child {
+                border-top: 0 none;
+                margin-top: 0;
+                padding-top: 0;
+            }
         </style>
     </head>
     <body>
         <!-- Recipe -->
-<div class="recipe" itemscope itemtype="http://schema.org/Recipe">
+<div class="recipe" itemscope itemtype="http://schema.org/Recipe" >
     
     <div class="infobox">
 
@@ -111,6 +126,8 @@
         
         <!-- Rating, categories -->
         <p itemprop="aggregateRating" class="rating" value="0"></p>
+        
+            <p itemprop="recipeCategory" class="categories">Formatted</p>
         
         
         <p class="metadata">
@@ -137,18 +154,20 @@
         </p>
         
         
+        
         <div class="clear"></div>
+        
 
     </div>
     
-    <div class="columnbox">
+    <div class="left-column">
 
         <!-- Ingredients -->
         
         <div class="ingredientsbox">
             <h3 class="subhead">Ingredients</h3>
             <div class="ingredients text">
-                <p class="line" itemprop="recipeIngredient"><strong>16</strong> tablespoons (1 cup) unsalted butter, 80% the way melted</p><p class="line" itemprop="recipeIngredient"><strong>2/3</strong> cup (135g) white sugar</p><p class="line" itemprop="recipeIngredient"><strong>2/3</strong> cup (120g) light brown sugar, packed</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> large eggs, separated</p><p class="line" itemprop="recipeIngredient"><strong>1/2</strong> tablespoon pure vanilla extract</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> and 3/4 cup (337g) all-purpose white flour</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> and 1/2 teaspoons cream of tartar</p><p class="line" itemprop="recipeIngredient"><strong>1/2</strong> teaspoon salt</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> teaspoon baking soda</p><p class="line" itemprop="recipeIngredient"><strong>3/4</strong> teaspoon ground cinnamon</p><p class="line" itemprop="recipeIngredient">Cinnamon Sugar Coating</p><p class="line" itemprop="recipeIngredient"><strong>1/4</strong> cup (50g) white sugar</p><p class="line" itemprop="recipeIngredient"><strong>3</strong> teaspoons ground cinnamon</p>
+                <p class="line" itemprop="recipeIngredient"><strong>1</strong> cup unsalted butter, 80% the way melted</p><p class="line" itemprop="recipeIngredient"><strong>135</strong> g white sugar</p><p class="line" itemprop="recipeIngredient"><strong>120</strong> g light brown sugar, packed</p><p class="line" itemprop="recipeIngredient"><strong>2</strong> eggs, separated</p><p class="line" itemprop="recipeIngredient"><strong>1/2</strong> tablespoon pure vanilla extract</p><p class="line" itemprop="recipeIngredient"><strong>337</strong> g all-purpose white flour</p><p class="line" itemprop="recipeIngredient"><strong>1 1/2</strong> tsp cream of tartar</p><p class="line" itemprop="recipeIngredient"><strong>1/2</strong> tsp salt</p><p class="line" itemprop="recipeIngredient"><strong>1</strong> tsp baking soda</p><p class="line" itemprop="recipeIngredient"><strong>3/4</strong> tsp ground cinnamon</p><p class="line" itemprop="recipeIngredient">Cinnamon Sugar Coating</p><p class="line" itemprop="recipeIngredient"><strong>1/4</strong> cup (50g) white sugar</p><p class="line" itemprop="recipeIngredient"><strong>3</strong> tsp ground cinnamon</p>
             </div>
         </div>
         
@@ -158,7 +177,9 @@
 
     </div>
     
-    <!-- Descriptino -->
+    <div class="right-column">
+    
+    <!-- Description -->
     
 
     <!-- Directions -->
@@ -166,12 +187,21 @@
     <div class="directionsbox">
         <h3 class="subhead">Directions</h3>
         <div itemprop="recipeInstructions" class="directions text">
-            <p class="line">In a large bowl add the 80% melted butter(cool until room temperature)</p><p class="line">Add sugar and brown sugar. Whisk together until smooth. Add in 1 whole egg and 1 egg yolk (reserve the whites for a separate recipe or discard) and the vanilla extract. Whisk until just combined and smooth.</p><p class="line">In another bowl, stir together the flour, cream of tartar, salt, baking soda, and 3/4 teaspoon ground cinnamon. Whisk together.</p><p class="line">Add all of the dry ingredients into the wet ingredients and mix until JUST combined. Do not overmix the dough. Cover tightly and place in the fridge for <span class='timer' time='2700.0'>45 minutes </span>to <span class='timer' time='3600.0'>1 hour</span>.</p><p class="line">Preheat the oven to 325 degrees F. (If you have a convection oven, do 325 degrees F at convection bake). In a small bowl stir together the white sugar and cinnamon.</p><p class="line">Remove the dough and roll tall balls of dough (see the 2nd photo in the post). If you have a kitchen scale, the balls of dough should be about 1.7 ounces. Roll the balls of dough generously into the cinnamon-sugar mixture.</p><p class="line">Place dough balls on a parchment or silpat lined sheet pan and bake for <span class='timer' time='540.0'>9-11 minutes</span>. Watch carefully being sure to not over-bake. I think slightly under-baked snickerdoodle cookies are the BEST!</p><p class="line">Remove and let stand on cookie sheet for <span class='timer' time='120.0'>2 minutes </span>before removing to a cooling rack.</p><p class="line">Cookies best enjoyed within 2-3 days.</p>
+            <p class="line">In a large bowl add the 80% melted butter(cool until room temperature)</p><p class="line">Add sugar and brown sugar. Whisk together until smooth. Add in 1 whole egg and 1 egg yolk (reserve the whites for a separate recipe or discard) and the vanilla extract. Whisk until just combined and smooth.</p><p class="line">In another bowl, stir together the flour, cream of tartar, salt, baking soda, and 3/4 teaspoon ground cinnamon. Whisk together.</p><p class="line">Add all of the dry ingredients into the wet ingredients and mix until JUST combined. Do not overmix the dough. Cover tightly and place in the fridge for 45 minutes to 1 hour.</p><p class="line">Preheat the oven to 325 degrees F. (If you have a convection oven, do 325 degrees F at convection bake). In a small bowl stir together the white sugar and cinnamon.</p><p class="line">Remove the dough and roll tall balls of dough (see the 2nd photo in the post). If you have a kitchen scale, the balls of dough should be about 1.7 ounces. Roll the balls of dough generously into the cinnamon-sugar mixture.</p><p class="line">Place dough balls on a parchment or silpat lined sheet pan and bake for 9-11 minutes. Watch carefully being sure to not over-bake. I think slightly under-baked snickerdoodle cookies are the BEST!</p><p class="line">Remove and let stand on cookie sheet for 2 minutes before removing to a cooling rack.</p><p class="line">Cookies best enjoyed within 2-3 days.</p>
         </div>
     </div>
     
 
     <!-- Notes -->
+    
+    
+    <div class="notesbox">
+        <h3 class="subhead">Notes</h3>
+        <div itemprop="comment" class="notes text">
+            <p>16 tablespoons (1 cup) unsalted butter, 80% the way melted<br/>2/3 cup (135g) white sugar<br/>2/3 cup (120g) light brown sugar, packed<br/>2 large eggs, separated<br/>1/2 tablespoon pure vanilla extract<br/>2 and 3/4 cup (337g) all-purpose white flour<br/>1 and 1/2 teaspoons cream of tartar<br/>1/2 teaspoon salt<br/>1 teaspoon baking soda<br/>3/4 teaspoon ground cinnamon<br/>Cinnamon Sugar Coating<br/>1/4 cup (50g) white sugar<br/>3 teaspoons ground cinnamon</p>
+        </div>
+    </div>
+    
     
 
     <!-- Nutrition (in regular mode it goes below the notes) -->
@@ -190,84 +220,15 @@
 
     
     
-</div>
-
-        
-        <!-- PhotoSwipe gallery -->
-
-<link rel="stylesheet" href="Resources/PhotoSwipe/photoswipe.css">
-<link rel="stylesheet" href="Resources/PhotoSwipe/default-skin/default-skin.css">
-<script src="Resources/PhotoSwipe/photoswipe.min.js"></script>
-<script src="Resources/PhotoSwipe/photoswipe-ui-default.min.js"></script>
-
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="pswp__bg"></div>
-    <div class="pswp__scroll-wrap">
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close"></button>
-            </div>
-            <button class="pswp__button pswp__button--arrow--left" title="Previous">
-            </button>
-            <button class="pswp__button pswp__button--arrow--right" title="Next">
-            </button>
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-        </div>
     </div>
+    
+    <div class="clear"></div>
+
 </div>
 
-<script type="text/javascript">
-    var openPhotoSwipe = function(event) {
-        var pswp = document.querySelector('.pswp');
-        
-        var element = event.target;
-        var src = element.getAttribute('src');
-        
-        // build items array
-        var items = [
-            
-        ];
-        
-        var index = 0;
-        for (var i=0; i<items.length; i++) {
-            var item = items[i];
-            if (item.src == src) {
-                index = i;
-            }
-        }
-                         
-        var options = {
-            index: index,
-            history: false,
-            focus: true,
-            captionEl: true,
-            fullscreenEl: false,
-            zoomEl: false,
-            shareEl: false,
-            preloaderEl: false,
-            bgOpacity: 0.9,
-            showHideOpacity: true
-        };
-                             
-        var gallery = new PhotoSwipe(pswp, PhotoSwipeUI_Default, items, options);
-        gallery.init();
-    };
 
-    var elements = document.querySelectorAll('.photoswipe');
-    for (var i=0; i<elements.length; i++) {
-        var element = elements[i];
-        element.addEventListener('click', openPhotoSwipe);
-    }
-</script>
 
-        
+
+
     </body>
 </html>
