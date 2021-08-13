@@ -10,3 +10,8 @@ html {
 .container > div {
   flex: ; /*grow*/
 }
+
+a.purple-air-link:link {
+  color: #fff;
+  font-size: 3em;
+}
