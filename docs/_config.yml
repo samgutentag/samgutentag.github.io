@@ -50,3 +50,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+## Test Local host with this command from teh `docs` directory
+# > bundle exec jekyll serve
+##
