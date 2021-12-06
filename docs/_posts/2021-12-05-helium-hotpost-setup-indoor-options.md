@@ -68,25 +68,33 @@ Ok, here are the 4 main options.
 
 ### Configuration 1: POE & 🌟Ethernet🌟
 
+<div display: block; margin-left: auto; margin-right: auto; width: 50%;>
 ![POE & Ethernet][option-1]
+</div>
 
 ### Configuration 2: Wall Power & 🌟Ethernet🌟
 
 Gettings Setup using Wall Power & Ethernet.
 
+<div display: block; margin-left: auto; margin-right: auto; width: 50%;>
 ![Wall Power & Ethernet][option-2]
+</div>
 
 ### Configuration 3: POE & Wifi
 
 Gettings Setup using POE & Wifi.
 
+<div display: block; margin-left: auto; margin-right: auto; width: 50%;>
 ![POE & Wifi][option-3]
+</div>
 
 ### Configuration 4: Wall Power & Wifi
 
 Gettings Setup using Wall Power & Wifi.
 
+<div display: block; margin-left: auto; margin-right: auto; width: 50%;>
 ![Wall Power & Wifi][option-4]
+</div>
 
 ## Last Step
 
@@ -100,9 +108,9 @@ Thank you so much for being a Helium Host! Please feel free to contact me at any
 
 I will also send you a link to monitor the Hotspot activity, so you can see the Network, working! 🎈
 
-[option-1]: https://i.imgur.com/7IGx29j.jpg?2
-[option-2]: https://i.imgur.com/iHCT6Nl.jpg?2
-[option-3]: https://i.imgur.com/hHjHx4W.jpg?2
-[option-4]: https://i.imgur.com/j91Nqkj.jpg?2
-[helium-network]: https://www.helium.com
 [helium-lorawan]: https://www.helium.com/lorawan
+[helium-network]: https://www.helium.com
+[option-1]: https://i.imgur.com/iHCT6Nl.jpg
+[option-2]: https://i.imgur.com/7IGx29j.jpg
+[option-3]: https://i.imgur.com/j91Nqkj.jpg
+[option-4]: https://i.imgur.com/hHjHx4W.jpg
