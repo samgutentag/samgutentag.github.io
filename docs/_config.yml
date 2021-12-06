@@ -51,6 +51,6 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-## Test Local host with this command from teh `docs` directory
+## Test Local host with this command from the `docs` directory
 # > bundle exec jekyll serve
 ##
