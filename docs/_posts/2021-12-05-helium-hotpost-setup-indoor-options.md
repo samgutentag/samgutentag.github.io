@@ -2,7 +2,7 @@
 layout: post
 title: "RAKv2 Helium Hotspot Indoor Setup"
 date: 2021-12-05 08:00:00 -0800
-last-updated: 2021-12-05
+last-updated: 2021-12-06
 tags: helium hotspot setup poe crypto
 ---
 
@@ -68,33 +68,25 @@ Ok, here are the 4 main options.
 
 ### Configuration 1: POE & 🌟Ethernet🌟
 
-<div display: block; margin-left: auto; margin-right: auto; width: 50%;>
 ![POE & Ethernet][option-1]
-</div>
 
 ### Configuration 2: Wall Power & 🌟Ethernet🌟
 
 Gettings Setup using Wall Power & Ethernet.
 
-<div display: block; margin-left: auto; margin-right: auto; width: 50%;>
 ![Wall Power & Ethernet][option-2]
-</div>
 
 ### Configuration 3: POE & Wifi
 
 Gettings Setup using POE & Wifi.
 
-<div display: block; margin-left: auto; margin-right: auto; width: 50%;>
 ![POE & Wifi][option-3]
-</div>
 
 ### Configuration 4: Wall Power & Wifi
 
 Gettings Setup using Wall Power & Wifi.
 
-<div display: block; margin-left: auto; margin-right: auto; width: 50%;>
 ![Wall Power & Wifi][option-4]
-</div>
 
 ## Last Step
 
