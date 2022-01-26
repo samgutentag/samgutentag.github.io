@@ -2,7 +2,7 @@
 layout: post
 title: "Converting Strings with Timezones using pandas"
 date: 2021-11-08 08:00:00 -0800
-last-updated: 2021-11-08
+last-updated: 2022-01-26
 tags: pandas datetimes timezones
 ---
 

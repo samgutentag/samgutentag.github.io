@@ -2,7 +2,7 @@
 layout: post
 title: "Use Raspberry Pi VNC with macOS Screen Sharing"
 date: 2019-12-18 08:00:00 -0800
-last-updated: 2019-12-18
+last-updated: 2022-01-26
 tags: raspberrypi vnc macos
 ---
 

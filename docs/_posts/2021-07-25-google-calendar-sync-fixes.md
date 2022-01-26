@@ -2,7 +2,7 @@
 layout: post
 title: "Fix Google Calendar Sync Issues"
 date: 2021-07-25 08:00:00 -0800
-last-updated: 2021-11-08
+last-updated: 2022-01-26
 tags: calendar sync google
 ---
 

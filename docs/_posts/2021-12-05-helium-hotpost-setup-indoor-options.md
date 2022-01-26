@@ -2,7 +2,7 @@
 layout: post
 title: "RAKv2 Helium Hotspot Indoor Setup"
 date: 2021-12-05 08:00:00 -0800
-last-updated: 2021-12-06
+last-updated: 2022-01-26
 tags: helium hotspot setup poe crypto
 ---
 

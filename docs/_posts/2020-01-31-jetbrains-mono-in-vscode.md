@@ -2,7 +2,7 @@
 layout: post
 title: "Using JetBrains Mono inside VSCode"
 date: 2020-01-31 08:00:00 -0800
-last-updated: 2020-01-31
+last-updated: 2022-01-26
 tags: codeeditor vscode fonts
 ---
 

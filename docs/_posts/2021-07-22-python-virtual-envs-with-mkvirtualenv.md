@@ -2,7 +2,7 @@
 layout: post
 title: "Python virtualenvs with mkvirtualenv"
 date: 2021-07-24 08:00:00 -0800
-last-updated: 2021-07-24
+last-updated: 2022-01-26
 tags: python virtualenvs variables
 ---
 

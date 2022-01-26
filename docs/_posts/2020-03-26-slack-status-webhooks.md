@@ -2,7 +2,7 @@
 layout: post
 title: "Setting Slack Status with Siri Shortcuts and Zoom"
 date: 2020-03-26 08:00:00 -0800
-last-updated: 2020-03-27
+last-updated: 2022-01-26
 tags: zoom slack shortcuts
 ---
 

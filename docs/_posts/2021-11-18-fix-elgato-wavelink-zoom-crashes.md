@@ -2,7 +2,7 @@
 layout: post
 title: "Fix Elgato WaveLink Crashing Zoom"
 date: 2021-11-18 08:00:00 -0800
-last-updated: 2021-11-18
+last-updated: 2022-01-26
 tags: elgato wavelink zoom
 ---
 

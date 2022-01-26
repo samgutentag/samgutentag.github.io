@@ -2,7 +2,7 @@
 layout: post
 title: "Publishing Blog Posts with WorkingCopy"
 date: 2021-03-23 08:00:00 -0800
-last-updated: 2021-03-23
+last-updated: 2022-01-26
 tags: blog workingcopy iPad publishing workflow
 ---
 
