@@ -12,4 +12,6 @@ On the opposite, Google Calendar loves to sync one of its own custom `Contacts` 
 
 ## Sneaky Google Calendar Sync Settings Page
 
-Navigate to this [Google Calendar Sync Selection](https://calendar.google.com/calendar/u/0/syncselect?pli=1) page where you can toggle each calendar on and off.
+Navigate to this [Google Calendar Sync Selection][sync-selection] page where you can toggle each calendar on and off.
+
+[sync-selection]: https://calendar.google.com/calendar/u/0/syncselect?pli=1

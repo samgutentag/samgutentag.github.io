@@ -6,7 +6,7 @@ last-updated: 2021-11-08
 tags: pandas datetimes timezones
 ---
 
-Working with dates and times are annoying, and roughly once every 3-4 weeks I completely forget how to convert a string that includes a timezone to a timezone aware `datetime` object in python/pandas.
+Working with dates and times is annoying, and roughly once every 3-4 weeks I completely forget how to convert a string that includes a timezone to a timezone aware `datetime` object in python/pandas.
 
 I often have a string like this: `2021-04-24T03:55:09-04:00` that I want to convert.
 

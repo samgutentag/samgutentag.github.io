@@ -8,9 +8,9 @@ tags: elgato wavelink zoom
 
 The [WaveLink Application][wavelink] for the [Wave:1][wave-1] microphone running on my install of [macOS Big Sur][bigsur] has been a nightmare...
 
-I have had to launch the application in various different order to launching [Zoom][zoom], reinstalling Zoom, reinstalling WaveLink, chanign docks, changing cables, unplugging cables. Its been a hassle and I am done.
+I have had to launch the application in various different order to launching [Zoom][zoom], reinstalling Zoom, reinstalling WaveLink, changing docks, changing cables, unplugging cables. It has been a hassle and I am done.
 
-Turns out, to use a Wave Mic with Zoom on macOS you do not _need_ WaveLink, so here is how to completely remove it from your system, thank you to this [reddit post][reddit-post] with the solution, copie dhere so I can find it in teh future.
+Turns out, to use a Wave Mic with Zoom on macOS you do not _need_ WaveLink, so here is how to completely remove it from your system, thank you to this [reddit post][reddit-post] with the solution, copied here so I can find it in the future.
 
 ## Removal
 

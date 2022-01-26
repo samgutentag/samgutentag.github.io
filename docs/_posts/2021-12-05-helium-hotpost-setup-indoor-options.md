@@ -10,7 +10,7 @@ This guide is assuming that I (Sam) have already set up and configured the RAKv2
 
 Thank you for hosting, your part is pretty straight forward, however, there are some details that will benefit your setup the most and maximize performance of the Hotspot.
 
-Please call me when you are ready to begin setup, as a few of these steps are a bit tricky, and the last step, is a doozy.
+Please call me when you are ready to begin setup, as a few of these steps are a bit tricky, and the last step is a doozy.
 
 ## Guidelines & FAQs
 

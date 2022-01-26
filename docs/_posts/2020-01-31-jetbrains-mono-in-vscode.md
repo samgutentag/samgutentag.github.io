@@ -8,7 +8,7 @@ tags: codeeditor vscode fonts
 
 ## Using JetBrains Mono inside VSCode
 
-JetBrains Mono can be downloaded from the [JetBrains Site Here](https://www.jetbrains.com/lp/mono/)
+JetBrains Mono can be downloaded from the [JetBrains Site Here][jetbrains-font]
 
 The information below assumes that you have downloaded the font, unzipped it and added to the macOS Font Book.app
 
@@ -32,3 +32,5 @@ Here is a snippet from my `settings.json` file, commented for reference.
 "editor.fontLigatures": true
 }
 {% endhighlight %}
+
+[jetbrains-font]: https://www.jetbrains.com/lp/mono/

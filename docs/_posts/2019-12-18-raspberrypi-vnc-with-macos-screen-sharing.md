@@ -12,7 +12,7 @@ Using a Raspberry Pi via ssh is the way I interact with these little computers s
 
 ## The Problem
 
-Nearly everytime I have setup a new Raspberry Pi and attempted to use the native Screen Sharing app to control them over VNC with my MacBook the first time I am treated to an Error Message reading:
+Nearly every time I have set up a new Raspberry Pi and attempted to use the native Screen Sharing app to control them over VNC with my MacBook the first time I am treated to an Error Message reading:
 
 ```
 The software on the remote computer appears to be
@@ -73,7 +73,7 @@ Enter the following command to restart the vnc server on the Pi
 To obtain the ip address of the Pi, enter
 
 ```
-> ifconfg
+> ifconfig
 ```
 
 in the terminal and look for the _inet_ entry under the _eth0_ (if the Pi is connected over ethernet) or _wlan0_ (if the Pi is connected over wifi)

@@ -8,7 +8,7 @@ tags: python virtualenvs variables
 
 ## Create a `virtualenv`
 
-Lets say you wanted to create a `virtualenv` for a new project using `python3` called `gutentag`
+Let's say you wanted to create a `virtualenv` for a new project using `python3` called `gutentag`
 
 {% highlight bash %}
 mkvirtualenv -p `which python` gutentag
@@ -36,11 +36,11 @@ lsvirtualenv -b
 
 ## Installing `mkvirtualenv`
 
-**These steps are copy/pasted from [this stack overflow Post](https://stackoverflow.com/a/49528037) so that I can find them quickly.**
+**These steps are copy/pasted from [this stackoverflow Post][stackoverflow-post] so that I can find them quickly.**
 
-To install `virtualenv` and `virtualenvwrapper` for repetitive use you need a correctly configured Python (this example uses `Python 3.x` but process is identical for `Python 2.x`).
+To install `virtualenv` and `virtualenvwrapper` for repetitive use you need a correctly configured Python (this example uses `Python 3.x` but the process is identical for `Python 2.x`).
 
-Although you can get `python` [installer from Python website](https://www.python.org/downloads/) I strongly advice against it. The most convenient and future-proof method to install `Python` on `MacOS` is [brew](https://brew.sh/).
+Although you can get the `python` [installer from Python website][python-installer] I advise against it. The most convenient and future-proof method to install `Python` on `MacOS` is [brew][homebrew-link].
 
 Main difference between installer from Python website and brew is that installer puts `python` packages to:
 
@@ -80,7 +80,7 @@ Now your system needs to know where to look for freshly installed Python package
 export PATH=/usr/local/share/python:$PATH
 {% endhighlight %}
 
-**Restart your terminal.** To make sure you've done everything correctly run `which python3` and in return you should receive `/usr/local/bin/python`.
+**Restart your terminal.** To make sure you've done everything correctly, run `which python3` and in return you should receive `/usr/local/bin/python`.
 
 ### Install `virtualenv` & `virtualenvwrapper`
 
@@ -92,18 +92,19 @@ pip3 install virtualenv virtualenvwrapper
 
 ### Set up `virtualenv` variables
 
-Define a default path for your virtual environments. For example you can create a hidden directory inside `~` and called it `.virtualenvs` with `mkdir ~/.virtualenvs`. Add `virtualenv` variables to `.zshrc` (or `.bash_profile`).
+Define a default path for your virtual environments. For example you can create a hidden directory inside `~` and call it `.virtualenvs` with `mkdir ~/.virtualenvs`. Add `virtualenv` variables to `.zshrc` (or `.bash_profile`).
 
 Final version of your `.zshrc` (or `.bash_profile`) should contain this information to work properly with installed packages:
 
+## Setting PATH for Python 3 installed by brew
+
 {% highlight bash %}
-
-# Setting PATH for Python 3 installed by brew
-
 export PATH=/usr/local/share/python:$PATH
+{% endhighlight %}
 
-# Configuration for virtualenv
+## Configuration for virtualenv
 
+{% highlight bash %}
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
@@ -113,3 +114,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 ### Restart your terminal
 
 You should be able to use `mkvirtualenv` and `workon` commands including autocompletion.
+
+[stackoverflow-post]: https://stackoverflow.com/a/49528037
+[python-installer]: https://www.python.org/downloads/
+[homebrew-link]: https://brew.sh/

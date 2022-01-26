@@ -6,4 +6,6 @@ last-updated: 2021-03-23
 tags: blog workingcopy iPad publishing workflow
 ---
 
-This is a test post that I created, edit, and pushed to github from my iPad using [WorkingCopy](https://workingcopyapp.com)
+This is a test post that I created, edit, and pushed to github from my iPad using [WorkingCopy][workingcopy-app-store]
+
+[workingcopy-app-store]: https://workingcopyapp.com

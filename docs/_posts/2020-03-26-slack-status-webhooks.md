@@ -8,23 +8,23 @@ tags: zoom slack shortcuts
 
 ## Working from Home Together
 
-As we all transition to the Work From Home lifestyle, my wife and I are seemingly always on and off Zoom calls. To keep each other in the loop and quiet on the opposite sides of out small desk, we have been using the `/status :zoom: on a call` command in Slack to set our status.
+As we all transition to the Work From Home lifestyle, my wife and I are seemingly always on and off Zoom calls. To keep each other in the loop and quiet on the opposite sides of our small desk, we have been using the `/status :zoom: on a call` command in Slack to set our status.
 
 ## Setting Slack Status with the `/status` command
 
 In both of these Slack Workspaces I added a nice little Zoom emoji (see steps below) and have been using the slash command `/status :zoom: on a call` to update my status.
 
-Using this `/status` command to update my status for my remote team of coworkers _and_ my wife in our private Workspace so she can see it on the other side of the desk from me is an annoying wo step process, and I typically forget to clear my status once the call is over.
+Using this `/status` command to update my status for my remote team of coworkers _and_ my wife in our private Workspace so she can see it on the other side of the desk from me is an annoying two process, and I typically forget to clear my status once the call is over.
 
 ### Adding Custom Emoji to Slack
 
-Tons of fun and useful emojis for Slack can be found at [slackmojis.com](https://slackmojis.com/) (this site does not always play well with Safari, fair warning). A quick search for Zoom leads you [here](https://emojis.slackmojis.com/emojis/images/1567179639/6288/zoom.png?1567179639) download this image.
+Tons of fun and useful emojis for Slack can be found at [slackmojis.com][slackmojis-com] (this site does not always play well with Safari, fair warning). A quick search for Zoom leads you [here][zoom-icon] to download this image.
 
-Follow the steps on the Slack Support Article [Add Custom Emoji](https://slack.com/help/articles/206870177-Add-custom-emoji) to add the custom emoji to your Slack Workspace(s).
+Follow the steps on the Slack Support Article [Add Custom Emoji][add-custom-emoji] to add the custom emoji to your Slack Workspace(s).
 
 ### Install and setup StatusHook App in Slack
 
-In a new browser tab, navigate to [statushook.cool](https://www.statushook.cool/) where you will need to click the "Add to Slack" button and install the application in your desired Workspace(s).
+In a new browser tab, navigate to [statushook.cool][statushook-cool] where you will need to click the "Add to Slack" button and install the application in your desired Workspace(s).
 
 Once it is installed, you will need to run two slash commands to generate POST urls to
 
@@ -44,13 +44,13 @@ This URL will only work for the user who generated it.
 
 ### Using this URL within a Siri Shortcut
 
-Now that we have our POST urls create a new Siri Shortcuts. You will be passing the URL to a "Get Contents of" action.
+Now that we have our POST urls create a new Siri Shortcut. You will be passing the URL to a "Get Contents of" action.
 
 In my case, I want to update my "On A Call" status in two different Slack Workspaces, so I added a List action, and then a "Repeat with each item in" action to loop over my URL list and update the status in each Workspace.
 
 ![siri_shortcut_image](https://i.imgur.com/3BErYFI.jpg)
 
-Save this Shortcut as "Slack On A Call" or something you will remember, and send it to your homescreen for quick reference.
+Save this Shortcut as "Slack On A Call" or something you will remember, and send it to your home screen for quick reference.
 
 Now the easiest way to create an "Slack Off Call" shortcut is to duplicate the "Slack On Call" shortcut you just made and replace the URL(s) with the status clear URL(s) generated above.
 
@@ -70,7 +70,7 @@ This was not nearly as painful as I thought it would be, but it does require "De
 
 ### Creating a Zoom Webhook App
 
-To start, sign into your Zoom account on the [Zoom website](https://www.zoom.us) you will need to navigate to the [Zoom App Marketplace](https://marketplace.zoom.us/) and look for the "Develop" dropdown in the upper right hand corner and select "Build App".
+To start, sign into your Zoom account on the [Zoom website][zoom-website] you will need to navigate to the [Zoom App Marketplace][zoom-app-marketplace] and look for the "Develop" dropdown in the upper right hand corner and select "Build App".
 
 ### Creating a "Webhook Only" Zoom App
 
@@ -80,13 +80,13 @@ If you have Developer Permissions, the blue "Create" button on the "Webhook Only
 
 ### Using StatusHook.cool URLs
 
-Assuming you can continue, give your app a name. I chose "Slack Stutus" for mine, because that is all the app is managing.
+Assuming you can continue, give your app a name. I chose "Slack Status" for mine, because that is all the app is managing.
 
 Fill out all the required fields in "Basic Information" and the "Developer Contact Information" then click the blue Continue button.
 
 ![zoom_01](https://i.imgur.com/zc2TZQS.png)
 
-Toggle "ON" the Event Subsciptions. You will be adding one for each StatusHook URL
+Toggle "ON" the Event Subscriptions. You will be adding one for each StatusHook URL
 
 ![zoom_02](https://i.imgur.com/LdBEuWD.png)
 
@@ -113,3 +113,10 @@ Add another new event subscription and repeat the steps for your "Off Call" Stat
 Click the blue Continue button and ensure that your app is activated on the account, you should see a green circle with a check mark.
 
 ![zoom_06](https://i.imgur.com/qSjVwjr.png)
+
+[slackmojis-com]: https://slackmojis.com/
+[zoom-website]: https://www.zoom.us
+[zoom-app-marketplace]: https://marketplace.zoom.us/
+[statushook-cool]: https://www.statushook.cool/
+[add-custom-emoji]: https://slack.com/help/articles/206870177-Add-custom-emoji
+[zoom-icon]: https://emojis.slackmojis.com/emojis/images/1567179639/6288/zoom.png?1567179639
