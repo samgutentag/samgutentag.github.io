@@ -1,15 +1,21 @@
 ---
 layout: default
 ---
-<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
+
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  title="{{ site.title }}"
+  href="/feed.xml"
+/>
 <div class="home">
-  {%- if page.title -%}
+  <!-- {%- if page.title -%}
   <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  {%- endif -%} -->
 
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
+  <!-- {%- if site.posts.size > 0 -%}
   {% comment %} <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2> {% endcomment %}
   <ul class="post-list">
     {%- for post in site.posts -%}
@@ -30,76 +36,5 @@ layout: default
 
   {% comment %} <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml" | relative_url }}">via RSS</a></p> {%
   endcomment %}
-  {%- endif -%}
-
+  {%- endif -%} -->
 </div>
-
-<!-- <!DOCTYPE html>
-
-<html>
-
-<head>
-  <title>Sam Gutentag</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <script src="https://kit.fontawesome.com/8dfec95ac9.js" crossorigin="anonymous"></script>
-  <noscript>
-    <link rel="stylesheet" href="assets/css/noscript.css" />
-  </noscript>
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-</head>
-
-<body class="is-preload">
-  <!-- Wrapper -->
-  <div id="wrapper">
-    <!-- Main -->
-    <section id="main">
-      <header>
-        <span class="avatar"><img src="../assets/images/avatar.jpg" alt="" /></span>
-        <h1>Sam Gutentag</h1>
-        <p>
-          <a href="http://www.samgutentag.com/about">Technical Artist | Learning Enthusiast | Husband</a>
-        </p>
-        <p>(Not Necessarily In That Order)</p>
-      </header>
-      <footer>
-        <ul class="icons">
-          <li><a href="assets/pdf/resume.pdf" class="fas fa-id-card"><span class="label">Resume</span></a></li>
-          <li><a href="/blog" class="fas fa-rss-square"><span class="label">Blog</span></a>
-          </li>
-          <!-- <li><a href="http://www.samgutentag.com/recipes.html" class="fas fa-utensils"><span
-                class="label">Cooking</span></a></li> -->
-          <li><a href="https://github.com/samgutentag" class="fab fa-github"><span class="label">GitHub</span></a></li>
-          <li><a href="https://www.linkedin.com/in/samgutentag" class="fab fa-linkedin-in"><span
-                class="label">LinkedIn</span></a></li>
-          <li><a href="https://www.twitter.com/samgutentag/" class="fab fa-twitter"><span
-                class="label">Twitter</span></a></li>
-          <li><a href="mailto:hello@samgutentag.com" class="far fa-paper-plane"><span class="label">Email</span></a>
-          </li>
-        </ul>
-      </footer>
-    </section>
-    <!-- Footer -->
-    <footer id="footer">
-      <ul class="copyright">
-        <li>Copyright &copy; 2013-2022 Sam Gutentag</li>
-      </ul>
-    </footer>
-  </div>
-  <script>
-    if ("addEventListener" in window) {
-      window.addEventListener("load", function () {
-        document.body.className = document.body.className.replace(
-          /\bis-loading\b/,
-          ""
-        );
-      });
-      document.body.className += navigator.userAgent.match(/(MSIE|rv:11\.0)/)
-        ? " is-ie"
-        : "";
-    }
-  </script>
-</body>
-
-</html> -->
