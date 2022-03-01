@@ -20,7 +20,7 @@ Please call me when you are ready to begin setup, as a few of these steps are a 
 
 Ok, please keep reading.
 
-### The Hotspot needs to be connected to your internet.
+### The Hotspot needs to be connected to your internet
 
 The Hotspot connects to other Hotspots via [LoRaWan][helium-lorawan] (Long Range Wifi Access Network), and connects to the Internet using your Internet Connection.
 
@@ -31,7 +31,7 @@ The Hotspot connects to other Hotspots via [LoRaWan][helium-lorawan] (Long Range
 - **Wifi**
 - This hotspot can connect to your wifi network, but it is _not_ good at it, using wifi should be considered a last resort.
 
-### The Hotspot needs power.
+### The Hotspot needs power
 
 The Hotspot itself uses the same amount of energy as a 5 Watt light bulb.
 
@@ -42,12 +42,12 @@ The Hotspot itself uses the same amount of energy as a 5 Watt light bulb.
 - **Wall Power**
 - A USB Type C power brick works well, though the cord is a little short and may be a hassle depending on the layout of your location.
 
-### The Hotspot needs a clear view of the world.
+### The Hotspot needs a clear view of the world
 
 - Please place the Hotspot in an open window that does **not** have a screen, ideally not one that you will be opening often.
 - Height is Key, the higher up your Antenna is, the greater your Hotspot's reach, and the greater your coverage. If you are in a high rise building, you are ahead of the game.
 
-### The Antenna must point up.
+### The Antenna must point up
 
 - The Antenna included in the package I sent you screws on to the connector on the Hotspot itself.
 - The Antenna broadcasts in a donut shaped pattern, similar to Wifi antennas, keeping it as vertical as possible to reduce signals being shot into space or into the ground.

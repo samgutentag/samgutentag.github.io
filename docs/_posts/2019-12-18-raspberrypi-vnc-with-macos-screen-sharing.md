@@ -14,7 +14,7 @@ Using a Raspberry Pi via ssh is the way I interact with these little computers s
 
 Nearly every time I have set up a new Raspberry Pi and attempted to use the native Screen Sharing app to control them over VNC with my MacBook the first time I am treated to an Error Message reading:
 
-```
+```bash
 The software on the remote computer appears to be
 incompatible with this version of Screen Sharing.
 ```
@@ -27,7 +27,7 @@ These steps need to be followed on the Raspberry Pi. This can be done over ssh o
 
 Open a terminal and enter
 
-```
+```bash
 > sudo raspi-config
 ```
 
@@ -38,7 +38,7 @@ Navigate to `VNC` and enable.
 
 When changing configurations it is recommended to Reboot the Pi before continuing. The `raspi-config` might prompt directly to reboot, but if it does not enter the following command to reboot the Pi.
 
-```
+```bash
 > sudo reboot -h now
 ```
 
@@ -46,7 +46,7 @@ When changing configurations it is recommended to Reboot the Pi before continuin
 
 Once rebooted, create vnc credentials that will be used to connect over VNC to the pi. You will be prompted to enter a password and verify it. This is the password that will be used to establish the VNC connection.
 
-```
+```bash
 > sudo vncpasswd -service
 > sudo touch /etc/vnc/config.d/common.custom
 > cd /etc/vnc/config.d
@@ -56,7 +56,7 @@ Once rebooted, create vnc credentials that will be used to connect over VNC to t
 
 Open the `custom.common` file just created and add the line.
 
-```
+```bash
 Authentication=VncAuth
 ```
 
@@ -64,7 +64,7 @@ Authentication=VncAuth
 
 Enter the following command to restart the vnc server on the Pi
 
-```
+```bash
 > sudo systemctl restart vncserver-x11-serviced
 ```
 
@@ -72,7 +72,7 @@ Enter the following command to restart the vnc server on the Pi
 
 To obtain the ip address of the Pi, enter
 
-```
+```bash
 > ifconfig
 ```
 

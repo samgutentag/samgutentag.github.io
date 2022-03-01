@@ -6,7 +6,7 @@ layout: home
 title: Home
 ---
 
-# Gutentag, World!
+## Gutentag, World
 
 I am a Developer Support Engineer, Tinkerer, Home Chef, Husband (and soon to be Father) living and working in the San Francisco Bay Area.
 
