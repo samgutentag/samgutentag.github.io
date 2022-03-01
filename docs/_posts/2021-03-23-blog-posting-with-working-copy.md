@@ -4,6 +4,7 @@ title: "Publishing Blog Posts with WorkingCopy"
 date: 2021-03-23 08:00:00 -0800
 last-updated: 2022-03-01
 tags: blog workingcopy iPad publishing workflow
+published: false
 ---
 
 Blogging on the go with WorkingCopy.
