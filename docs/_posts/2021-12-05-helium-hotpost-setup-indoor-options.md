@@ -2,9 +2,13 @@
 layout: post
 title: "RAKv2 Helium Hotspot Indoor Setup"
 date: 2021-12-05 08:00:00 -0800
-last-updated: 2022-01-26
+last-updated: 2022-03-01
 tags: helium hotspot setup poe crypto
 ---
+
+[What is Helium?][what-is-helium-video] Glad you asked (to host).
+
+## So Happy To Host With You
 
 This guide is assuming that I (Sam) have already set up and configured the RAKv2 Helium Hotspot to connect to the [Helium Network][helium-network], the next step is to install the physical device itself.
 
@@ -106,3 +110,4 @@ I will also send you a link to monitor the Hotspot activity, so you can see the 
 [option-2]: https://i.imgur.com/7IGx29j.jpg
 [option-3]: https://i.imgur.com/j91Nqkj.jpg
 [option-4]: https://i.imgur.com/hHjHx4W.jpg
+[what-is-helium-video]: https://www.youtube.com/watch?v=Vx9YyS7-d3g

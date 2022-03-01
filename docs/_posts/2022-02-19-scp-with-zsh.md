@@ -2,9 +2,13 @@
 layout: post
 title: "Using scp with ohmyzsh"
 date: 2022-02-19 08:00:00 -0800
-last-updated: 2022-02-19
+last-updated: 2022-03-01
 tags: scp terminal ohmyzsh zsh
 ---
+
+scp please see me!
+
+## Wildcard Copies
 
 This trips me up everytime I attempt to copy files from a RaspberryPi to my MacBook.
 

@@ -2,9 +2,13 @@
 layout: post
 title: "Converting Strings with Timezones using pandas"
 date: 2021-11-08 08:00:00 -0800
-last-updated: 2022-01-26
+last-updated: 2022-03-01
 tags: pandas datetimes timezones
 ---
+
+See also: [xkcd 1883][xkcd-1883]
+
+## 60% Of The Time, It Works Every Time
 
 Working with dates and times is annoying, and roughly once every 3-4 weeks I completely forget how to convert a string that includes a timezone to a timezone aware `datetime` object in python/pandas.
 
@@ -28,3 +32,5 @@ df["datetime"] = pd.to_datetime(df["datetime_str"], utc=True).dt.tz_convert("Ame
 df.set_index("datetime", inplace=True)
 
 ```
+
+[xkcd-1883]: https://xkcd.com/1883/

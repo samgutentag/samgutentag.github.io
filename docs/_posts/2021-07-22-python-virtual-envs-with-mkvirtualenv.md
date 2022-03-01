@@ -2,9 +2,11 @@
 layout: post
 title: "Python virtualenvs with mkvirtualenv"
 date: 2021-07-24 08:00:00 -0800
-last-updated: 2022-01-26
+last-updated: 2022-03-01
 tags: python virtualenvs variables
 ---
+
+Think "nice tidy boxes", but not yet Docker.
 
 ## Create a `virtualenv`
 

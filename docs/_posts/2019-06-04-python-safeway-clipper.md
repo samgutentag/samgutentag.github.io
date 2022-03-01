@@ -2,9 +2,13 @@
 layout: post
 title: "Clipping Safeway Coupons with Python"
 date: 2019-06-04 08:00:00 -0700
-last-updated: 2022-01-26
+last-updated: 2022-03-01
 tags: python selenium automation
 ---
+
+Clipping coupons, with code.
+
+## Im Tired Of Tapping
 
 I grocery shop on a weekly basis, mostly because I live in a small San Francisco apartment with a refrigerator from the early 1200's, but also because I am learning to enjoy cooking and fresh ingredients are _actually_ starting to taste better to me.
 

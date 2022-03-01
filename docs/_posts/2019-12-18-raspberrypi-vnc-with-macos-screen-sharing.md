@@ -2,15 +2,15 @@
 layout: post
 title: "Use Raspberry Pi VNC with macOS Screen Sharing"
 date: 2019-12-18 08:00:00 -0800
-last-updated: 2022-01-26
+last-updated: 2022-03-01
 tags: raspberrypi vnc macos
 ---
 
-## The Summary
+All your screens are belong to us.
+
+## "Can Everybody See My Screen?"
 
 Using a Raspberry Pi via ssh is the way I interact with these little computers sitting around, but sometimes it is nice to see the screen. Enter VNC.
-
-## The Problem
 
 Nearly every time I have set up a new Raspberry Pi and attempted to use the native Screen Sharing app to control them over VNC with my MacBook the first time I am treated to an Error Message reading:
 

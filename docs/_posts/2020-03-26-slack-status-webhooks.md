@@ -2,9 +2,11 @@
 layout: post
 title: "Setting Slack Status with Siri Shortcuts and Zoom"
 date: 2020-03-26 08:00:00 -0800
-last-updated: 2022-01-26
+last-updated: 2022-03-01
 tags: zoom slack shortcuts
 ---
+
+Hey Siri, could this meeting have been an email?
 
 ## Working from Home Together
 

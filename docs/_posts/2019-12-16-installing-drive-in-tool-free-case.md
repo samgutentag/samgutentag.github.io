@@ -2,9 +2,11 @@
 layout: post
 title: "Installing a Drive into a Tool Free Case"
 date: 2019-12-16 08:00:00 -0800
-last-updated: 2022-01-26
+last-updated: 2022-03-01
 tags: hardware howto installguide
 ---
+
+Some, actually all, assembly required.
 
 ## Step 1
 

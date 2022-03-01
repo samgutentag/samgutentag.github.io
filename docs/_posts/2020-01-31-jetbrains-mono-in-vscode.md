@@ -2,11 +2,13 @@
 layout: post
 title: "Using JetBrains Mono inside VSCode"
 date: 2020-01-31 08:00:00 -0800
-last-updated: 2022-01-26
+last-updated: 2022-03-01
 tags: codeeditor vscode fonts
 ---
 
-## Using JetBrains Mono inside VSCode
+Using a custom font is fancy, and can even be useful too.
+
+## Using JetBrains Mono Inside VSCode
 
 JetBrains Mono can be downloaded from the [JetBrains Site Here][jetbrains-font]
 

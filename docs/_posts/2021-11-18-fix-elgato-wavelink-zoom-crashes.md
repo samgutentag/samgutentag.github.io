@@ -2,9 +2,13 @@
 layout: post
 title: "Fix Elgato WaveLink Crashing Zoom"
 date: 2021-11-18 08:00:00 -0800
-last-updated: 2022-01-26
+last-updated: 2022-03-01
 tags: elgato wavelink zoom
 ---
+
+Push to wait, to talk, to wait, to talk.
+
+## Thank You, Next
 
 The [WaveLink Application][wavelink] for the [Wave:1][wave-1] microphone running on my install of [macOS Big Sur][bigsur] has been a nightmare...
 
