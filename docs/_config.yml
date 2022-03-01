@@ -54,3 +54,5 @@ plugins:
 ## Test Local host with this command from the `docs` directory
 # > bundle exec jekyll serve
 ##
+
+show_excerpts: true
