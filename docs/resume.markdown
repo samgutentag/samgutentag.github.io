@@ -13,9 +13,9 @@ title: Resume
 
 ### Developer Support Engineer, Aug 2020 - Present
 
-- Established and led developer relations team to serve as the partner developer voice in platform roadmapping with internal engineering and platform stakeholders
+- Established and led developer relations team to serve as the partner developer voice in platform roadmapping with internal engineering and product stakeholders
 - Launched a partner developer portal that streamlined onboarding and education, increased collaboration with internal developers, and cultivated a community to proactively problem solve and implement new features
-- Authored new and reconciled existing documentation, and produced accompanying video and written tutorials, to promote partner developer education and best practices when using the SDK to build application
+- Authored new and reconciled existing documentation, and produced accompanying video and written tutorials, to promote partner developer education and best practices when using the SDK to build applications
 - Implemented coding sessions and reviews with partner developers in the product cycle to establish a common ground with each developer and provide tailored support based on their existing capabilities
 
 ### Lead Character Technical Artist, Sept 2018 - Aug 2020
