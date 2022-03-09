@@ -3,9 +3,7 @@ layout: default
 title: Resume
 ---
 
-<sub>[download a better formatted copy here](./assets/pdf/resume.pdf)</sub>
-
-> Experienced Developer Support Engineer driven by a passion for learning new technologies and supporting the developers and teams that build with them.
+<sub>[download a better formatted copy here](./assets/pdf/samgutentag_resume.pdf)</sub>
 
 # EMPLOYMENT
 
@@ -48,9 +46,9 @@ title: Resume
 
 ## PROGRAMMING LANGUAGES & UTILITIES
 
-**Actively Using:** Python, Numpy, Matplotlib, Markdown, Git, PlatformIO, Technical Writing
-
-**Developing:** SQL, JavaScript, Docusaurus
+**Actively Using:** Python, Numpy, Matplotlib, Markdown, Git, PlatformIO, Docusaurus & Technical Writing
+**Familiar:** SQL, C+, Arduino
+**Developing:** JavaScript, React, Erlang (_very early_)
 
 ---
 
