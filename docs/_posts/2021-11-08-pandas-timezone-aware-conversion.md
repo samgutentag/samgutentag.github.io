@@ -6,7 +6,7 @@ last-updated: 2022-03-01
 tags: pandas datetimes timezones
 ---
 
-See also: [xkcd 1883][xkcd-1883]
+> See also: [xkcd 1883][xkcd-1883]
 
 ## 60% Of The Time, It Works Every Time
 

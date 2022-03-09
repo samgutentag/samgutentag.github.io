@@ -6,7 +6,7 @@ last-updated: 2022-03-01
 tags: scp terminal ohmyzsh zsh
 ---
 
-scp please see me!
+> scp please see me.
 
 ## Wildcard Copies
 

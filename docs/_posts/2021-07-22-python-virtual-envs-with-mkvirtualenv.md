@@ -6,7 +6,7 @@ last-updated: 2022-03-01
 tags: python virtualenvs variables
 ---
 
-Think "nice tidy boxes", but not yet Docker.
+> Think "nice tidy boxes", but not yet Docker.
 
 ## Create a `virtualenv`
 

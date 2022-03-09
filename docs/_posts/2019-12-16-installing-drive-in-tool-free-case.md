@@ -6,7 +6,7 @@ last-updated: 2022-03-01
 tags: hardware howto installguide
 ---
 
-Some, actually all, assembly required.
+> Some, actually all, assembly required.
 
 ## Step 1
 

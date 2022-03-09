@@ -6,7 +6,7 @@ last-updated: 2022-03-01
 tags: raspberrypi vnc macos
 ---
 
-All your screens are belong to us.
+> All your screens are belong to us.
 
 ## "Can Everybody See My Screen?"
 

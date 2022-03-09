@@ -7,7 +7,7 @@ tags: blog workingcopy iPad publishing workflow
 published: false
 ---
 
-Blogging on the go with WorkingCopy.
+> Blogging on the go with WorkingCopy.
 
 ## This Should Be Fun
 

@@ -6,7 +6,7 @@ last-updated: 2022-03-01
 tags: calendar sync google
 ---
 
-Dear calendar, please just sync.
+> Dear calendar, please just sync.
 
 ## Calendars Demand Consistency
 

@@ -6,7 +6,7 @@ last-updated: 2022-03-01
 tags: python virtualenvs variables
 ---
 
-It's all about scope.
+> It's all about scope.
 
 Working environments is made even better by defining some variables that are only active in that specific environment.
 

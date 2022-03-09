@@ -6,7 +6,7 @@ last-updated: 2022-03-01
 tags: zoom slack shortcuts
 ---
 
-Hey Siri, could this meeting have been an email?
+> Hey Siri, could this meeting have been an email?
 
 ## Working from Home Together
 

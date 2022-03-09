@@ -6,7 +6,7 @@ last-updated: 2022-03-01
 tags: helium hotspot setup poe crypto
 ---
 
-[What is Helium?][what-is-helium-video] Glad you asked (to host).
+> [What is Helium?][what-is-helium-video] Glad you asked (to host).
 
 ## So Happy To Host With You
 

@@ -6,7 +6,7 @@ last-updated: 2022-03-01
 tags: python selenium automation
 ---
 
-Clipping coupons, with code.
+> Clipping coupons, with code.
 
 ## Im Tired Of Tapping
 

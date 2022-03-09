@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Fix Elgato WaveLink Crashing Zoom"
+title: "Stop Elgato WaveLink From Crashing Zoom"
 date: 2021-11-18 08:00:00 -0800
 last-updated: 2022-03-01
 tags: elgato wavelink zoom
 ---
 
-Push to wait, to talk, to wait, to talk.
+> Push to wait, to talk, to wait, to talk.
 
 ## Thank You, Next
 

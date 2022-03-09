@@ -6,7 +6,7 @@ last-updated: 2022-03-01
 tags: codeeditor vscode fonts
 ---
 
-Using a custom font is fancy, and can even be useful too.
+> Using a custom font is fancy, and can even be useful too.
 
 ## Using JetBrains Mono Inside VSCode
 

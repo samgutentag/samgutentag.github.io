@@ -6,7 +6,7 @@ last-updated: 2022-03-01
 tags: typeface design
 ---
 
-Charm from a router bit.
+> Charm from a router bit.
 
 ## Fonts Are Friends
 
