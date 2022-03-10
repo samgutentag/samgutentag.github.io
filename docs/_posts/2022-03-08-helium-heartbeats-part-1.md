@@ -10,7 +10,7 @@ tags: python helium pushover
 
 ## Monitoring Helium Hotspots with Pushover.
 
-I own and host (with friends and family) a handful of Helium Hotspots and I like to keep an eye on them to know they are operating well, get a heads up on potential problems, and in general satiate my curiousity and love for data. That said, It is very easy to fall into the trap of endlessly refreshing Miner Dashboards, the Helium Explorer and the various community apps that have come about to monitor Hotspot's status.
+I own and host (with friends and family) a handful of Helium Hotspots and I like to keep an eye on them to know they are operating well, get a heads up on potential problems, and in general satiate my curiosity and love for data. That said, It is very easy to fall into the trap of endlessly refreshing Miner Dashboards, the Helium Explorer and the various community apps that have come about to monitor Hotspot's status.
 
 I, and likely you, should not do this, it is not a great use of time and probably causes more worry than it should.
 
@@ -20,7 +20,7 @@ I, and likely you, should not do this, it is not a great use of time and probabl
 
 To remedy this desire for updates and insights, I have put together a set of scripts running on a Raspberry Pi that utilize the Helium Blockchain API and the application [Pushover][pushover-website] to keep me up to date on the status of my Hotspots without overloading me with information.
 
-This series of posts is obout the scripts I use to monitor my Hotspot "Heartbeats", the inactivity gaps that each Hotspot has. it collects a bunch of other information for other utilities I will write about later as well, but lets focus on just the activity monitoring for now.
+This series of posts is about the scripts I use to monitor my Hotspot "Heartbeats", the inactivity gaps that each Hotspot has. It collects a bunch of other information for other utilities I will write about later as well, but let's focus on just the activity monitoring for now.
 
 The end result of this code is a message I send to myself in the application Pushover or view on a (_very basic_) local webpage and it looks like this.
 
@@ -28,7 +28,7 @@ The end result of this code is a message I send to myself in the application Pus
 
 > these are not my actual hotspots, just ones from a wallet I selected at random.
 
-If all is well, these charts are nice and clear, providing my with activity gaps over the past 3-ish days.
+If all is well, these charts are nice and clear, providing me with activity gaps over the past 3-ish days.
 
 If all is not well, the charts are filled in with red, which helps me at a glance identify a potential issue to resolve.
 
@@ -38,7 +38,7 @@ If all is not well, the charts are filled in with red, which helps me at a glanc
 
 ## What is a "Heartbeat"?
 
-Here is an example `heartbeat.json` file that is saved by the script, its lightweight, but that keeps storage low and later steps fast and human readible!
+Here is an example `heartbeat.json` file that is saved by the script, it is lightweight, but that keeps storage low and later steps fast and human readable!
 
 ```json
 {
@@ -94,7 +94,7 @@ Checkout the other posts in this series where I will cover in more detail how I 
 
 [github-repo]: https://github.com/samgutentag/helium-heartbeat
 [helim-heartbeat-part-1]: https://gutentag.co/3MzZNAb
-[helim-heartbeat-part-2]: https://www.samgutentag.com/blog
+[helim-heartbeat-part-2]: https://gutentag.co/3MGjUwo
 [helim-heartbeat-part-3]: https://www.samgutentag.com/blog
 [helim-heartbeat-part-4]: https://www.samgutentag.com/blog
 [pushover-website]: https://pushover.net/#apps
