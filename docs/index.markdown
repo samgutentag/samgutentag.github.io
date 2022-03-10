@@ -8,7 +8,11 @@ title: About
 
 ## Gutentag, World
 
-I am a Developer Support Engineer, Tinkerer, Home Chef, Husband (and soon to be Father) living and working in the San Francisco Bay Area.
+I am a Developer Support Engineer, Tinkerer, Data Enthusiast, Home Chef, Husband (and soon to be Father) living and working in the San Francisco Bay Area.
+
+When I’m not working you’ll find me tinkering with my 3D printer, building home projects in my garage, practicing a new recipe or home chef skill, playing with my two dogs, reading up on how to be a parent, and spending time with my wife (preferably outside).
+
+---
 
 Born and raised in Columbus, Ohio I am a 2013 graduate of The Ohio State University with a Bachelor of Arts in Computer Information Systems, Animation and Game Development.
 
