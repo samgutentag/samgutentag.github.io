@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Monitor Helium Hotspot Activity Part 1, Overview"
+title: "Monitor Helium Hotspot Activity Part 1, Overview and Heartbeats"
 date: 2022-03-08 08:00:00 -0800
 last-updated: 2022-03-09
 tags: python helium pushover
@@ -93,10 +93,10 @@ Checkout the other posts in this series where I will cover in more detail how I 
 - [Monitor Helium Hotspot Activity Part 4, Notifications with Pushover][helim-heartbeat-part-4]
 
 [github-repo]: https://github.com/samgutentag/helium-heartbeat
-[helim-heartbeat-part-1]: ./2022-03-08-helim-heartbeat-part-1.md
-[helim-heartbeat-part-2]: ./2022-03-09-helim-heartbeat-part-2.md
-[helim-heartbeat-part-3]: ./2022-03-10-helim-heartbeat-part-3.md
-[helim-heartbeat-part-4]: ./2022-03-11-helim-heartbeat-part-4.md
+[helim-heartbeat-part-1]: https://gutentag.co/3MzZNAb
+[helim-heartbeat-part-2]: https://www.samgutentag.com/blog
+[helim-heartbeat-part-3]: https://www.samgutentag.com/blog
+[helim-heartbeat-part-4]: https://www.samgutentag.com/blog
 [pushover-website]: https://pushover.net/#apps
 [sample-image-warning]: https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/sample_output_warning.png?raw=true
 [sample-image]: https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/sample_output.png?raw=true
