@@ -11,7 +11,7 @@ published: true
 
 # Collecting Data with the Helium API
 
-This tutorial assumes you have some programming experience, but I aim to make this as straight forward as possible. It is a personal project to serve a need in my life but please make pull requests and feature suggestions on Github and I would love to help out!
+This tutorial assumes you have some programming experience, but I aim to make this as straightforward as possible. It is a personal project to serve a need in my life but please make pull requests and feature suggestions on Github and I would love to help out!
 
 ## Github Repo
 
@@ -21,7 +21,7 @@ You can find the code for this project on [github][github-repo], clone the repo 
 
 ## Set Up your Development Virtual Environment
 
-I [wrote a blog post][virtual-env-blog] on the basics of setting up python virtual environemnts, so here are the commands to get you setup.
+I [wrote a blog post][virtual-env-blog] on the basics of setting up python virtual environments, so here are the commands to get you setup.
 
 [virtual-env-blog]: https://gutentag.co/3sVfKZW
 
@@ -82,7 +82,7 @@ I've included some helper functions outside of the main script to keep things as
 
 ### Headers
 
-To get started, we need to create some helps to poll the Helium API in the `helium_api_wrapper.py` script.
+To get started, we need to create some helpers to poll the Helium API in the `helium_api_wrapper.py` script.
 
 Please be nice to the HeliumAPI, if you poll too quickly you will be throttled or denied access, so this header makes you somewhat "unique" in the eyes of the API host.
 
@@ -91,7 +91,7 @@ It will populate a header with information from your host system, the file name,
 ```python
 HEADERS = {
     "User-Agent": f"solitaryPixels_{basename(__file__)}/{__version__}",
-    "From": f"{__email__}",
+    "From": f"{getlogin()}.{basename(__file__)}@heliumheartbeat.com",
 }
 ```
 
@@ -136,7 +136,7 @@ def hotspot_activity(address, cursor="", max_depth=2, api_url=API_HELIUM):
             break
 ```
 
-It uses the same method to pagniate the API results using a `cursor`, though we only want the single most recent activity, so the `max_depth` is set to a shallow `2` to speed things up, and be nice to the Helium API
+It uses the same method to paginate the API results using a `cursor`, though we only want the single most recent activity, so the `max_depth` is set to a shallow `2` to speed things up, and be nice to the Helium API
 
 ---
 
@@ -144,7 +144,7 @@ It uses the same method to pagniate the API results using a `cursor`, though we 
 
 In the [first post of this series][helium-heartbeat-part-1] I outlined what exactly a "Heartbeat" is considered to be, but the short version is an activity check for a given hotspot.
 
-The next few steps take a multithreaeded approach to get teh heartbeat of each individual hotspot.
+The next few steps take a multithreaded approach to get the heartbeat of each individual hotspot.
 
 ### Get Hotspots For Wallet
 
@@ -154,9 +154,9 @@ This first step uses the Environment Variable `WALLET_ADR` to poll the API using
 
 This script uses multithreading to speed up the process, but it was also developed with my personal hotspots in mind. So anything more than a handful of hotspots may take a while to complete.
 
-For each hotspot associated with the target wallet, the `get_hotspot_heartbeat` function makes used of the helper function`hotspot_activity` to collect relevant data on the hotspot, the hotspots latest activity, and the reported block chain height.
+For each hotspot associated with the target wallet, the `get_hotspot_heartbeat` function makes use of the helper function`hotspot_activity` to collect relevant data on the hotspot, the hotspot's latest activity, and the reported block chain height.
 
-We collect the blockchain height with every hotspot as a simplified safegurd for API drift issues. These values are collected and the maximum is taken as the `block_height_max` to simplify comparisons.
+We collect the blockchain height with every hotspot as a simplified safeguard for API drift issues. These values are collected and the maximum is taken as the `block_height_max` to simplify comparisons.
 
 ### Calculate the Activity Gap
 
@@ -166,7 +166,7 @@ Once we have all of the heartbeat data for each hotspot, the `heartbeats[name]["
 
 Now that we have built our dictionary object of wallet heartbeats, we store it in a `data` directory with `year` and `month` subdirectories.
 
-A heartbeat collection run on March 5th, 2022 at 4:15am would have the filepath `./data/wallet_heartbeats/2022/03/heartbeat-2022.03.05-04.15.json`
+A heartbeat collection run on March 5th, 2022 at 4:15am would have the file path `./data/wallet_heartbeats/2022/03/heartbeat-2022.03.05-04.15.json`
 
 Note that the timestamp is taken in the machine local time zone.
 
@@ -189,6 +189,6 @@ Checkout the other posts in this series where I will cover in more detail how I 
 
 [github-repo]: https://github.com/samgutentag/helium-heartbeat
 [helim-heartbeat-part-1]: https://gutentag.co/3MzZNAb
-[helim-heartbeat-part-2]: https://www.samgutentag.com/blog
+[helim-heartbeat-part-2]: https://gutentag.co/3MGjUwo
 [helim-heartbeat-part-3]: https://www.samgutentag.com/blog
 [helim-heartbeat-part-4]: https://www.samgutentag.com/blog
