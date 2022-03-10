@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Monitor Helium Hotspot Activity Part 2, Using the Helium API with Python"
+title: "🎈 Monitor Helium Hotspot Activity Part 2, Using the Helium API with Python"
 date: 2022-03-09 08:00:00 -0800
 last-updated: 2022-03-09
 tags: python helium pushover hyperthreading

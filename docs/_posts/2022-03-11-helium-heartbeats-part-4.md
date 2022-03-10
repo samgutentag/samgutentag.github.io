@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Monitor Helium Hotspot Activity Part 4, Notifications with Pushover"
+title: "🎈 Monitor Helium Hotspot Activity Part 4, Notifications with Pushover"
 date: 2022-03-09 08:00:00 -0800
 last-updated: 2022-03-11
 tags: python helium pushover

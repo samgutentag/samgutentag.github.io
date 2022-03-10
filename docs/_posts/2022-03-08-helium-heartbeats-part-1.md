@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Monitor Helium Hotspot Activity Part 1, Overview and Heartbeats"
+title: "🎈 Monitor Helium Hotspot Activity Part 1, Overview and Heartbeats"
 date: 2022-03-08 08:00:00 -0800
 last-updated: 2022-03-09
 tags: python helium pushover
