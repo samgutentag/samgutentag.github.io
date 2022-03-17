@@ -244,6 +244,29 @@ for name in sorted(heartbeats.keys()):
 block_height_max = max(block_heights)
 ```
 
+### Step 2b. Heartbeat Data
+
+The `get_hotspot_heartbeat()` function slices the API response into the bits actually needed.
+
+| param     | info                   |
+| --------- | ---------------------- |
+| `hotspot` | Helium Hotspot address |
+
+```python
+def get_hotspot_heartbeat(hotspot=None):
+    _heartbeat = {}
+    _name = hotspot["name"]
+    _heartbeat["name"] = _name
+    _heartbeat["status_height"] = hotspot["status"]["height"]
+    _heartbeat["status_timestamp"] = hotspot["status"]["timestamp"]
+    _heartbeat["chain_height"] = hotspot["block"]
+
+    # get latest activity block
+    _heartbeat["latest_activity_block"] = get_latest_active_block(hotspot=hotspot)
+
+    return _heartbeat
+```
+
 ### Step 3. Calculate the Activity Gaps
 
 Once we have all of the heartbeat data for each hotspot, the `heartbeats[name]["blocks_inactive"]` key can be calculated by subtracting the `heartbeats[name]["latest_activity_block"]` from the `block_height_max`.
