@@ -2,13 +2,13 @@
 layout: post
 title: "Python virtualenvs with mkvirtualenv"
 date: 2021-07-24 08:00:00 -0800
-last-updated: 2022-03-01
+last-updated: 2022-03-16
 tags: python virtualenvs variables
 ---
 
 > Think "nice tidy boxes", but not yet Docker.
 
-## Create a `virtualenv`
+## Create a virtualenv
 
 Let's say you wanted to create a `virtualenv` for a new project using `python3` called `gutentag`
 
@@ -18,7 +18,7 @@ mkvirtualenv -p `which python` gutentag
 
 This command can be run from anywhere, though I tend to create a directory for the project in my `$HOME/Developer/` directory with the same name as the `virtualenv`.
 
-## Delete a `virtualenv`
+## Delete a virtualenv
 
 What if you no longer need a particular `virtualenv`? Use the `rmvirtualenv` command.
 
@@ -26,7 +26,7 @@ What if you no longer need a particular `virtualenv`? Use the `rmvirtualenv` com
 rmvirtualenv gutentag
 {% endhighlight %}
 
-## List all current `virtualenv`s
+## List all current virtualenv
 
 To output a list of existing `virtualenv` setups, use the `lsvirtualenv` following command, note the `-b` option for brevity.
 
@@ -36,7 +36,7 @@ lsvirtualenv -b
 
 ---
 
-## Installing `mkvirtualenv`
+## Installing mkvirtualenv
 
 **These steps are copy/pasted from [this stackoverflow Post][stackoverflow-post] so that I can find them quickly.**
 
@@ -58,9 +58,11 @@ Main difference between installer from Python website and brew is that installer
 
 And though it may not make any difference to you now – it will later on.
 
+---
+
 ## Configuration steps
 
-### Install `brew`
+### Install brew
 
 Check out `brew` installation page or simply run this in your terminal:
 
@@ -68,7 +70,7 @@ Check out `brew` installation page or simply run this in your terminal:
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {% endhighlight %}
 
-### Install `Python`
+### Install Python
 
 To install `python` with `brew` run:
 
@@ -84,7 +86,7 @@ export PATH=/usr/local/share/python:$PATH
 
 **Restart your terminal.** To make sure you've done everything correctly, run `which python3` and in return you should receive `/usr/local/bin/python`.
 
-### Install `virtualenv` & `virtualenvwrapper`
+### Install virtualenv & virtualenvwrapper
 
 Now it's time to install `virtualenv` and `virtualenvwrapper` to be able to use `workon` command and switch between virtual environments. This is done using `pip`:
 
@@ -92,7 +94,7 @@ Now it's time to install `virtualenv` and `virtualenvwrapper` to be able to use 
 pip3 install virtualenv virtualenvwrapper
 {% endhighlight %}
 
-### Set up `virtualenv` variables
+### Set up virtualenv variables
 
 Define a default path for your virtual environments. For example you can create a hidden directory inside `~` and call it `.virtualenvs` with `mkdir ~/.virtualenvs`. Add `virtualenv` variables to `.zshrc` (or `.bash_profile`).
 
