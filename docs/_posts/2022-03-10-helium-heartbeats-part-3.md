@@ -183,7 +183,7 @@ More information on this project can be found on the companion posts here:
 [github-repo]: https://github.com/samgutentag/helium-heartbeat
 [helim-heartbeat-part-1]: https://gutentag.co/3MzZNAb
 [helim-heartbeat-part-2]: https://gutentag.co/3MGjUwo
-[helim-heartbeat-part-3]: https://gutentag.co/3N8Tzrk
+[helim-heartbeat-part-3]: https://gutentag.co/37DqFPL
 [helim-heartbeat-part-4]: https://www.samgutentag.com/blog
 [sample-image-warning]: https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/sample_output_warning.png?raw=true
 [sample-image]: https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/sample_output.png?raw=true

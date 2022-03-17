@@ -103,7 +103,7 @@ Checkout the other posts in this series where I will cover in more detail how I 
 [github-repo]: https://github.com/samgutentag/helium-heartbeat
 [helim-heartbeat-part-1]: https://gutentag.co/3MzZNAb
 [helim-heartbeat-part-2]: https://gutentag.co/3MGjUwo
-[helim-heartbeat-part-3]: https://gutentag.co/3N8Tzrk
+[helim-heartbeat-part-3]: https://gutentag.co/37DqFPL
 [helim-heartbeat-part-4]: https://www.samgutentag.com/blog
 [pushover-website]: https://pushover.net/#apps
 [sample-image-warning]: https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/sample_output_warning.png?raw=true
