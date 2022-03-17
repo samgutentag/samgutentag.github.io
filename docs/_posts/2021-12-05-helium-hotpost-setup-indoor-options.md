@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "RAKv2 Helium Hotspot Indoor Setup"
+title: "🎈 RAKv2 Helium Hotspot Indoor Setup"
 date: 2021-12-05 08:00:00 -0800
 last-updated: 2022-03-01
 tags: helium hotspot setup poe crypto
@@ -16,11 +16,11 @@ Thank you for hosting, your part is pretty straight forward, however, there are 
 
 Please call me when you are ready to begin setup, as a few of these steps are a bit tricky, and the last step is a doozy.
 
-## Guidelines & FAQs
+## Guidelines & Faqs
 
 Ok, please keep reading.
 
-### The Hotspot needs to be connected to your internet
+### The Hotspot Needs To Be Connected To Your Internet
 
 The Hotspot connects to other Hotspots via [LoRaWan][helium-lorawan] (Long Range Wifi Access Network), and connects to the Internet using your Internet Connection.
 
@@ -31,7 +31,7 @@ The Hotspot connects to other Hotspots via [LoRaWan][helium-lorawan] (Long Range
 - **Wifi**
 - This hotspot can connect to your wifi network, but it is _not_ good at it, using wifi should be considered a last resort.
 
-### The Hotspot needs power
+### The Hotspot Needs Power
 
 The Hotspot itself uses the same amount of energy as a 5 Watt light bulb.
 
@@ -42,12 +42,12 @@ The Hotspot itself uses the same amount of energy as a 5 Watt light bulb.
 - **Wall Power**
 - A USB Type C power brick works well, though the cord is a little short and may be a hassle depending on the layout of your location.
 
-### The Hotspot needs a clear view of the world
+### The Hotspot Needs A Clear View Of The World
 
 - Please place the Hotspot in an open window that does **not** have a screen, ideally not one that you will be opening often.
 - Height is Key, the higher up your Antenna is, the greater your Hotspot's reach, and the greater your coverage. If you are in a high rise building, you are ahead of the game.
 
-### The Antenna must point up
+### The Antenna Must Point Up
 
 - The Antenna included in the package I sent you screws on to the connector on the Hotspot itself.
 - The Antenna broadcasts in a donut shaped pattern, similar to Wifi antennas, keeping it as vertical as possible to reduce signals being shot into space or into the ground.
@@ -61,36 +61,24 @@ With all of that in mind, let's get you set up, but remember:
 
 <div style="background-color:rgba(255, 0, 0, 0.25); text-align:center; vertical-align: middle;font-weight: bold;">
 <p>
-⚠️IT IS INCREDIBLY IMPORTANT THAT YOU NEVER POWER ON⚠️
+🚨IT IS INCREDIBLY IMPORTANT THAT YOU NEVER POWER ON🚨
 </p>
 <p>
-⚠️THE HOTSPOT WITHOUT THE ANTENNA PROPERLY CONNECTED!⚠️
+🚨THE HOTSPOT WITHOUT THE ANTENNA PROPERLY CONNECTED🚨
 </p>
 </div>
 
-Ok, here are the 4 main options.
+### Ethernet - Ideal
 
-### Configuration 1: POE & 🌟Ethernet🌟
+|       POE & Ethernet        |       Wall Power & Ethernet        |
+| :-------------------------: | :--------------------------------: |
+| ![POE & Ethernet][option-1] | ![Wall Power & Ethernet][option-2] |
 
-![POE & Ethernet][option-1]
+### Wifi - If You Must
 
-### Configuration 2: Wall Power & 🌟Ethernet🌟
-
-Gettings Setup using Wall Power & Ethernet.
-
-![Wall Power & Ethernet][option-2]
-
-### Configuration 3: POE & Wifi
-
-Gettings Setup using POE & Wifi.
-
-![POE & Wifi][option-3]
-
-### Configuration 4: Wall Power & Wifi
-
-Gettings Setup using Wall Power & Wifi.
-
-![Wall Power & Wifi][option-4]
+|       POE & Wifi        |       Wall Power & Wifi        |
+| :---------------------: | :----------------------------: |
+| ![POE & Wifi][option-3] | ![Wall Power & Wifi][option-4] |
 
 ## Last Step
 
