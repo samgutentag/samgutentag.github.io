@@ -62,9 +62,9 @@ You will need the Enclosure, the Back Plate, and 4 short Hex Screws with Washers
 
 The Back Plate attaches to the rear of the the Enclosure, be mindful of the orientation of the Back Plate, it looks symetrical, but it is not
 
-|         Yay         |       Not Yay       |
-| :-----------------: | :-----------------: |
-| ![step-03][step-03] | ![step-04][step-04] |
+|         Yay         |       Not Yay       |      Most Yay       |
+| :-----------------: | :-----------------: | :-----------------: |
+| ![step-03][step-03] | ![step-04][step-04] | ![step-05][step-05] |
 
 Attach the Mounting Arm to the Back Plate. Make sure to orient the arm that the head of hte HEx Bolt fits into the counter sink.
 
@@ -170,7 +170,8 @@ I will also send you a link to monitor the Hotspot activity, so you can see the 
 [step-02]: https://i.imgur.com/FnUEqK0.jpg
 [step-03]: https://i.imgur.com/jXy5CHm.jpg
 [step-04]: https://i.imgur.com/bMJwzne.jpg
-[step-06]: https://i.imgur.com/1YFqMTk.jpg
+[step-05]: https://i.imgur.com/1YFqMTk.jpg
+[step-06]: https://i.imgur.com/bcCJhCe.jpg
 [step-09]: https://i.imgur.com/VACyd6x.jpg
 [step-10]: https://i.imgur.com/6UtkSjk.jpg
 [step-12]: https://i.imgur.com/ONxmfjK.jpg
