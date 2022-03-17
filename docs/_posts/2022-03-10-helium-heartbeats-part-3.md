@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "🎈 Monitor Helium Hotspot Activity Part 3, Visualize the Data"
-date: 2022-03-9 08:00:00 -0800
-last-updated: 2022-03-10
+date: 2022-03-10 08:00:00 -0800
+last-updated: 2022-03-17
 tags: python helium pushover pandas api refresh
 published: true
 ---
 
-> Pythons, Pandas and Matplots
+> Pythons, Pandas and Matplots, Oh My!
 
 ## Visualizing The Heartbeat Data
 
