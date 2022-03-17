@@ -66,9 +66,9 @@ And though it may not make any difference to you now – it will later on.
 
 Check out `brew` installation page or simply run this in your terminal:
 
-{% highlight bash %}
+```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-{% endhighlight %}
+```
 
 ### Install Python
 
