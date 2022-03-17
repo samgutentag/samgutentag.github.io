@@ -52,13 +52,13 @@ Some Extra tools make this process much faster
 - Common Sense
 - Safety Precautions
 
-## Assemble the Enclosure
+## Assemble The Enclosure
 
 You will need the Enclosure, the Back Plate, and 4 short Hex Screws with Washers.
 
 |   Enclosure Body    | Enclosure Back Plate | Hex Screws          |
 | :-----------------: | :------------------: | ------------------- |
-| ![step-02][step-02] | ![step-01][step-01]  | ![step-01][step-06] |
+| ![step-02][step-02] | ![step-01][step-01]  | ![step-06][step-06] |
 
 The Back Plate attaches to the rear of the the Enclosure, be mindful of the orientation of the Back Plate, it looks symetrical, but it is not
 
@@ -104,7 +104,7 @@ Once the screws are removed, thread them back through the mounting holes in the 
 | :-----------------: | :-----------------: |
 | ![step-20][step-20] | ![step-21][step-21] |
 
-## Antenna and Power Connections
+## Antenna And Power Connections
 
 Attach the Antenna Extension to the Hotspot Antenna Connector, BE CAREFUL and take your time.
 
@@ -122,11 +122,11 @@ The Mounting Plate can now be attached with the 3 small phillips screws to the E
 
 ---
 
-## Mounting the Hotspot Precautions
+## Mounting The Hotspot Precautions
 
 > I assume no resposibility for the next steps, you are at your own risk and this information is provided as an informational resource only. BE SAFE, falling off of roofs or othe elevated platforms and locations can be fatal. Hire a Professional Installer if you have **any** doubt in your safety or abilities.
 
-## POE Connections
+## Poe Connections
 
 This example uses a roof mount, First you will need to run an Ethernet Cable from your modem/router to the location you will be mounting the Hotspot Enclosure, I will assume that part is done.
 
@@ -148,7 +148,7 @@ Wrap all connections in a layer of PVC Tape, then Self Sealing Waterproof Tape a
 
 ![step-29][step-29]
 
-## Admire your Work
+## Admire Your Work
 
 There are more steps to get your Hotspot out of `Relay` but that is for another guide. Right now, take a moment to admire your work!
 
@@ -165,30 +165,30 @@ I will also send you a link to monitor the Hotspot activity, so you can see the 
 [helium-lorawan]: https://www.helium.com/lorawan
 [helium-network]: https://www.helium.com
 [what-is-helium-video]: https://www.youtube.com/watch?v=Vx9YyS7-d3g
-[step-00]: ./assets/rak-enclosure-setup-00.png
-[step-01]: ./assets/rak-enclosure-setup-01.png
-[step-02]: ./assets/rak-enclosure-setup-02.png
-[step-03]: ./assets/rak-enclosure-setup-03.png
-[step-04]: ./assets/rak-enclosure-setup-04.png
-[step-05]: ./assets/rak-enclosure-setup-05.png
-[step-09]: ./assets/rak-enclosure-setup-09.png
-[step-10]: ./assets/rak-enclosure-setup-10.png
-[step-12]: ./assets/rak-enclosure-setup-12.png
-[step-13]: ./assets/rak-enclosure-setup-13.png
-[step-14]: ./assets/rak-enclosure-setup-14.png
-[step-15]: ./assets/rak-enclosure-setup-15.png
-[step-16]: ./assets/rak-enclosure-setup-16.png
-[step-18]: ./assets/rak-enclosure-setup-18.png
-[step-19]: ./assets/rak-enclosure-setup-19.png
-[step-20]: ./assets/rak-enclosure-setup-20.png
-[step-21]: ./assets/rak-enclosure-setup-21.png
-[step-22]: ./assets/rak-enclosure-setup-22.png
-[step-23]: ./assets/rak-enclosure-setup-23.png
-[step-24]: ./assets/rak-enclosure-setup-24.png
-[step-25]: ./assets/rak-enclosure-setup-25.png
-[step-26]: ./assets/rak-enclosure-setup-26.png
-[step-27]: ./assets/rak-enclosure-setup-27.png
-[step-28]: ./assets/rak-enclosure-setup-28.png
-[step-29]: ./assets/rak-enclosure-setup-29.png
-[step-30]: ./assets/rak-enclosure-setup-30.png
+[step-00]: https://imgur.com/5pB8HXe
+[step-01]: https://imgur.com/7Mb26Tt
+[step-02]: https://imgur.com/FnUEqK0
+[step-03]: https://imgur.com/jXy5CHm
+[step-04]: https://imgur.com/bMJwzne
+[step-06]: https://imgur.com/1YFqMTk
+[step-09]: https://imgur.com/VACyd6x
+[step-10]: https://imgur.com/6UtkSjk
+[step-12]: https://imgur.com/ONxmfjK
+[step-13]: https://imgur.com/qGsBuj5
+[step-14]: https://imgur.com/VCsO6p5
+[step-15]: https://imgur.com/kLwWNsp
+[step-16]: https://imgur.com/XsWtfru
+[step-18]: https://imgur.com/jRFdpyF
+[step-19]: https://imgur.com/0uYz0lS
+[step-20]: https://imgur.com/njQWdpn
+[step-21]: https://imgur.com/o1y8wBN
+[step-22]: https://imgur.com/kv7gUFq
+[step-23]: https://imgur.com/iF8Ac0a
+[step-24]: https://imgur.com/PcQlpkd
+[step-25]: https://imgur.com/iF9NVms
+[step-26]: https://imgur.com/RLAhbGV
+[step-27]: https://imgur.com/9KzbZzw
+[step-28]: https://imgur.com/p5gob3X
+[step-29]: https://imgur.com/Didzgqr
+[step-30]: https://imgur.com/nWlK5n0
 [rak-outdoor-enclosure]: https://store.rakwireless.com/products/outdoor-enclosure-kit-h?variant=37912840175814
