@@ -1,44 +1,46 @@
 ---
 layout: post
-title: "🎈 Monitor Helium Hotspot Activity Part 1, Overview and Heartbeats"
+title: "🎈 Monitor Helium Hotspot Activity Part : Overview and Heartbeats"
 date: 2022-03-08 08:00:00 -0800
-last-updated: 2022-03-09
-tags: python helium pushover
+last-updated: 2022-03-16
+tags: python Helium pushover
 ---
 
-> Can't Stop, Wont Stop, Probably Should Stop Refreshing.
+> Can't Stop, Wont Stop, (Probably Should Stop) Refreshing.
 
-## Monitoring Helium Hotspots with Pushover.
+## Feeling Refreshed
 
-I own and host (with friends and family) a handful of Helium Hotspots and I like to keep an eye on them to know they are operating well, get a heads up on potential problems, and in general satiate my curiosity and love for data. That said, It is very easy to fall into the trap of endlessly refreshing Miner Dashboards, the Helium Explorer and the various community apps that have come about to monitor Hotspot's status.
+I own and host (with friends and family) a handful of [Helium Hotspots][helium-hotspots] and I like to keep an eye on them to know they are operating well, get a heads up on potential problems, and in general satiate my curiosity and love for data.
 
-I, and likely you, should not do this, it is not a great use of time and probably causes more worry than it should.
+It is very easy to fall into the trap of endlessly refreshing Miner Dashboards, the Helium Explorer and the various community apps that have come about to monitor Hotspot's status.
+
+I, and likely you, should not do this. It is not a great use of time and probably causes more worry than it should.
 
 ---
 
 ## My Approach
 
-To remedy this desire for updates and insights, I have put together a set of scripts running on a Raspberry Pi that utilize the Helium Blockchain API and the application [Pushover][pushover-website] to keep me up to date on the status of my Hotspots without overloading me with information.
+To remedy this desire for updates and insights, I have put together a set of scripts running on a Raspberry Pi that utilize the [Helium Blockchain API][helium-api] and the application [Pushover][pushover-website] to keep me up to date on the status of my Hotspots. Without overloading me with information.
 
-This series of posts is about the scripts I use to monitor my Hotspot "Heartbeats", the inactivity gaps that each Hotspot has. It collects a bunch of other information for other utilities I will write about later as well, but let's focus on just the activity monitoring for now.
+These scripts rely on the concept of a "Hotspot Heartbeat" and the inactivity gaps of block activity. The scripts collects a bunch of other information for other utilities I will write about later as well, but let's focus on just the activity monitoring for now.
 
-The end result of this code is a message I send to myself in the application Pushover or view on a (_very basic_) local webpage and it looks like this.
-
-![sample image][sample-image]
-
-> these are not my actual hotspots, just ones from a wallet I selected at random.
+The end result of this code is a message I send to myself in the application Pushover or view on a (_very basic_) local webpage.
 
 If all is well, these charts are nice and clear, providing me with activity gaps over the past 3-ish days.
 
-If all is not well, the charts are filled in with red, which helps me at a glance identify a potential issue to resolve.
+If all is **not** well, the charts are filled in with red, which helps me at a glance identify a potential issue to resolve.
 
-![sample warning image][sample-image-warning]
+|            Yay 👍             |                  Not Yay 👎                   |
+| :---------------------------: | :-------------------------------------------: |
+| ![sample image][sample-image] | ![sample warning image][sample-image-warning] |
+
+> these are not my actual hotspots, they are associated to a wallet I selected at random.
 
 ---
 
 ## What is a "Heartbeat"?
 
-Here is an example `heartbeat.json` file that is saved by the script, it is lightweight, but that keeps storage low and later steps fast and human readable!
+Here is an example `heartbeat.json` file that is saved by this script, it is lightweight, but that keeps storage low and later steps fast and human readable.
 
 ```json
 {
@@ -100,3 +102,5 @@ Checkout the other posts in this series where I will cover in more detail how I 
 [pushover-website]: https://pushover.net/#apps
 [sample-image-warning]: https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/sample_output_warning.png?raw=true
 [sample-image]: https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/sample_output.png?raw=true
+[helium-hotspots]: https://www.helium.com/mine
+[helium-api]: https://docs.helium.com/blockchain
