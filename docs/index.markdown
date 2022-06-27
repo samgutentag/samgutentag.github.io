@@ -14,14 +14,10 @@ When I’m not working, you’ll find me tinkering with my 3D printer, building 
 
 Born and raised in Columbus, Ohio I am a 2013 graduate of The Ohio State University with a Bachelor of Arts in Computer Information Systems, Animation and Game Development.
 
-Previously I was a Creature Technical Director and Location Matchmove Artist at [Industrial Light & Magic][ilm], and I currently work as a Developer Support Engineer at Penumbra, Inc as part of the [REAL System VR][real-vr] Development Team.
-
 Keep up with my public facing work, and a few side projects, on [Github][github] and via [blog posts][blog] on this site.
 
 The font used for headers on this site is [National Park Typeface][typeface] (and I love it).
 
-[ilm]: https://www.ilm.com
-[real-vr]: https://www.realsystem.com
 [github]: https://www.github.com/samgutentag
 [blog]: https://www.samgutentag.com/blog
 [typeface]: https://nationalparktypeface.com/
