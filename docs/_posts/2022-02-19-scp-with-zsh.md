@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using scp with ohmyzsh"
+title: 'Using scp with ohmyzsh'
 date: 2022-02-19 08:00:00 -0800
 last-updated: 2022-03-01
 tags: scp terminal ohmyzsh zsh
@@ -28,6 +28,7 @@ When using a `zsh` shell, you must escape wildcard characters.
 
 ## Source
 
-Credit goes to [this stack overflow response][stack-overflow-post] that I have stumbled towards dozens of times.
+Credit goes to [this stack overflow response][stack-overflow-post] that I have stumbled towards
+dozens of times.
 
 [stack-overflow-post]: https://superuser.com/questions/420525/scp-with-zsh-no-matches-found
