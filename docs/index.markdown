@@ -8,8 +8,8 @@ title: About
 
 ## Gutentag, World
 
-I am a Developer Relations Lead at [Nova Labs][nova-website], Tinkerer, Data Enthusiast, Home Chef,
-Husband and Father living and working in the San Francisco Bay Area.
+I am the Developer Relations Lead at [Nova Labs][nova-website], Tinkerer, Data Enthusiast, Home
+Chef, Husband and Father living and working in the San Francisco Bay Area.
 
 When I’m not working, you’ll find me tinkering with my 3D printer, working on home projects in my
 garage, practicing a new recipe or home chef skill, playing with my two dogs, reading up on how to
