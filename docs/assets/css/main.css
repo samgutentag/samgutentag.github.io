@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
 
 /*
 	Identity by HTML5 UP
@@ -131,7 +131,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -201,7 +201,7 @@ input,
 select,
 textarea {
   color: #414f57;
-  font-family: "NationalPark-Regular", "Source Sans Pro", Helvetica, sans-serif;
+  font-family: 'NationalPark-Regular', 'Source Sans Pro', Helvetica, sans-serif;
   font-size: 14pt;
   font-weight: 300;
   line-height: 2;
@@ -357,10 +357,10 @@ label {
   margin: 0 0 0.75em 0;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='tel'],
 select,
 textarea {
   -moz-appearance: none;
@@ -377,19 +377,19 @@ textarea {
   width: 100%;
 }
 
-input[type="text"]:invalid,
-input[type="password"]:invalid,
-input[type="email"]:invalid,
-input[type="tel"]:invalid,
+input[type='text']:invalid,
+input[type='password']:invalid,
+input[type='email']:invalid,
+input[type='tel']:invalid,
 select:invalid,
 textarea:invalid {
   box-shadow: none;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+input[type='tel']:focus,
 select:focus,
 textarea:focus {
   border-color: #ff7496;
@@ -402,7 +402,7 @@ textarea:focus {
 }
 
 .select-wrapper:before {
-  content: "";
+  content: '';
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: FontAwesome;
@@ -428,9 +428,9 @@ textarea:focus {
   display: none;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
+input[type='text'],
+input[type='password'],
+input[type='email'],
 select {
   height: 2.75em;
 }
@@ -439,8 +439,8 @@ textarea {
   padding: 0.75em 1em;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -453,8 +453,8 @@ input[type="radio"] {
   z-index: -1;
 }
 
-input[type="checkbox"] + label,
-input[type="radio"] + label {
+input[type='checkbox'] + label,
+input[type='radio'] + label {
   text-decoration: none;
   color: #414f57;
   cursor: pointer;
@@ -466,8 +466,8 @@ input[type="radio"] + label {
   position: relative;
 }
 
-input[type="checkbox"] + label:before,
-input[type="radio"] + label:before {
+input[type='checkbox'] + label:before,
+input[type='radio'] + label:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: FontAwesome;
@@ -476,11 +476,11 @@ input[type="radio"] + label:before {
   text-transform: none !important;
 }
 
-input[type="checkbox"] + label:before,
-input[type="radio"] + label:before {
+input[type='checkbox'] + label:before,
+input[type='radio'] + label:before {
   border-radius: 4px;
   border: solid 1px #c8cccf;
-  content: "";
+  content: '';
   display: inline-block;
   height: 1.65em;
   left: 0;
@@ -491,22 +491,22 @@ input[type="radio"] + label:before {
   width: 1.65em;
 }
 
-input[type="checkbox"]:checked + label:before,
-input[type="radio"]:checked + label:before {
+input[type='checkbox']:checked + label:before,
+input[type='radio']:checked + label:before {
   color: #ff7496;
-  content: "\f00c";
+  content: '\f00c';
 }
 
-input[type="checkbox"]:focus + label:before,
-input[type="radio"]:focus + label:before {
+input[type='checkbox']:focus + label:before,
+input[type='radio']:focus + label:before {
   border-color: #ff7496;
 }
 
-input[type="checkbox"] + label:before {
+input[type='checkbox'] + label:before {
   border-radius: 4px;
 }
 
-input[type="radio"] + label:before {
+input[type='radio'] + label:before {
   border-radius: 100%;
 }
 
@@ -631,13 +631,13 @@ ul.icons li a:before {
 
 ul.icons li a:before {
   color: #ffffff;
-  text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf,
-    0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+  text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf,
+    0px -1.25px 0px #c8cccf;
 }
 
 ul.icons li a:hover:before {
-  text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496,
-    0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
+  text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496,
+    0px -1.25px 0px #ff7496;
 }
 
 ul.icons li a:before {
@@ -693,21 +693,21 @@ dl dd {
 
 /* Button */
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
 button,
 .button {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  -moz-transition: background-color 0.2s ease-in-out,
-    border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out,
-    border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out,
-    border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
     color 0.2s ease-in-out;
   display: inline-block;
@@ -724,34 +724,34 @@ button,
   white-space: nowrap;
 }
 
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='button']:hover,
 button:hover,
 .button:hover {
   border-color: #ff7496;
   color: #ff7496 !important;
 }
 
-input[type="submit"].icon,
-input[type="reset"].icon,
-input[type="button"].icon,
+input[type='submit'].icon,
+input[type='reset'].icon,
+input[type='button'].icon,
 button.icon,
 .button.icon {
   padding-left: 1.35em;
 }
 
-input[type="submit"].icon:before,
-input[type="reset"].icon:before,
-input[type="button"].icon:before,
+input[type='submit'].icon:before,
+input[type='reset'].icon:before,
+input[type='button'].icon:before,
 button.icon:before,
 .button.icon:before {
   margin-right: 0.5em;
 }
 
-input[type="submit"].fit,
-input[type="reset"].fit,
-input[type="button"].fit,
+input[type='submit'].fit,
+input[type='reset'].fit,
+input[type='button'].fit,
 button.fit,
 .button.fit {
   display: block;
@@ -759,28 +759,28 @@ button.fit,
   margin: 0 0 0.75em 0;
 }
 
-input[type="submit"].small,
-input[type="reset"].small,
-input[type="button"].small,
+input[type='submit'].small,
+input[type='reset'].small,
+input[type='button'].small,
 button.small,
 .button.small {
   font-size: 0.8em;
 }
 
-input[type="submit"].big,
-input[type="reset"].big,
-input[type="button"].big,
+input[type='submit'].big,
+input[type='reset'].big,
+input[type='button'].big,
 button.big,
 .button.big {
   font-size: 1.35em;
 }
 
-input[type="submit"].disabled,
-input[type="submit"]:disabled,
-input[type="reset"].disabled,
-input[type="reset"]:disabled,
-input[type="button"].disabled,
-input[type="button"]:disabled,
+input[type='submit'].disabled,
+input[type='submit']:disabled,
+input[type='reset'].disabled,
+input[type='reset']:disabled,
+input[type='button'].disabled,
+input[type='button']:disabled,
 button.disabled,
 button:disabled,
 .button.disabled,
@@ -833,7 +833,7 @@ button:disabled,
 }
 
 #main .avatar:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 50%;
@@ -932,7 +932,7 @@ body.is-loading #main {
 }
 
 #wrapper:before {
-  content: "";
+  content: '';
   display: block;
 }
 
