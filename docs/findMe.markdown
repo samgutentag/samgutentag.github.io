@@ -25,5 +25,5 @@ where I watch friends stream and should be more active
 <img src="./assets/images/svg/twitter-square.svg" width="64" height="64">[twitter](http://www.twitter.com/samgutentag)
 where I sometimes post but mostly read
 
-<img src="./assets/images/svg/mastodon.svg" width="64" height="64"><a rel="me" href="https://mastodon.social/@samgutentag">mastodon</a>
+<img src="./assets/images/svg/mastodon.svg" width="64" height="64">[mastodon](https://mastodon.social/@samgutentag)
 where I am still figuring things out

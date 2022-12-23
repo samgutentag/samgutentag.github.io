@@ -26,3 +26,8 @@ posts][blog] on this site.
 [helium-mapper]: https://mappers.helium.com/
 [nova-website]: https://nova.xyz/
 [helium-foundation-website]: https://www.helium.foundation/
+
+<div style="display: none;" >
+<a rel="me" href="https://mastodon.social/@samgutentag">mastodon</a>
+<a rel="me" href="https://mastodon.social/@samgutentag">mastodon</a>
+</div>
