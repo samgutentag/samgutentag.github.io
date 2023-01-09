@@ -56,3 +56,11 @@ data/
 share/
 logs/
 charts/
+
+# jekyll blog stuff
+########################################
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
