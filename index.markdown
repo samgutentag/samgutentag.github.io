@@ -8,9 +8,9 @@ title: About
 
 ## Gutentag, World!
 
-Hi, I'm Sam Gutentag. I am the Developer Relations Lead at [Helium
+Hi, I'm Sam Gutentag. I am the Developer Relations Lead at the [Helium
 Foundation][helium-foundation-website], a Tinkerer, a Data Enthusiast, a decent Home Chef, a Husband
-and a Father living and working in the San Francisco Bay Area.
+and a Father.
 
 <!-- Born and raised in Columbus, Ohio I am a 2013 graduate of The Ohio State University with a Bachelor
 of Arts in Computer Information Systems, Animation and Game Development. -->
@@ -24,10 +24,4 @@ posts][blog] on this site.
 [blog]: https://www.samgutentag.com/blog
 [typeface]: https://nationalparktypeface.com/
 [helium-mapper]: https://mappers.helium.com/
-[nova-website]: https://nova.xyz/
 [helium-foundation-website]: https://www.helium.foundation/
-
-<div style="display: none;" >
-<a rel="me" href="https://mastodon.social/@samgutentag">mastodon</a>
-<a rel="me" href="https://mastodon.social/@samgutentag">mastodon</a>
-</div>
