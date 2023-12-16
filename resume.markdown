@@ -61,8 +61,9 @@ title: Resume
 
 ### Industrial Light & Magic, San Francisco, CA
 
-> Creature Technical Director, Nov 2014 - Feb 2018 Technical Resource Assistant, Sept 2013 - Nov
-> 2014
+> Creature Technical Director, Nov 2014 - Feb 2018
+
+> Technical Resource Assistant, Sept 2013 - Nov 2014
 
 **Workflow Optimization and Customization:**
 
