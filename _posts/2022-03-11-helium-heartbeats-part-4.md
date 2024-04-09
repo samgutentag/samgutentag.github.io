@@ -13,8 +13,7 @@ published: false
 
 ![sample image][sample-image]
 
-[sample-image]:
-  https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/sample_output.png?raw=true
+[sample-image]: https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/sample_output.png?raw=true
 
 ## Notifications with Pushover
 
@@ -37,13 +36,10 @@ Once you have a Pushover account, lets create some API Keys.
 ### Pushover API
 
 [github-repo]: https://github.com/samgutentag/helium-heartbeat
-[sample-image]:
-  https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/sample_output.png?raw=true
-[sample-image-warning]:
-  https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/sample_output_warning.png?raw=true
+[sample-image]: https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/sample_output.png?raw=true
+[sample-image-warning]: https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/sample_output_warning.png?raw=true
 [virtual-env-blog]: ./2020-01-29-virtualenv-env-variables.md
-[shell-output-image-file]:
-  https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/env-setup-shell-output.png?raw=true
+[shell-output-image-file]: https://github.com/samgutentag/helium-heartbeat/blob/main/_assets/env-setup-shell-output.png?raw=true
 [pushover-website]: https://pushover.net/#apps
 [pushover-ios]: https://pushover.net/clients/ios
 [pushover-pricing]: https://pushover.net/pricing

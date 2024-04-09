@@ -19,19 +19,15 @@ VSCode does not treat MDX files in the same way it handles standard markdown fil
 To get around this, in your `settings.json` file, add the following:
 
 ```json
-
 "files.associations" {
   "*.mdx": "markdown"
 }
-
 ```
 
-Thats it, now extensions like "[markdownlint][markdownlint-link]", "[Markdown Preview
-Enhanced][markdownpreviewenhanced-link]", and "[Markdown All in One][markdownallinone-link]"
+Thats it, now extensions like [markdownlint][markdownlint-link], [Markdown Preview
+Enhanced][markdownpreviewenhanced-link], and [Markdown All in One][markdownallinone-link] work on `.mdx` files as you would expect/intend them to.
 
-[markdownlint-link]:
-  https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
-[markdownpreviewenhanced-link]:
-  https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
-[markdownallinone-link]:
-  https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
+
+[markdownlint-link]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
+[markdownpreviewenhanced-link]: https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
+[markdownallinone-link]: https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
