@@ -10,7 +10,7 @@ tags: typeface design
 
 ## Fonts Are Friends
 
-This blog makes use of the [National Park Typeface][national-park-typeface], a typeface desigend to
+This blog makes use of the [National Park Typeface][national-park-typeface], a typeface designed to
 mimic the National Park Service signs that are carved using a router bit by [The Design Outside (DO)
 Studio][do-studio]
 

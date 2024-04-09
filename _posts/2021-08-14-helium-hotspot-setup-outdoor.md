@@ -67,13 +67,13 @@ You will need the Enclosure, the Back Plate, and 4 short Hex Screws with Washers
 | ![step-02][step-02] | ![step-01][step-01]  | ![step-06][step-06] |
 
 The Back Plate attaches to the rear of the the Enclosure, be mindful of the orientation of the Back
-Plate, it looks symetrical, but it is not
+Plate, it looks symmetrical, but it is not
 
 |         Yay         |       Not Yay       |      Most Yay       |
 | :-----------------: | :-----------------: | :-----------------: |
 | ![step-03][step-03] | ![step-04][step-04] | ![step-05][step-05] |
 
-Attach the Mounting Arm to the Back Plate. Make sure to orient the arm that the head of hte HEx Bolt
+Attach the Mounting Arm to the Back Plate. Make sure to orient the arm that the head of the Hex Bolt
 fits into the counter sink.
 
 |       Pieces        |    Counter Sink     |
@@ -100,8 +100,8 @@ Install the Antenna Cable and Port Covers, take extra care with the Antenna cabl
 
 Mount the Hotspot to the Plate _before_ inserting the Plate into the Enclosure Back.
 
-Locate and remove the 4 screws from the bottom of the Hotspot case, the "Bottom" is the side farthes
-from the Antenna Connector
+Locate and remove the 4 screws from the bottom of the Hotspot case, the "Bottom" is the side
+farthest from the Antenna Connector
 
 |       Bottom        |         Top         |
 | :-----------------: | :-----------------: |
@@ -124,12 +124,12 @@ Attach the Antenna Extension to the Hotspot Antenna Connector, BE CAREFUL and ta
 Attach the POE splitter to the Ethernet and Power sockets on the Hotspot, the Injector then is
 connected to the Ethernet Gland Insert.
 
-I highly recommend you install the Ethernet Gland _before_ attaching it to the POE Splitter to
-avoide twisting the parts around too much as you screw it together.
+I highly recommend you install the Ethernet Gland _before_ attaching it to the POE Splitter to avoid
+twisting the parts around too much as you screw it together.
 
 ![step-23][step-23]
 
-The Mounting Plate can now be attached with the 3 small phillips screws to the Enclosure Back. The
+The Mounting Plate can now be attached with the 3 small Phillips screws to the Enclosure Back. The
 Hotspot should be very secure.
 
 ![step-27][step-27]
@@ -138,8 +138,8 @@ Hotspot should be very secure.
 
 ## Mounting The Hotspot Precautions
 
-> I assume no resposibility for the next steps, you are at your own risk and this information is
-> provided as an informational resource only. BE SAFE, falling off of roofs or othe elevated
+> I assume no responsibility for the next steps, you are at your own risk and this information is
+> provided as an informational resource only. BE SAFE, falling off of roofs or other elevated
 > platforms and locations can be fatal. Hire a Professional Installer if you have **any** doubt in
 > your safety or abilities.
 
@@ -154,7 +154,7 @@ to your Hotspot and the one labelled "LAN" to your modem/router.
 ## Final Installation
 
 To create a watertight seal, use the included Glands to secure the Ethernet Cable to the Enclosure.
-Do not forget to thread the peices in order onto the Ethernet cable before you attach the Ethernet
+Do not forget to thread the pieces in order onto the Ethernet cable before you attach the Ethernet
 to the Enclosure.
 
 |   Parts In Order    |     Gland Seal      | Ethernet Connection |
@@ -187,7 +187,6 @@ or concerns you may have, and I am happy to explain the Helium Project more as w
 
 I will also send you a link to monitor the Hotspot activity, so you can see the Network, working! 🎈
 
-[helium-lorawan]: https://www.helium.com/lorawan
 [helium-network]: https://www.helium.com
 [what-is-helium-video]: https://www.youtube.com/watch?v=Vx9YyS7-d3g
 [step-00]: https://i.imgur.com/5pB8HXe.jpg

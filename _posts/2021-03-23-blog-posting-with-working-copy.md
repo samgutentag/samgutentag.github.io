@@ -11,7 +11,7 @@ published: false
 
 ## This Should Be Fun
 
-This is a test post that I created, edit, and pushed to github from my iPad using
+This is a test post that I created, edit, and pushed to GitHub from my iPad using
 [WorkingCopy][workingcopy-app-store]
 
 [workingcopy-app-store]: https://workingcopyapp.com

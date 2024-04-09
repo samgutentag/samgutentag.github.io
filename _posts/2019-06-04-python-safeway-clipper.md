@@ -27,12 +27,12 @@ To overcome this boring and forgetful stumbling block to savings, I wrote myself
 that uses [Selenium][selenium-link] and [chromedriver][chromedriver-link] to hack together my own
 Safeway Coupon API.
 
-The project is hosted on github here [Safeway Clipper][safeway-clipper]
+The project is hosted on Github here [Safeway Clipper][safeway-clipper]
 
 The key part of this project was to be a set and forget task that runs on a normal interval so that
 anytime I show up at Safeway, I am likely to have as many coupons clipped as is actually possible.
 
-To accomplish this, the main script is wrapped into a cron job. This allows the old [2010 Macbook
+To accomplish this, the main script is wrapped into a cron job. This allows the old [2010 MacBook
 Pro][2010-macbook-pro] still chugging along in my back closet to run this script every night.
 
 ## Approach
