@@ -53,7 +53,7 @@ Option + I).
 
 In the Developer Tools panel, navigate to the **Network** tab and enter `m3u` into the filter box.
 
-![dev-tools-network-tab][image-01]
+![dev-tools-network-tab](https://raw.githubusercontent.com/samgutentag/img-host/main/download-spaces/devtools-network-tab.png)
 
 Paste in the spaces replay link from above into the address bar and hit enter.
 
@@ -65,11 +65,11 @@ playlist_16732160847824420797.m3u8?type=replay
 
 The key element is the `type=replay` suffix.
 
-![devtools-filtered-results][image-02]
+![devtools-filtered-results](https://raw.githubusercontent.com/samgutentag/img-host/main/download-spaces/devtools-filtered-results.png)
 
 Right click on this entry and select **Copy** > **Copy URL** from the menu.
 
-![devtool-copy-recording-url][image-03]
+![devtool-copy-recording-url](https://raw.githubusercontent.com/samgutentag/img-host/7aa6031544e7eb2d01ac3901c5cb49fd495ee7a8/download-spaces/devtool-copy-recording-url.png)
 
 ### Download the Recording
 
@@ -86,17 +86,8 @@ Use `yt-dpl` to download the spaces recording with this command:
 yt-dpl [playlist_16732160847824420797.m3u8?type=replay](https://prod-fastly-us-east-1.video.pscp.tv/Transcoding/v1/hls/cxIaV_kOVKtVFbsr-rugYE7nlh8BEqogOW-AsQwgF4n5q7I9ve0B_DrmtotFaAEpYpmMJ7A3G8BTdBnNukeHJQ/non_transcode/us-east-1/periscope-replay-direct-prod-us-east-1-public/audio-space/playlist_16732160847824420797.m3u8\?type\=replay)
 ```
 
-![terminal-download][image-04]
+![terminal-download](https://raw.githubusercontent.com/samgutentag/img-host/main/download-spaces/terminal-download.png)
 
 Assuming this is working correctly, you will be shown a progress display in the terminal window.
 
 Once complete, you can open the `mp4` file in any media player you choose.
-
-[image-02]:
-  https://raw.githubusercontent.com/samgutentag/img-host/main/download-spaces/devtools-filtered-results.png
-[image-01]:
-  https://raw.githubusercontent.com/samgutentag/img-host/main/download-spaces/devtools-network-tab.png
-[image-03]:
-  https://raw.githubusercontent.com/samgutentag/img-host/7aa6031544e7eb2d01ac3901c5cb49fd495ee7a8/download-spaces/devtool-copy-recording-url.png
-[image-04]:
-  https://raw.githubusercontent.com/samgutentag/img-host/main/download-spaces/terminal-download.png
