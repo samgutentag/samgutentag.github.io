@@ -7,9 +7,13 @@ title: Resume
 
 ## Experience
 
+### Audius
+
+> Developer Relations Engineer, Dec 2023 - Present
+
 ### Helium Foundation, San Francisco, CA
 
-> Developer Relations Lead, May 2022 - Sep 2023
+> Developer Relations Lead, May 2022 - Dec 2023
 
 **Developer Advocacy and Collaboration:**
 
