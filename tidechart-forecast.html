@@ -17,15 +17,17 @@
       }
       .chart-container {
         width: 100%;
-        max-width: 800px;
-        margin-bottom: 40px;
+        height: 430px;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0;
       }
     </style>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   </head>
   <body>
     <!-- <h1>Hilton Head Tide and Sun</h1> -->
-    <div id="charts"></div>
+    <div id="charts" class="chart-container"></div>
 
     <script>
       const tideApiUrl =
@@ -305,11 +307,26 @@
           showlegend: false,
         }
 
-        const chartContainer = document.createElement('div')
+        const chartContainer = document.createElement('charts')
         chartContainer.className = 'chart-container'
         document.getElementById('charts').appendChild(chartContainer)
 
-        Plotly.newPlot(chartContainer, [tideTrace], layout)
+        Plotly.newPlot(chartContainer, [tideTrace, highTrace, lowTrace], layout, {
+          responsive: true,
+        }).then(function (gd) {
+          Plotly.toImage(gd, {
+            format: 'png',
+            width: gd.offsetWidth,
+            height: gd.offsetHeight,
+          }).then(function (url) {
+            const img = new Image()
+            img.src = url
+            img.style.width = '100%'
+            img.style.height = '100%'
+            chartContainer.innerHTML = ''
+            chartContainer.appendChild(img)
+          })
+        })
       }
 
       async function init() {
