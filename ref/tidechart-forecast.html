@@ -245,6 +245,10 @@
       }
 
       init()
+      // Reload the page on window resize
+      window.addEventListener('resize', function () {
+        location.reload()
+      })
     </script>
   </body>
 </html>
