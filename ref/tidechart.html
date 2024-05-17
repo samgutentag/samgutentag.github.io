@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hilton Head Tide and Sun</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+      }
+      .chart-container {
+        width: 100%;
+        max-width: 800px;
+        margin-bottom: 40px;
+      }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <h1>Hilton Head Tide and Sun</h1>
+    <div id="charts"></div>
+
+    <script>
+      const tideApiUrl =
+        'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=NOS.COOPS.TAC.WL&begin_date=20240518&end_date=20240525&datum=MLLW&station=8670870&time_zone=lst_ldt&units=english&interval=h&format=json'
+      const sunApiUrl =
+        'https://api.sunrisesunset.io/json?lat=32.21632&lng=-80.7526&date_start=2024-05-18&date_end=2024-05-25'
+
+      async function fetchData(url) {
+        const response = await fetch(url)
+        const data = await response.json()
+        return data
+      }
+
+      async function fetchTideData() {
+        const data = await fetchData(tideApiUrl)
+        return data.predictions
+      }
+
+      async function fetchSunData() {
+        const data = await fetchData(sunApiUrl)
+        return data.results
+      }
+
+      function processTideData(predictions) {
+        const dataByDate = {}
+
+        predictions.forEach((prediction) => {
+          const date = prediction.t.split(' ')[0]
+          if (!dataByDate[date]) {
+            dataByDate[date] = []
+          }
+          dataByDate[date].push({
+            datetime: prediction.t,
+            value: parseFloat(prediction.v),
+          })
+        })
+
+        return dataByDate
+      }
+
+      function convertTo24Hour(timeStr) {
+        const [time, modifier] = timeStr.split(' ')
+        let [hours, minutes] = time.split(':')
+
+        if (modifier === 'PM' && hours !== '12') {
+          hours = parseInt(hours, 10) + 12
+        } else if (modifier === 'AM' && hours === '12') {
+          hours = '00'
+        }
+
+        return `${hours}:${minutes}`
+      }
+
+      function createPlot(date, tideData, sunData) {
+        const tideTrace = {
+          x: tideData.map((item) => item.datetime),
+          y: tideData.map((item) => item.value),
+          mode: 'lines',
+          name: date,
+          line: {
+            color: `blue`,
+            shape: 'spline', // Set the shape to 'spline' for smoothing
+            smoothing: 1.3, // Adjust smoothing factor (between 0 and 1.3, higher means smoother)
+          },
+        }
+
+        // daylight hours
+        const sunInfo = sunData.find((day) => day.date === date)
+        const sunrise = `${date} ${convertTo24Hour(sunInfo.sunrise)}:00`
+        const sunset = `${date} ${convertTo24Hour(sunInfo.sunset)}:00`
+
+        // solar noon
+        const solarNoon = `${date} ${convertTo24Hour(sunInfo.solar_noon)}:00`
+
+        // golden hour
+        const goldHour = `${date} ${convertTo24Hour(sunInfo.golden_hour)}:00`
+
+        // dawn
+        const dawn = `${date} ${convertTo24Hour(sunInfo.dawn)}:00`
+
+        // dusk
+        const dusk = `${date} ${convertTo24Hour(sunInfo.dusk)}:00`
+
+        const layout = {
+          title: `Tide Predictions for ${date}`,
+          xaxis: {
+            title: 'Time',
+            type: 'date',
+          },
+          yaxis: {
+            title: 'Water Level (feet)',
+            range: [0, 10],
+          },
+          shapes: [
+            {
+              type: 'rect',
+              xref: 'x',
+              yref: 'paper',
+              x0: dawn,
+              x1: sunrise,
+              y0: 0,
+              y1: 1,
+              fillcolor: 'red',
+              opacity: 0.2,
+              line: {
+                width: 0,
+              },
+            },
+            {
+              type: 'rect',
+              xref: 'x',
+              yref: 'paper',
+              x0: sunrise,
+              x1: solarNoon,
+              y0: 0,
+              y1: 1,
+              fillcolor: 'yellow',
+              opacity: 0.3,
+              line: {
+                width: 0,
+              },
+            },
+            {
+              type: 'rect',
+              xref: 'x',
+              yref: 'paper',
+              x0: solarNoon,
+              x1: goldHour,
+              y0: 0,
+              y1: 1,
+              fillcolor: 'orange',
+              opacity: 0.2,
+              line: {
+                width: 0,
+              },
+            },
+            {
+              type: 'rect',
+              xref: 'x',
+              yref: 'paper',
+              x0: goldHour,
+              x1: sunset,
+              y0: 0,
+              y1: 1,
+              fillcolor: 'orange',
+              opacity: 0.5,
+              line: {
+                width: 0,
+              },
+            },
+            {
+              type: 'rect',
+              xref: 'x',
+              yref: 'paper',
+              x0: sunset,
+              x1: dusk,
+              y0: 0,
+              y1: 1,
+              fillcolor: 'blue',
+              opacity: 0.5,
+              line: {
+                width: 0,
+              },
+            },
+          ],
+        }
+
+        const chartContainer = document.createElement('div')
+        chartContainer.className = 'chart-container'
+        document.getElementById('charts').appendChild(chartContainer)
+
+        Plotly.newPlot(chartContainer, [tideTrace], layout)
+      }
+
+      async function init() {
+        const tidePredictions = await fetchTideData()
+        const sunResults = await fetchSunData()
+        const tideDataByDate = processTideData(tidePredictions)
+
+        Object.keys(tideDataByDate).forEach((date) => {
+          createPlot(date, tideDataByDate[date], sunResults)
+        })
+      }
+
+      init()
+    </script>
+  </body>
+</html>
