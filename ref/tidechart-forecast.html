@@ -24,7 +24,7 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   </head>
   <body>
-    <h1>Hilton Head Tide and Sun</h1>
+    <!-- <h1>Hilton Head Tide and Sun</h1> -->
     <div id="charts"></div>
 
     <script>
@@ -109,8 +109,13 @@
         // dusk
         const dusk = `${date} ${convertTo24Hour(sunInfo.dusk)}:00`
 
+        // firstLight
+        const firstLight = `${date} ${convertTo24Hour(sunInfo.first_light)}:00`
+        // lastLight
+        const lastLight = `${date} ${convertTo24Hour(sunInfo.last_light)}:00`
+
         const layout = {
-          title: `Tide Predictions for ${date}`,
+          title: `Hilton Head Tide Predictions for ${date}`,
           xaxis: {
             title: 'Time',
             type: 'date',
@@ -124,11 +129,25 @@
               type: 'rect',
               xref: 'x',
               yref: 'paper',
+              x0: firstLight,
+              x1: dawn,
+              y0: 0,
+              y1: 1,
+              fillcolor: 'grey',
+              opacity: 0.1,
+              line: {
+                width: 0,
+              },
+            },
+            {
+              type: 'rect',
+              xref: 'x',
+              yref: 'paper',
               x0: dawn,
               x1: sunrise,
               y0: 0,
               y1: 1,
-              fillcolor: 'red',
+              fillcolor: 'orange',
               opacity: 0.2,
               line: {
                 width: 0,
@@ -173,7 +192,7 @@
               fillcolor: 'orange',
               opacity: 0.5,
               line: {
-                width: 0,
+                width: 1,
               },
             },
             {
@@ -185,12 +204,27 @@
               y0: 0,
               y1: 1,
               fillcolor: 'blue',
-              opacity: 0.5,
+              opacity: 0.25,
+              line: {
+                width: 0,
+              },
+            },
+            {
+              type: 'rect',
+              xref: 'x',
+              yref: 'paper',
+              x0: dusk,
+              x1: lastLight,
+              y0: 0,
+              y1: 1,
+              fillcolor: 'grey',
+              opacity: 0.1,
               line: {
                 width: 0,
               },
             },
           ],
+          autosize: true,
         }
 
         const chartContainer = document.createElement('div')
