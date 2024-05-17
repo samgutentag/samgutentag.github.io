@@ -342,9 +342,14 @@
 
       init()
 
-      // Reload the page on window resize
+      // Initial width of the window
+      let initialWidth = window.innerWidth
+
+      // Reload the page on window resize width changes only
       window.addEventListener('resize', function () {
-        location.reload()
+        if (window.innerWidth !== initialWidth) {
+          location.reload()
+        }
       })
     </script>
   </body>
