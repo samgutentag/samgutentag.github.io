@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hilton Head Tide and Sun</title>
+    <title>Santa Barbara Tide and Sun</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -26,14 +26,14 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   </head>
   <body>
-    <!-- <h1>Hilton Head Tide and Sun</h1> -->
+    <!-- <h1>Santa Barbara Tide and Sun</h1> -->
     <div id="charts" class="chart-container"></div>
 
     <script>
       const tideApiUrl =
-        'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=NOS.COOPS.TAC.WL&begin_date=20240518&end_date=20240525&datum=MLLW&station=8670870&time_zone=lst_ldt&units=english&interval=h&format=json'
+        'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=NOS.COOPS.TAC.WL&begin_date=20240501&end_date=20240630&datum=MLLW&station=9411340&time_zone=lst_ldt&units=english&interval=h&format=json'
       const sunApiUrl =
-        'https://api.sunrisesunset.io/json?lat=32.21632&lng=-80.7526&date_start=2024-05-18&date_end=2024-05-25'
+        'https://api.sunrisesunset.io/json?lat=34.41435608229667&lng=-119.77973849012125&date_start=2024-05-01&date_end=2024-06-30'
 
       async function fetchData(url) {
         const response = await fetch(url)
@@ -193,44 +193,16 @@
         ]
 
         const layout = {
-          title: `Hilton Head Tide Predictions for ${date}`,
+          title: `Santa Barbara Tide Predictions for ${date}`,
           xaxis: {
             title: 'Time',
             type: 'date',
           },
           yaxis: {
             title: 'Water Level (feet)',
-            range: [0, 8],
+            range: [-2, 8],
           },
           shapes: [
-            {
-              type: 'rect',
-              xref: 'x',
-              yref: 'paper',
-              x0: firstLight,
-              x1: dawn,
-              y0: 0,
-              y1: 1,
-              fillcolor: 'grey',
-              opacity: 0.1,
-              line: {
-                width: 0,
-              },
-            },
-            {
-              type: 'rect',
-              xref: 'x',
-              yref: 'paper',
-              x0: dawn,
-              x1: sunrise,
-              y0: 0,
-              y1: 1,
-              fillcolor: 'orange',
-              opacity: 0.2,
-              line: {
-                width: 0,
-              },
-            },
             {
               type: 'rect',
               xref: 'x',
@@ -271,34 +243,6 @@
               opacity: 0.5,
               line: {
                 width: 1,
-              },
-            },
-            {
-              type: 'rect',
-              xref: 'x',
-              yref: 'paper',
-              x0: sunset,
-              x1: dusk,
-              y0: 0,
-              y1: 1,
-              fillcolor: 'blue',
-              opacity: 0.25,
-              line: {
-                width: 0,
-              },
-            },
-            {
-              type: 'rect',
-              xref: 'x',
-              yref: 'paper',
-              x0: dusk,
-              x1: lastLight,
-              y0: 0,
-              y1: 1,
-              fillcolor: 'grey',
-              opacity: 0.1,
-              line: {
-                width: 0,
               },
             },
           ],

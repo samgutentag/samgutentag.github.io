@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hilton Head Tide and Sun</title>
+    <title>Santa Barbara Tide and Sun</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -19,7 +19,8 @@
 
       .chart-container {
         width: 100%;
-        height: 430px;
+        /* height: 430px; */
+        height: 80%;
         max-width: 100%;
         max-height: 100%;
         margin: 0;
@@ -32,9 +33,10 @@
 
     <script>
       const tideApiUrl =
-        'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=NOS.COOPS.TAC.WL&begin_date=20240501&end_date=20240525&datum=MLLW&station=8670870&time_zone=lst_ldt&units=english&interval=h&format=json'
+        'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=NOS.COOPS.TAC.WL&date=today&datum=MLLW&station=9411340&time_zone=lst_ldt&units=english&interval=h&format=json'
+
       const sunApiUrl =
-        'https://api.sunrisesunset.io/json?lat=32.21632&lng=-80.7526&date_start=2024-05-01&date_end=2024-05-25'
+        'https://api.sunrisesunset.io/json?lat=34.41435608229667&lng=-119.77973849012125&date=today'
 
       async function fetchData(url) {
         const response = await fetch(url)
@@ -147,7 +149,7 @@
         }
 
         // daylight hours
-        const sunInfo = sunData.find((day) => day.date === date)
+        const sunInfo = sunData
         const sunrise = `${date} ${convertTo24Hour(sunInfo.sunrise)}:00`
         const sunset = `${date} ${convertTo24Hour(sunInfo.sunset)}:00`
 
@@ -156,17 +158,6 @@
 
         // golden hour
         const goldHour = `${date} ${convertTo24Hour(sunInfo.golden_hour)}:00`
-
-        // dawn
-        const dawn = `${date} ${convertTo24Hour(sunInfo.dawn)}:00`
-
-        // dusk
-        const dusk = `${date} ${convertTo24Hour(sunInfo.dusk)}:00`
-
-        // firstLight
-        const firstLight = `${date} ${convertTo24Hour(sunInfo.first_light)}:00`
-        // lastLight
-        const lastLight = `${date} ${convertTo24Hour(sunInfo.last_light)}:00`
 
         const annotations = [
           ...highs.map((item) => ({
@@ -194,44 +185,16 @@
         ]
 
         const layout = {
-          title: `Hilton Head Tide Predictions for ${date}`,
+          title: `Santa Barbara Tide Predictions for ${date}`,
           xaxis: {
             title: 'Time',
             type: 'date',
           },
           yaxis: {
             title: 'Water Level (feet)',
-            range: [0, 8],
+            range: [-2, 8],
           },
           shapes: [
-            {
-              type: 'rect',
-              xref: 'x',
-              yref: 'paper',
-              x0: firstLight,
-              x1: dawn,
-              y0: 0,
-              y1: 1,
-              fillcolor: 'grey',
-              opacity: 0.1,
-              line: {
-                width: 0,
-              },
-            },
-            {
-              type: 'rect',
-              xref: 'x',
-              yref: 'paper',
-              x0: dawn,
-              x1: sunrise,
-              y0: 0,
-              y1: 1,
-              fillcolor: 'orange',
-              opacity: 0.2,
-              line: {
-                width: 0,
-              },
-            },
             {
               type: 'rect',
               xref: 'x',
@@ -270,34 +233,6 @@
               y1: 1,
               fillcolor: 'orange',
               opacity: 0.5,
-              line: {
-                width: 1,
-              },
-            },
-            {
-              type: 'rect',
-              xref: 'x',
-              yref: 'paper',
-              x0: sunset,
-              x1: dusk,
-              y0: 0,
-              y1: 1,
-              fillcolor: 'blue',
-              opacity: 0.25,
-              line: {
-                width: 0,
-              },
-            },
-            {
-              type: 'rect',
-              xref: 'x',
-              yref: 'paper',
-              x0: dusk,
-              x1: lastLight,
-              y0: 0,
-              y1: 1,
-              fillcolor: 'grey',
-              opacity: 0.1,
               line: {
                 width: 0,
               },
