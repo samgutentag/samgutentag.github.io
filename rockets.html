@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>API Query and Sort</title>
+    <title>Vandenberg SFB Launches</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -73,6 +73,10 @@
       ) {
         try {
           const response = await fetch(url);
+          if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.detail);
+          }
           const data = await response.json();
 
           const sortedResults = data.results.sort((a, b) => {
@@ -106,7 +110,8 @@
             resultsContainer.appendChild(resultDiv);
           });
         } catch (error) {
-          console.error("Error fetching data:", error);
+          const resultsContainer = document.getElementById(containerId);
+          resultsContainer.innerHTML = `<div class="result">${error.message}</div>`;
         }
       }
 
