@@ -7,9 +7,13 @@ title: Resume
 
 ## Experience
 
+### Trunk
+
+> Sr. Developer Relations Engineer, Jan 2025 - Present
+
 ### Audius
 
-> Developer Relations Engineer, Dec 2023 - Present
+> Developer Relations Engineer, Dec 2023 - Dec 2024
 
 ### Helium Foundation, San Francisco, CA
 
